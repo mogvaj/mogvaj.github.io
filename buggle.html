@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <title>Boggle Board Maker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center bg-info">
+          <h2 class="text-white">Buggle</h2>
+        </div>
+      </div>
+      <div class="row mb-2 mt-2">
+        <div class="col text-right">
+          Enter seed value:
+        </div>
+        <div class="col text-left">
+          <input type="text" id="seedField" value="" placeholder="Enter a # here" />
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col text-right">
+          Timer length (seconds):
+        </div>
+        <div class="col text-left">
+          <input type="text" id="timerLength" value="180" placeholder="Enter timer length" />
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col text-center">
+          <button class="btn btn-success" id="startGameButton" onclick="handleStartGameButton();">Start Game</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="outputDiv" class="container">
+      </div>
+
+      <hr>
+
+      <div class="container">
+        <div class="row">
+          <div id="timerDiv" class="col text-center"></div>
+          <audio id="horseAudio">
+            <source src="https://www.w3schools.com/jsref/horse.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+      var boggleCubesData = [
+        [ 'I', 'E', 'T', 'G', 'V', 'N' ],
+        [ 'H', 'N', 'L', 'N', 'R', 'Z' ],
+        [ 'W', 'R', 'E', 'T', 'V', 'H' ],
+        [ 'K', 'S', 'F', 'F', 'A', 'P' ],
+        [ 'S', 'E', 'E', 'U', 'N', 'I' ],
+        [ 'E', 'O', 'T', 'S', 'I', 'S' ],
+        [ 'E', 'G', 'N', 'W', 'E', 'H' ],
+        [ 'L', 'Y', 'E', 'D', 'R', 'V' ],
+        [ 'D', 'T', 'Y', 'T', 'S', 'I' ],
+        [ 'A', 'G', 'A', 'E', 'N', 'E' ],
+        [ 'R', 'T', 'T', 'E', 'Y', 'L' ],
+        [ 'A', 'B', 'B', 'O', 'J', 'O' ],
+        [ 'T', 'W', 'A', 'O', 'O', 'T' ],
+        [ 'T', 'M', 'I', 'O', 'U', 'C' ],
+        [ 'H', 'A', 'P', 'S', 'O', 'C' ],
+        [ 'Qu', 'U', 'M', 'H', 'N', 'I' ]
+      ];
+      var x = '';
+
+      class LetterHedron {
+        constructor(anObject) {
+          this.possibleValues = anObject.possibleValues;
+        }
+
+        getSeededRandomSide(aSeed) {
+          return this.possibleValues[getSeededRandomNumber(0, this.possibleValues.length, aSeed)];
+        }
+
+        toString() {
+          var returnString = '';
+          for (var i = 0; i < this.possibleValues.length; i++) {
+            returnString += this.possibleValues[i];
+            if (i < this.possibleValues.length - 1) {
+              returnString += ', ';
+            }
+          }
+          return returnString;
+        }
+      }
+
+      class GameBoard {
+        constructor(boggleData) {
+          this.boggleHedronsStart = [];
+          for (var i = 0; i < boggleData.length; i++) {
+            var newLetterHedron = new LetterHedron({
+              "possibleValues": boggleData[i]
+            });
+            this.boggleHedronsStart.push(newLetterHedron);
+          }
+        }
+
+        getSeededShakenBoggleLetters(aSeed) {
+          var subscriptArray = [];
+          for (var i = 0; i < this.boggleHedronsStart.length; i++) {
+            subscriptArray.push(i);
+          }
+          var shakenBoggleLetters = [];
+          var randomSubscript = 0;
+          var numSubscripts = subscriptArray.length;
+          for (var i = 0; i < numSubscripts; i++) {
+            randomSubscript = getSeededRandomNumber(0, subscriptArray.length, aSeed);
+            shakenBoggleLetters.push(
+              this.boggleHedronsStart[subscriptArray[randomSubscript]].getSeededRandomSide(aSeed)
+            );
+            subscriptArray.splice(randomSubscript, 1);
+          }
+          return shakenBoggleLetters;
+        }
+
+        getSeededGameboard(aSeed) {
+          var shakenBoggleLetters = this.getSeededShakenBoggleLetters(aSeed);
+          var htmlString = '<table class="mx-auto">';
+          for (var r = 0; r < 4; r++) {
+            htmlString += "<tr>";
+            for (var c = 0; c < 4; c++ ) {
+              htmlString += "<td class='w-25'>";
+              htmlString +=   "<button class='btn btn-info btn-lg rounded shadow boggleButton text-center w-100'>" + shakenBoggleLetters[(r*4) + c] + "</button>";
+              htmlString += "</td>";
+            }
+            htmlString += "</div>";
+          }
+          htmlString += "</table>";
+          return htmlString;
+        }
+      }
+
+      function getSeededRandomNumber(min, max, aSeed) {
+        Math.seed = aSeed;
+        Math.seed = (Math.seed * 9301 + 49297) % 233280;
+        var randomNumber = Math.seed / 233280;
+        return Math.floor(min + randomNumber * (max - min));
+      }
+
+      function handleStartGameButton() {
+        if (typeof x != 'string') {
+          clearInterval(x);
+        }
+        var seedValue = document.getElementById('seedField').value;
+        if ( seedValue !== '') {
+          var gameBoard = new GameBoard(boggleCubesData);
+          var targetElement = document.getElementById("outputDiv");
+          targetElement.innerHTML = gameBoard.getSeededGameboard(seedValue);
+
+          var timerElement = document.getElementById("timerDiv");
+          var elapsedSeconds = 0;
+          var maxSeconds = document.getElementById("timerLength").value;
+          x = setInterval( function() {
+            timerElement.innerHTML = "<button class='btn btn-warning btn-lg w-50'>" + elapsedSeconds + " / " + maxSeconds + "</button>";
+            if (elapsedSeconds >= maxSeconds) {
+              clearInterval(x);
+              timerElement.innerHTML = "<button class='btn btn-danger btn-lg w-50'>EXPIRED!!!</button>";
+              document.getElementById("horseAudio").play();
+            }
+            else {
+              elapsedSeconds++;
+            }
+          }, 1000);
+        }
+      }
+    </script>
+  </body>
+</html>
