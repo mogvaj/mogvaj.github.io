@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Boggle Board Maker</title>
+    <title>Buggle Board Maker</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -56,7 +56,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script>
-      var boggleCubesData = [
+      var buggleCubesData = [
         [ 'I', 'E', 'T', 'G', 'V', 'N' ],
         [ 'H', 'N', 'L', 'N', 'R', 'Z' ],
         [ 'W', 'R', 'E', 'T', 'V', 'H' ],
@@ -98,42 +98,42 @@
       }
 
       class GameBoard {
-        constructor(boggleData) {
-          this.boggleHedronsStart = [];
-          for (var i = 0; i < boggleData.length; i++) {
+        constructor(buggleData) {
+          this.buggleHedronsStart = [];
+          for (var i = 0; i < buggleData.length; i++) {
             var newLetterHedron = new LetterHedron({
-              "possibleValues": boggleData[i]
+              "possibleValues": buggleData[i]
             });
-            this.boggleHedronsStart.push(newLetterHedron);
+            this.buggleHedronsStart.push(newLetterHedron);
           }
         }
 
-        getSeededShakenBoggleLetters(aSeed) {
+        getSeededShakenBuggleLetters(aSeed) {
           var subscriptArray = [];
-          for (var i = 0; i < this.boggleHedronsStart.length; i++) {
+          for (var i = 0; i < this.buggleHedronsStart.length; i++) {
             subscriptArray.push(i);
           }
-          var shakenBoggleLetters = [];
+          var shakenBuggleLetters = [];
           var randomSubscript = 0;
           var numSubscripts = subscriptArray.length;
           for (var i = 0; i < numSubscripts; i++) {
             randomSubscript = getSeededRandomNumber(0, subscriptArray.length, aSeed);
-            shakenBoggleLetters.push(
-              this.boggleHedronsStart[subscriptArray[randomSubscript]].getSeededRandomSide(aSeed)
+            shakenBuggleLetters.push(
+              this.buggleHedronsStart[subscriptArray[randomSubscript]].getSeededRandomSide(aSeed)
             );
             subscriptArray.splice(randomSubscript, 1);
           }
-          return shakenBoggleLetters;
+          return shakenBuggleLetters;
         }
 
         getSeededGameboard(aSeed) {
-          var shakenBoggleLetters = this.getSeededShakenBoggleLetters(aSeed);
+          var shakenBuggleLetters = this.getSeededShakenBuggleLetters(aSeed);
           var htmlString = '<table class="mx-auto">';
           for (var r = 0; r < 4; r++) {
             htmlString += "<tr>";
             for (var c = 0; c < 4; c++ ) {
               htmlString += "<td class='w-25'>";
-              htmlString +=   "<button class='btn btn-info btn-lg rounded shadow boggleButton text-center w-100'>" + shakenBoggleLetters[(r*4) + c] + "</button>";
+              htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>" + shakenBuggleLetters[(r*4) + c] + "</button>";
               htmlString += "</td>";
             }
             htmlString += "</div>";
@@ -156,7 +156,7 @@
         }
         var seedValue = document.getElementById('seedField').value;
         if ( seedValue !== '') {
-          var gameBoard = new GameBoard(boggleCubesData);
+          var gameBoard = new GameBoard(buggleCubesData);
           var targetElement = document.getElementById("outputDiv");
           targetElement.innerHTML = gameBoard.getSeededGameboard(seedValue);
 
