@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Die Testing</title>
+  </head>
+  <body>
+    <div id="outputDiv"></div>
+
+    <script src="dicegen.js"></script>
+    <script>
+      var dieSet = generateDice(englishLetterArray, 16, 6);
+
+      document.getElementById("outputDiv").innerHTML = dieSet;
+    </script>
+  </body>
+</html>
