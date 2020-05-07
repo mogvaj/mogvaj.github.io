@@ -29,6 +29,22 @@
         </div>
       </div>
       <div class="row mb-2">
+        <div class="col text-right">
+          Rows:
+        </div>
+        <div class="col text-left">
+          <input type="text" id="m" value="4" placeholder="Enter number of rows" />
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col text-right">
+          Columns:
+        </div>
+        <div class="col text-left">
+          <input type="text" id="n" value="4" placeholder="Enter number of columns" />
+        </div>
+      </div>
+      <div class="row mb-2">
         <div class="col text-center">
           <button class="btn btn-success" id="startGameButton" onclick="handleStartGameButton();">Start Game</button>
         </div>
@@ -126,14 +142,19 @@
           return shakenBuggleLetters;
         }
 
-        getSeededGameboard(aSeed) {
+        getSeededGameboard(aSeed, m=4, n=4) {
           var shakenBuggleLetters = this.getSeededShakenBuggleLetters(aSeed);
           var htmlString = '<table class="mx-auto">';
-          for (var r = 0; r < 4; r++) {
+          for (var r = 0; r < m; r++) {
             htmlString += "<tr>";
-            for (var c = 0; c < 4; c++ ) {
-              htmlString += "<td class='w-25'>";
-              htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>" + shakenBuggleLetters[(r*4) + c] + "</button>";
+            for (var c = 0; c < n; c++ ) {
+              var width = Math.round(100/n);
+              var style = "";
+              if (!([25, 50, 75].includes(width))) {
+                style = "width: " + width + "!important;";
+              }
+              htmlString += "<td class='w-" + width + "' style='" + style + "'>";
+              htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>" + shakenBuggleLetters[((r*4) + c) % 16] + "</button>";
               htmlString += "</td>";
             }
             htmlString += "</div>";
@@ -155,10 +176,12 @@
           clearInterval(x);
         }
         var seedValue = document.getElementById('seedField').value;
+        var m = document.getElementById('m').value;
+        var n = document.getElementById('n').value;
         if ( seedValue !== '') {
           var gameBoard = new GameBoard(buggleCubesData);
           var targetElement = document.getElementById("outputDiv");
-          targetElement.innerHTML = gameBoard.getSeededGameboard(seedValue);
+          targetElement.innerHTML = gameBoard.getSeededGameboard(seedValue, m, n);
 
           var timerElement = document.getElementById("timerDiv");
           var elapsedSeconds = 0;
