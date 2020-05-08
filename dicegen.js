@@ -42,6 +42,22 @@ class CumulativeFrequencyEntry {
 }
 
 function generateDice(aLetterArray, numDice, numSides) {
+  var outputDiv = document.getElementById("outputDiv");
+
+  alert("Starting generateDice()...");
+  var numDiceFaces = numDice * numSides;
+  var workingArray = [];
+  var indexArray = [];
+  var i = 0;
+
+  alert("Creating workingArray and indexArray...");
+  for (i = 0; i < numDiceFaces; i++) {
+    workingArray.push(i);
+    indexArray.push(i);
+  }
+  outputDiv.innerHTML = "workingArray = " + workingArray + "<br>";
+  outputDiv.innerHTML += "indexArray = " + indexArray + "<br>";
+
   // First create a cumulative frequency list
   var cfList = [];
   for (i = 0; i < aLetterArray.length; i++) {
@@ -56,38 +72,88 @@ function generateDice(aLetterArray, numDice, numSides) {
     );
     cfList.push(newEntry);
   }
+  alert("cfList array created..." + cfList);
 
-  // Now, generate the dice with values distributed according
-  // to the prescribed relative frequencies
-  var returnArray = [];
+  // Now, put at least one instance of each letter
+  // into a random position in the workingArray
   var randomValue = 0;
-  var maxRandomValue = cfList[cfList.length - 1].cumulativeFrequency * 100;
-  var found = false;
-  var i = 0;
+  var randomIndex = 0;
+  for (i = 0; i < aLetterArray.length; i++) {
+    randomValue = Math.floor((Math.random() * indexArray.length) + 1);
+    randomIndex = indexArray.splice(randomValue, 1);
+    workingArray[randomIndex] = aLetterArray[i].character;
+  }
+  alert("workingArray = " + workingArray);
 
+  // Now, generate the remaining dice faces
+  // with values distributed according
+  // to the prescribed relative frequencies
+  while (indexArray.length > 0) {
+    var randomValue = 0;
+    var maxRandomValue = cfList[cfList.length - 1].cumulativeFrequency * 100;
+    var foundALetter = false;
+    var foundLetter = '';
+    var found = false;
+    var currentFrequency = 0;
+
+    while (!foundALetter) {
+      randomValue = Math.floor((Math.random() * maxRandomValue) + 1) / 100;
+
+      i = findLetterByFrequency(cfList, randomValue);
+
+      // foundLetter = cfList[i].character;
+      currentFrequency = getNumInArray(workingArray, cfList[i].character) / aLetterArray.length;
+      alert("indexArray.length = " + indexArray.length + "; trying found letter: " + cfList[i].character + "; currentFrequency = " + currentFrequency);
+      if (currentFrequency < cfList[i].cumulativeFrequency) {
+        foundALetter = true;
+        randomValue = Math.floor((Math.random() * indexArray.length) + 1);
+        randomIndex = indexArray.splice(randomValue, 1);
+        workingArray[randomIndex] = cfList[i].character;
+      }
+    }
+  }
+
+  var returnArray = [];
   for (d = 0; d < numDice; d++) {
     var newDie = [];
-    for (s = 0; s < numSides; s++) {
-      randomValue = Math.floor((Math.random() * maxRandomValue) + 1) / 100;
-      found = false;
-      i = 0;
-      while (!found && i < cfList.length) {
-        if (randomValue < cfList[i].cumulativeFrequency) {
-          found = true;
-        }
-        else {
-          found = false;
-          i++;
-        }
-      }
-      if (!found) {
-        i = 0;
-      }
-
-      var newSide = cfList[i].character;
-      newDie.push(newSide);
+    for (f = 0; f < numSides; f++) {
+      newDie.push(workingArray[(d * numFaces) + f]);
     }
     returnArray.push(newDie);
   }
+
   return returnArray;
+}
+
+
+function getNumInArray(anArray, aValue) {
+  var counter = 0;
+  for (i = 0; i < anArray.length; i++) {
+    if (anArray[i] === aValue) {
+      counter++;
+    }
+  }
+  return counter;
+}
+
+
+
+function findLetterByFrequency(cfList, randomValue) {
+  var found = false;
+  var i = 0;
+
+  while (!found && i < cfList.length) {
+    if (randomValue < cfList[i].cumulativeFrequency) {
+      found = true;
+    }
+    else {
+      found = false;
+      i++;
+    }
+  }
+  if (!found) {
+    i = 0;
+  }
+
+  return i;
 }
