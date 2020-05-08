@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./custom.css">
   </head>
   <body>
+    <form id="validate-input"></form>
     <div class="container">
       <div class="row">
         <div class="col text-center bg-info">
@@ -20,7 +21,7 @@
           Enter seed value:
         </div>
         <div class="col text-left">
-          <input type="number" min="0" id="seedField" value="" placeholder="Enter a # here" />
+          <input type="number" min="0" id="seedField" value="" form="validate-input" placeholder="Enter a # here" />
         </div>
       </div>
       <div class="row mb-2">
@@ -28,7 +29,7 @@
           Timer length (seconds):
         </div>
         <div class="col text-left">
-          <input type="number" min="0" id="timerLength" value="180" placeholder="Enter timer length" />
+          <input type="number" min="0" id="timerLength" value="180" form="validate-input" placeholder="Enter timer length" />
         </div>
       </div>
       <div class="row mb-2">
@@ -162,6 +163,10 @@
       }
 
       function handleStartGameButton() {
+
+	// Call HTML5 validate on inputs
+	document.getElementById('validate-input').reportValidity();
+
         if (typeof x != 'string') {
           clearInterval(x);
         }
