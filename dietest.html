@@ -7,9 +7,25 @@
 
     <script src="dicegen.js"></script>
     <script>
-      var dieSet = generateDice(englishLetterArray, 16, 6);
+      var dieSet = generateDice(englishLetterArray, 25, 6);
 
-      document.getElementById("outputDiv").innerHTML = dieSet;
+      var jsonString = '[<br>';
+      for (i = 0; i < 25; i++) {
+        jsonString += "&nbsp;&nbsp;[";
+        for (s = 0; s < 6; s++) {
+          jsonString += ' "' + dieSet[i][s] + '"';
+          if (s < 5) {
+            jsonString += ',';
+          }
+        }
+        jsonString += " ]";
+        if (i < 24) {
+          jsonString += ",";
+        }
+        jsonString += "<br>";
+      }
+      jsonString += "]";
+      document.getElementById("outputDiv").innerHTML = jsonString;
     </script>
   </body>
 </html>
