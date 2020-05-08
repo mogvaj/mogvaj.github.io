@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Dice rotation CSS classes -->
+    <link rel="stylesheet" href="./custom.css">
   </head>
   <body>
     <div class="container">
@@ -17,7 +20,7 @@
           Enter seed value:
         </div>
         <div class="col text-left">
-          <input type="text" id="seedField" value="" placeholder="Enter a # here" />
+          <input type="number" min="0" id="seedField" value="" placeholder="Enter a # here" />
         </div>
       </div>
       <div class="row mb-2">
@@ -126,14 +129,22 @@
           return shakenBuggleLetters;
         }
 
+	getRotClass(aSeed) {
+	  // One of 0, 90, 280, 270, all equally likely
+	  var deg = Math.abs(getSeededRandomNumber(0, 4, aSeed))*90; // uses hardcoded board size!
+	  return "rot" + deg;
+	}
+
         getSeededGameboard(aSeed) {
           var shakenBuggleLetters = this.getSeededShakenBuggleLetters(aSeed);
           var htmlString = '<table class="mx-auto">';
           for (var r = 0; r < 4; r++) {
             htmlString += "<tr>";
             for (var c = 0; c < 4; c++ ) {
-              htmlString += "<td class='w-25'>";
-              htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>" + shakenBuggleLetters[(r*4) + c] + "</button>";
+	      htmlString += "<td class='w-25'>";
+	      htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>";
+	      htmlString +=     "<div class='" + this.getRotClass((r+1)*4*(aSeed+1)*(c+1)) + "'>" + shakenBuggleLetters[(r*4) + c] + "</div>";
+              htmlString +=   "</button>";
               htmlString += "</td>";
             }
             htmlString += "</div>";
@@ -155,7 +166,7 @@
           clearInterval(x);
         }
         var seedValue = document.getElementById('seedField').value;
-        if ( seedValue !== '') {
+        if (seedValue !== '' && seedValue >= 0) {
           var gameBoard = new GameBoard(buggleCubesData);
           var targetElement = document.getElementById("outputDiv");
           targetElement.innerHTML = gameBoard.getSeededGameboard(seedValue);
