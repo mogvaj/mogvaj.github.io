@@ -152,11 +152,11 @@
           return shakenBuggleLetters;
         }
 
-	getRotClass(aSeed) {
-	  // One of 0, 90, 280, 270, all equally likely
-	  var deg = Math.abs(getSeededRandomNumber(0, 4, aSeed))*90; // uses hardcoded board size!
-	  return "rot" + deg;
-	}
+      	getRotClass(aSeed) {
+      	  // One of 0, 90, 280, 270, all equally likely
+      	  var deg = Math.abs(getSeededRandomNumber(0, 4, aSeed))*90; // uses hardcoded board size!
+      	  return "rot" + deg;
+      	}
 
         getSeededGameboard(aSeed) {
           var shakenBuggleLetters = this.getSeededShakenBuggleLetters(aSeed);
@@ -185,9 +185,8 @@
       }
 
       function handleStartGameButton() {
-
-	// Call HTML5 validate on inputs
-	document.getElementById('validate-input').reportValidity();
+      	// Call HTML5 validate on inputs
+      	document.getElementById('validate-input').reportValidity();
 
         if (typeof x != 'string') {
           clearInterval(x);
