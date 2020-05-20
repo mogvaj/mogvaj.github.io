@@ -47,7 +47,7 @@
           Enter seed value:
         </div>
         <div class="col text-left">
-          <input type="number" min="0" id="seedField" value="" form="validate-input" placeholder="Enter a # here" />
+          <input type="text" id="seedField" value="" form="validate-input" placeholder="Enter a phrase here" />
         </div>
       </div>
       <div class="row mb-2">
@@ -84,6 +84,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
 
     <script>
       var buggleCubesData = [
@@ -112,8 +113,8 @@
           this.possibleValues = anObject.possibleValues;
         }
 
-        getSeededRandomSide(aSeed) {
-          return this.possibleValues[getSeededRandomNumber(0, this.possibleValues.length, aSeed)];
+        getSeededRandomSide() {
+          return this.possibleValues[getSeededRandomNumber(0, this.possibleValues.length)];
         }
 
         toString() {
@@ -139,7 +140,7 @@
           }
         }
 
-        getSeededShakenBuggleLetters(aSeed) {
+        getSeededShakenBuggleLetters() {
           var subscriptArray = [];
           for (var i = 0; i < this.buggleHedronsStart.length; i++) {
             subscriptArray.push(i);
@@ -148,20 +149,20 @@
           var randomSubscript = 0;
           var numSubscripts = subscriptArray.length;
           for (var i = 0; i < numSubscripts; i++) {
-            randomSubscript = getSeededRandomNumber(0, subscriptArray.length, aSeed);
+            randomSubscript = getSeededRandomNumber(0, subscriptArray.length);
             shakenBuggleLetters.push(
-              this.buggleHedronsStart[subscriptArray[randomSubscript]].getSeededRandomSide(aSeed)
+              this.buggleHedronsStart[subscriptArray[randomSubscript]].getSeededRandomSide()
             );
             subscriptArray.splice(randomSubscript, 1);
           }
           return shakenBuggleLetters;
         }
 
-      	getRotClass(aSeed) {
-      	  // One of 0, 90, 280, 270, all equally likely
-      	  var deg = Math.abs(getSeededRandomNumber(0, 4, aSeed))*90; // uses hardcoded board size!
-      	  return "rot" + deg;
-      	}
+        getRotClass() {
+          // One of 0, 90, 280, 270, all equally likely
+          var deg = Math.abs(getSeededRandomNumber(0, 4))*90; // uses hardcoded board size!
+          return "rot" + deg;
+        }
 
         getUnderlineClass(ltr) {
           // If ltr matches underline_filter, add the underline class
@@ -171,17 +172,17 @@
           return '';
         }
 
-        getSeededGameboard(aSeed) {
-          var shakenBuggleLetters = this.getSeededShakenBuggleLetters(aSeed);
+        getSeededGameboard() {
+          var shakenBuggleLetters = this.getSeededShakenBuggleLetters();
           var htmlString = '<table class="mx-auto">';
           for (var r = 0; r < 4; r++) {
             htmlString += "<tr>";
             for (var c = 0; c < 4; c++ ) {
               var ltr = shakenBuggleLetters[(r*4) + c];
-      	      htmlString += "<td class='w-25'>";
-      	      htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>";
-      	      htmlString +=     "<div class='" +
-                  this.getRotClass((r+1)*4*(aSeed+1)*(c+1)) + " " +
+              htmlString += "<td class='w-25'>";
+              htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>";
+              htmlString +=     "<div class='" +
+                  this.getRotClass() + " " +
                   this.getUnderlineClass(ltr) +
                   "'>" + ltr + "</div>";
               htmlString +=   "</button>";
@@ -194,22 +195,47 @@
         }
       }
 
-      function getSeededRandomNumber(min, max, aSeed) {
-        Math.seed = aSeed;
-        Math.seed = (Math.seed * 9301 + 49297) % 233280;
-        var randomNumber = Math.seed / 233280;
-        return Math.floor(min + randomNumber * (max - min));
+      /**
+       * seedRNG
+       *
+       * \brief replaces Math.random with a predictable new
+       *        Math.seedrandom(...) from seedrandom library.
+       *
+       * \param newSeed A phrase used as a seed to the Math.random
+       *                function.
+       */
+      function seedRNG(newSeed) {
+        Math.seedrandom(newSeed);
+      }
+
+      /**
+       * getSeededRandomNumber
+       *
+       * \brief Returns an integer in range [min, max) from a uniform
+       *        distribution
+       *
+       * \param min Integer lower bound (inclusive)
+       * \param max Integer upper bound (exclusive)
+       *
+       * \return Integer from a uniform distribution in [min, max)
+       */
+      function getSeededRandomNumber(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        //The maximum is exclusive and the minimum is inclusive
+        return Math.floor(Math.random() * (max - min)) + min;
       }
 
       function handleStartGameButton() {
-      	// Call HTML5 validate on inputs
-      	document.getElementById('validate-input').reportValidity();
+        // Call HTML5 validate on inputs
+        document.getElementById('validate-input').reportValidity();
 
         if (typeof x != 'string') {
           clearInterval(x);
         }
         var seedValue = document.getElementById('seedField').value;
-        if (seedValue !== '' && seedValue >= 0) {
+        if (seedValue !== '') {
+          seedRNG(seedValue); // globally seed Math.random
           var gameBoard = new GameBoard(buggleCubesData);
           var targetElement = document.getElementById("outputDiv");
           targetElement.innerHTML = gameBoard.getSeededGameboard(seedValue);
