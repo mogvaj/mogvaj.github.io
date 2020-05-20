@@ -233,7 +233,7 @@
         if (typeof x != 'string') {
           clearInterval(x);
         }
-        var seedValue = document.getElementById('seedField').value;
+        var seedValue = document.getElementById('seedField').value.toUpperCase();
         if (seedValue !== '') {
           seedRNG(seedValue); // globally seed Math.random
           var gameBoard = new GameBoard(buggleCubesData);
