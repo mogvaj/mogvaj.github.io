@@ -4,8 +4,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+      /* Dice rotation CSS classes  */
+      .rot90 {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+      .rot180 {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+      .rot270 {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+      }
+      /* Text decoration CSS classes */
+      .underline {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
+    <form id="validate-input"></form>
     <div class="container">
       <div class="row">
         <div class="col text-center bg-info">
@@ -17,7 +47,7 @@
           Enter seed value:
         </div>
         <div class="col text-left">
-          <input type="text" id="seedField" value="" placeholder="Enter a # here" />
+          <input type="number" min="0" id="seedField" value="" form="validate-input" placeholder="Enter a # here" />
         </div>
       </div>
       <div class="row mb-2">
@@ -25,7 +55,7 @@
           Timer length (seconds):
         </div>
         <div class="col text-left">
-          <input type="text" id="timerLength" value="180" placeholder="Enter timer length" />
+          <input type="number" min="0" id="timerLength" value="180" form="validate-input" placeholder="Enter timer length" />
         </div>
       </div>
       <div class="row mb-2">
@@ -74,6 +104,7 @@
         [ 'H', 'A', 'P', 'S', 'O', 'C' ],
         [ 'Qu', 'U', 'M', 'H', 'N', 'I' ]
       ];
+      var underline_filter = ['C', 'H', 'M', 'N', 'U', 'W', 'Z']; // matching entries will be underlined
       var x = '';
 
       class LetterHedron {
@@ -126,14 +157,34 @@
           return shakenBuggleLetters;
         }
 
+      	getRotClass(aSeed) {
+      	  // One of 0, 90, 280, 270, all equally likely
+      	  var deg = Math.abs(getSeededRandomNumber(0, 4, aSeed))*90; // uses hardcoded board size!
+      	  return "rot" + deg;
+      	}
+
+        getUnderlineClass(ltr) {
+          // If ltr matches underline_filter, add the underline class
+          if (underline_filter.includes(ltr)) {
+              return 'underline';
+          }
+          return '';
+        }
+
         getSeededGameboard(aSeed) {
           var shakenBuggleLetters = this.getSeededShakenBuggleLetters(aSeed);
           var htmlString = '<table class="mx-auto">';
           for (var r = 0; r < 4; r++) {
             htmlString += "<tr>";
             for (var c = 0; c < 4; c++ ) {
-              htmlString += "<td class='w-25'>";
-              htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>" + shakenBuggleLetters[(r*4) + c] + "</button>";
+              var ltr = shakenBuggleLetters[(r*4) + c];
+      	      htmlString += "<td class='w-25'>";
+      	      htmlString +=   "<button class='btn btn-info btn-lg rounded shadow buggleButton text-center w-100'>";
+      	      htmlString +=     "<div class='" +
+                  this.getRotClass((r+1)*4*(aSeed+1)*(c+1)) + " " +
+                  this.getUnderlineClass(ltr) +
+                  "'>" + ltr + "</div>";
+              htmlString +=   "</button>";
               htmlString += "</td>";
             }
             htmlString += "</div>";
@@ -151,11 +202,14 @@
       }
 
       function handleStartGameButton() {
+      	// Call HTML5 validate on inputs
+      	document.getElementById('validate-input').reportValidity();
+
         if (typeof x != 'string') {
           clearInterval(x);
         }
         var seedValue = document.getElementById('seedField').value;
-        if ( seedValue !== '') {
+        if (seedValue !== '' && seedValue >= 0) {
           var gameBoard = new GameBoard(buggleCubesData);
           var targetElement = document.getElementById("outputDiv");
           targetElement.innerHTML = gameBoard.getSeededGameboard(seedValue);
