@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Clock</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body class="bg-dark">
+        <div class="container">
+            <div class="text-center mt-5">
+                <h3 id="dateDiv" class="text-warning fw-bold"></h3>
+                <h1 id="clockDiv" class="text-light fw-bold"></h1>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+        <script>
+            window.focus();
+            
+            var refreshInterval = 1000; // milliseconds
+
+            var dateDiv = document.getElementById("dateDiv");
+            var clockDiv = document.getElementById("clockDiv");
+            var weekdays = [
+                { "long":"Sunday",      "short":"Sun",  "abbr":"S" },
+                { "long":"Monday",      "short":"Mon",  "abbr":"M" },
+                { "long":"Tuesday",     "short":"Tue",  "abbr":"T" },
+                { "long":"Wednesday",   "short":"Wed",  "abbr":"W" },
+                { "long":"Thursday",    "short":"Thu",  "abbr":"Th" },
+                { "long":"Friday",      "short":"Fri",  "abbr":"F" },
+                { "long":"Saturday",    "short":"Sat",  "abbr":"S" }
+            ];
+            var months = [
+                {}, // index = 0
+                { "long":"January",      "short":"Jan",  "abbr":"J" },
+                { "long":"February",     "short":"Feb",  "abbr":"F" },
+                { "long":"March",        "short":"Mar",  "abbr":"M" },
+                { "long":"April",        "short":"Apr",  "abbr":"A" },
+                { "long":"May",          "short":"May",  "abbr":"M" },
+                { "long":"June",         "short":"Jun",  "abbr":"J" },
+                { "long":"July",         "short":"Jul",  "abbr":"J" },
+                { "long":"August",       "short":"Aug",  "abbr":"A" },
+                { "long":"September",    "short":"Sep",  "abbr":"S" },
+                { "long":"October",      "short":"Oct",  "abbr":"O" },
+                { "long":"November",     "short":"Nov",  "abbr":"N" },
+                { "long":"December",     "short":"Dec",  "abbr":"D" }
+            ];
+
+            var d = 0;
+            var year = 0;
+            var month = 0;
+            var dayNum = 0;
+            var weekday = 0;
+            var hour = 0;
+            var minute = 0;
+            var second = 0;
+
+            var dateString = '';
+            var clockString = '';
+
+            function updateTime() {
+                console.log("Starting updateTime()...");
+                setTimeout( function() {
+                    d = new Date();
+                    year = d.getFullYear();
+                    month = d.getMonth();
+                    dayNum = d.getDate();
+                    weekday = d.getDay();
+                    hour = d.getHours();
+                    minute = d.getMinutes();
+                    second = d.getSeconds();
+
+                    dateString = weekdays[weekday].short + ', ';
+                    dateString += months[month + 1].short + ' ';
+                    dateString += dayNum + ', ';
+                    dateString += year;
+
+                    if (hour > 12) {
+                        clockString = (hour - 12) + ':';
+                    }
+                    else {
+                        clockString = hour + ':';
+                    }
+                    clockString += prepender(minute) + ':';
+                    clockString += prepender(second) + ' ';
+                    if (hour < 12) {
+                        clockString += "am";
+                    }
+                    else {
+                        clockString += "pm";
+                    }
+
+                    dateDiv.innerHTML = dateString;
+                    clockDiv.innerHTML = clockString;
+
+                    updateTime();
+                }, refreshInterval);
+            }
+
+            function prepender(aNumber) {
+                var returnValue = '';
+                if (aNumber < 10) {
+                    returnValue = '0';
+                }
+                returnValue += aNumber;
+
+                return returnValue;
+            }
+
+            updateTime();
+        </script>
+    </body>
+</html>
