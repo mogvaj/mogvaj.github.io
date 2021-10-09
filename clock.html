@@ -80,7 +80,7 @@
                     dateString += dayNum + ', ';
                     dateString += year;
 
-                    shortTime = hour + ":" + minute;
+                    shortTime = hour + ":" + prepender(minute);
 
                     if (hour > 12) {
                         clockString = (hour - 12) + ':';
