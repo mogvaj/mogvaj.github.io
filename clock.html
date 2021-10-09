@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Clock</title>
+        <title id="theTitle">Clock</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -19,11 +19,13 @@
 
         <script>
             window.focus();
-            
+
             var refreshInterval = 1000; // milliseconds
 
             var dateDiv = document.getElementById("dateDiv");
             var clockDiv = document.getElementById("clockDiv");
+            var theTitle = document.getElementById("theTitle");
+
             var weekdays = [
                 { "long":"Sunday",      "short":"Sun",  "abbr":"S" },
                 { "long":"Monday",      "short":"Mon",  "abbr":"M" },
@@ -78,6 +80,8 @@
                     dateString += dayNum + ', ';
                     dateString += year;
 
+                    shortTime = hour + ":" + minute;
+
                     if (hour > 12) {
                         clockString = (hour - 12) + ':';
                     }
@@ -95,6 +99,10 @@
 
                     dateDiv.innerHTML = dateString;
                     clockDiv.innerHTML = clockString;
+
+                    if (theTitle.innerHTML !== shortTime) {
+                      theTitle.innerHTML = shortTime;
+                    }
 
                     updateTime();
                 }, refreshInterval);
