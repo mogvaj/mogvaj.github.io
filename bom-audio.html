@@ -83,7 +83,7 @@
                         var sourceElement = createDOMElement({
                             "ELtype": "source",
                             "ELattributes": [
-                                { "ELname": "src", "ELvalue": filename },
+                                { "ELname": "src", "ELvalue": url + filename }, // "url" is a global variable
                                 { "ELname": "type", "ELvalue": "audio/mpeg" }
                             ],
                             "ELparentElement": audioElement
@@ -110,6 +110,7 @@
                 return returnString;
             }
 
+            var url = "mp3/";
             var bomFiles = [
                 "2013-06-001-title-page-64k-eng.mp3",
                 "2013-06-002-introduction-64k-eng.mp3",
