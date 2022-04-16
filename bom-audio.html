@@ -36,6 +36,7 @@
             <nav id="footer" class="navbar fixed-bottom navbar-light bg-light">
                 <div class="container-fluid">
                     <hr>
+                    <button id="playButton" class="btn btn-secondary mr-3" onclick="handPlayButtonClick();" disabled>Choose chapter at left</button>
                     <span>Audio Speed: </span><input type="text" id="speedInput" value="2">
                     <button class="btn btn-primary ml-3">Activate Speed</button>
                     <hr>
@@ -47,9 +48,11 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
         <script>
-            function setupBookElement(anAnchor) {
-                var isReading = false;
+            var isReading = -1;
+            var currentChapter = "none";
+            var currentStatus = "waiting"; // or "playing" or "pausing"
 
+            function setupBookElement(anAnchor) {
                 var stringsToRemove = [
                     "64k",
                     "eng",
@@ -58,7 +61,6 @@
 
                 for (let i = 0; i < bomFiles.length; i++) {
                     // console.log("Starting " + bomFiles[i] + "...");
-
                     var newTitleArray = bomFiles[i].split('-');
                     var newTitleString = "";
                     var foundMatch = false;
@@ -80,11 +82,13 @@
                         newTitleString += " ";
                     }
                     newTitleString.trim();
+
                     var newBookElement = createDOMElement({
                         "ELtype": "button",
                         "ELclasses": [ "btn", "btn-primary", "mt-1" ],
                         "ELattributes": [
-                            { "ELname": "id", "ELvalue": bomFiles[i]}
+                            { "ELname": "id", "ELvalue": bomFiles[i] },
+                            { "ELname": "nicetitle", "ELvalue": newTitleString }
                         ],
                         "ELhtmlString": newTitleString,
                         "ELparentElement": anAnchor
@@ -93,34 +97,40 @@
                     newBookElement.addEventListener("click", function(thisObject) {
                         // console.log("Clicked on: " + thisObject.target.id);
 
-                        if (isReading === false) {
-                            var filename = thisObject.target.id;
-                            var audioDiv = document.getElementById("audioDiv");
-                            var audioElement = createDOMElement({
-                                "ELtype": "audio",
-                                "ELattributes": [
-                                    { "ELname": "id", "ELvalue": "audioElement" }
-                                ],
-                                "ELparentElement": audioDiv
-                            });
+                        var filename = thisObject.target.id;
+                        var audioDiv = document.getElementById("audioDiv");
 
-                            var sourceElement = createDOMElement({
-                                "ELtype": "source",
-                                "ELattributes": [
-                                    { "ELname": "src", "ELvalue": url + filename }, // "url" is a global variable
-                                    { "ELname": "type", "ELvalue": "audio/mpeg" }
-                                ],
-                                "ELparentElement": audioElement
-                            });
+                        $(audioDiv).empty();
+                        var audioElement = createDOMElement({
+                            "ELtype": "audio",
+                            "ELattributes": [
+                                { "ELname": "id", "ELvalue": "audioElement" }
+                            ],
+                            "ELparentElement": audioDiv
+                        });
 
-                            isReading = true;
-                            audioElement.onended = function() {
-                                isReading = false;
-                            }
+                        var sourceElement = createDOMElement({
+                            "ELtype": "source",
+                            "ELattributes": [
+                                { "ELname": "src", "ELvalue": url + filename }, // "url" is a global variable
+                                { "ELname": "type", "ELvalue": "audio/mpeg" }
+                            ],
+                            "ELparentElement": audioElement
+                        });
 
-                            audioElement.playbackRate = document.getElementById("speedInput").value;
-                            audioElement.play();
+                        isReading = document.getElementById(thisObject.target.id);
+                        currentChapter = document.getElementById(thisObject.target.id);
+                        currentStatus = "playing";
+                        togglePlayButton();
+
+                        audioElement.onended = function() {
+                            isReading = -1;
+                            currentChapter = "none";
+                            currentStatus = "waiting";
                         }
+
+                        audioElement.playbackRate = document.getElementById("speedInput").value;
+                        audioElement.play();
                     });
 
                     var newBR = createDOMElement({
@@ -128,6 +138,50 @@
                         "ELparentElement": anAnchor
                     });
                 }
+            }
+
+            function handPlayButtonClick() {
+                var playButton = document.getElementById("playButton");
+                if (currentStatus === "waiting") {
+                    // do nothing
+                }
+                else if (currentStatus === "playing") {
+                    currentStatus = "pausing";
+                }
+                else if (currentStatus === "pausing") {
+                    currentStatus = "playing";
+                }
+
+                togglePlayButton();
+            }
+
+            function togglePlayButton() {
+                var playButton = document.getElementById("playButton");
+                var audioElement = document.getElementById("audioElement");
+                var buttonText = "";
+
+                if (currentStatus === "waiting") {
+                    buttonText = "Choose chapter at left";
+                    playButton.disabled = true;
+                    playButton.classList.remove("btn-primary");
+                    playButton.classList.add("btn-secondary");
+                }
+                else if (currentStatus === "playing") {
+                    buttonText = "Pause";
+                    playButton.disabled = false;
+                    playButton.classList.remove("btn-secondary");
+                    playButton.classList.add("btn-primary");
+                    audioElement.play();
+                }
+                else if (currentStatus === "pausing") {
+                    buttonText = "Play";
+                    playButton.disabled = false;
+                    playButton.classList.remove("btn-secondary");
+                    playButton.classList.add("btn-primary");
+                    audioElement.pause();
+                }
+
+                playButton.innerHTML = buttonText;
             }
 
             function capitalizeFirstLetter(aString) {
