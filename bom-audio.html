@@ -2,6 +2,12 @@
 <html>
     <head>
         <title>Book of Mormon Audio</title>
+        <style>
+            .bomText {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 1.5em;
+            }
+        </style>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +34,7 @@
 
                 <div id="rightSide" class="col-8">
                     <br><br><br>
-                    <div id="textDiv">Choose a chapter to read on the left</div>
+                    <div id="readingDiv">Choose a chapter to read on the left</div>
                     <br><br><br><br>
                 </div>
             </div>
@@ -47,8 +53,11 @@
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        <script src="chapters/chapters.js"></script>
+
         <script>
-            var isReading = -1;
+            // var isReading = -1;
             var currentChapter = "none";
             var currentStatus = "waiting"; // or "playing" or "pausing"
 
@@ -61,11 +70,29 @@
 
                 for (let i = 0; i < bomFiles.length; i++) {
                     // console.log("Starting " + bomFiles[i] + "...");
-                    var newTitleArray = bomFiles[i].split('-');
+                    var newTitleArray = bomFiles[i].replace("-64k-eng.mp3", "").split('-');
                     var newTitleString = "";
+                    var newTextFilename = "";
+
+                    var r = 0;
+                    for (var w = 3; w < newTitleArray.length; w++) {
+                        r = 0;
+                        for (q = 0; q < stringsToRemove.length; q++) {
+                            if (newTitleArray[w] === stringsToRemove[q]) {
+                                r++;
+                            }
+                        }
+
+                        if (r === 0) {
+                            if (newTextFilename.length > 0) {
+                                newTextFilename += "-";
+                            }
+                            newTextFilename += newTitleArray[w];
+                        }
+                    }
+
                     var foundMatch = false;
-                    let r = 0;
-                    for (let w = 3; w < newTitleArray.length; w++) {
+                    for (var w = 3; w < newTitleArray.length; w++) {
                         r = 0;
                         while (!foundMatch && r < stringsToRemove.length) {
                             if (newTitleArray[w] === stringsToRemove[r]) {
@@ -88,7 +115,7 @@
                         "ELclasses": [ "btn", "btn-primary", "mt-1" ],
                         "ELattributes": [
                             { "ELname": "id", "ELvalue": bomFiles[i] },
-                            { "ELname": "nicetitle", "ELvalue": newTitleString }
+                            { "ELname": "nicetitle", "ELvalue": newTextFilename }
                         ],
                         "ELhtmlString": newTitleString,
                         "ELparentElement": anAnchor
@@ -97,9 +124,35 @@
                     newBookElement.addEventListener("click", function(thisObject) {
                         // console.log("Clicked on: " + thisObject.target.id);
 
+                        // Set up the text pane
+                        var readingDiv = document.getElementById("readingDiv");
+                        $(readingDiv).empty();
+                        var htmlString = "<div class='bomText'>";
+                        if (chapters[thisObject.target.getAttribute("nicetitle")]) {
+                            var rawReadingText = chapters[thisObject.target.getAttribute("nicetitle")];
+                            var rawReadingLines = rawReadingText.split("\n");
+                            var lineWords = "";
+                            for (var t = 0; t < rawReadingLines.length; t++) {
+                                htmlString += "<p>";
+                                lineWords = rawReadingLines[t].split(' ');
+                                if ("0123456789".indexOf(lineWords[0][0]) !== -1) {
+                                    htmlString += "<b>" + lineWords[0] + "</b> ";
+                                    for (var z = 1; z < lineWords.length; z++) {
+                                        htmlString += " " + lineWords[z];
+                                    }
+                                }
+                                else {
+                                    htmlString += rawReadingLines[t];
+                                 }
+                                 htmlString += "</p>";
+                            }
+                        }
+                        htmlString += "</div>";
+                        readingDiv.innerHTML = htmlString;
+
+                        // Set up the audio objects
                         var filename = thisObject.target.id;
                         var audioDiv = document.getElementById("audioDiv");
-
                         $(audioDiv).empty();
                         var audioElement = createDOMElement({
                             "ELtype": "audio",
@@ -118,11 +171,6 @@
                             "ELparentElement": audioElement
                         });
 
-                        isReading = document.getElementById(thisObject.target.id);
-                        currentChapter = document.getElementById(thisObject.target.id);
-                        currentStatus = "playing";
-                        togglePlayButton();
-
                         audioElement.onended = function() {
                             isReading = -1;
                             currentChapter = "none";
@@ -131,6 +179,8 @@
 
                         audioElement.playbackRate = document.getElementById("speedInput").value;
                         audioElement.play();
+                        currentStatus = "playing";
+                        togglePlayButton();
                     });
 
                     var newBR = createDOMElement({
