@@ -127,27 +127,10 @@
                         // Set up the text pane
                         var readingDiv = document.getElementById("readingDiv");
                         $(readingDiv).empty();
-                        var htmlString = "<div class='bomText'>";
+                        htmlString = "<p>Choose a chapter on the left</p>";
                         if (chapters[thisObject.target.getAttribute("nicetitle")]) {
-                            var rawReadingText = chapters[thisObject.target.getAttribute("nicetitle")];
-                            var rawReadingLines = rawReadingText.split("\n");
-                            var lineWords = "";
-                            for (var t = 0; t < rawReadingLines.length; t++) {
-                                htmlString += "<p>";
-                                lineWords = rawReadingLines[t].split(' ');
-                                if ("0123456789".indexOf(lineWords[0][0]) !== -1) {
-                                    htmlString += "<b>" + lineWords[0] + "</b> ";
-                                    for (var z = 1; z < lineWords.length; z++) {
-                                        htmlString += " " + lineWords[z];
-                                    }
-                                }
-                                else {
-                                    htmlString += rawReadingLines[t];
-                                 }
-                                 htmlString += "</p>";
-                            }
+                            htmlString = markupChapterText(chapters[thisObject.target.getAttribute("nicetitle")]);
                         }
-                        htmlString += "</div>";
                         readingDiv.innerHTML = htmlString;
 
                         // Set up the audio objects
@@ -188,6 +171,50 @@
                         "ELparentElement": anAnchor
                     });
                 }
+            }
+
+            function markupChapterText(rawReadingText) {
+                var htmlString = "<div class='bomText'>";
+                var rawReadingLines = rawReadingText.split("\n");
+                var lineWords = "";
+                var chapterHeadingPassed = false;
+
+                for (var lineNum = 0; lineNum < rawReadingLines.length; lineNum++) {
+                    htmlString += "<p>";
+                    lineWords = rawReadingLines[lineNum].split(' ');
+                    console.log("lineWords[0][0] = " + lineWords[0][0].toLowerCase());
+                    if (lineWords[0].toLowerCase() === "chapter") {
+                        // This line is the "Chapter #"
+                        chapterHeadingPassed = true;
+                        htmlString += "<b style='font-variant: small-caps;'>";
+                        htmlString += rawReadingLines[lineNum];
+                        htmlString += "</b>";
+                    }
+                    else if ("0123456789".indexOf(lineWords[0][0]) !== -1) {
+                        // This line is a verse
+                        htmlString += "<b>" + lineWords[0] + "</b> ";
+                        for (var z = 1; z < lineWords.length; z++) {
+                            htmlString += " " + lineWords[z];
+                        }
+                    }
+                    else {
+                        if (chapterHeadingPassed) {
+                            // This line is the chapter summary
+                            htmlString += "<i>";
+                            htmlString += rawReadingLines[lineNum];
+                            htmlString += "</i>";
+                        }
+                        else {
+                            // This line is a "prologue" (prior to the chapter heading)
+                            // Alternatively, could be a normal paragraph outside of a normal chapter
+                            htmlString += rawReadingLines[lineNum];
+                        }
+                        htmlString += "</p>";
+                    }
+                }
+                htmlString += "</div>";
+
+                return htmlString;
             }
 
             function handPlayButtonClick() {
