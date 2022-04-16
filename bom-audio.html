@@ -112,7 +112,7 @@
 
                     var newBookElement = createDOMElement({
                         "ELtype": "button",
-                        "ELclasses": [ "btn", "btn-primary", "mt-1" ],
+                        "ELclasses": [ "btn", "btn-primary", "mt-1", "chapter-button" ],
                         "ELattributes": [
                             { "ELname": "id", "ELvalue": bomFiles[i] },
                             { "ELname": "nicetitle", "ELvalue": newTextFilename }
@@ -123,6 +123,12 @@
                     var thisObject = this;
                     newBookElement.addEventListener("click", function(thisObject) {
                         // console.log("Clicked on: " + thisObject.target.id);
+
+                        // Show this as the chapter being read by turning the button green
+                        $(".chapter-button").removeClass("btn-success");
+                        $(".chapter-button").addClass("btn-primary");
+                        $(document.getElementById(thisObject.target.id)).removeClass("btn-primary");
+                        $(document.getElementById(thisObject.target.id)).addClass("btn-success");
 
                         // Set up the text pane
                         var readingDiv = document.getElementById("readingDiv");
