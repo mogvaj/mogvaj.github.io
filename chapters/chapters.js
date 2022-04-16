@@ -734,10 +734,9 @@ Nephi begins the record of his people—Lehi sees in vision a pillar of fire and
 29 And now I, Nephi, make an end; for I durst not speak further as yet concerning these things.
 30 Wherefore, my brethren, I would that ye should consider that the things which have been written upon the plates of brass are true; and they testify that a man must be obedient to the commandments of God.
 31 Wherefore, ye need not suppose that I and my father are the only ones that have testified, and also taught them. Wherefore, if ye shall be obedient to the commandments, and endure to the end, ye shall be saved at the last day. And thus it is. Amen.`,
-"2-nephi-00": `CHAPTER 0
-THE SECOND BOOK OF NEPHI An account of the death of Lehi. Nephi's brethren rebel against him. The Lord warns Nephi to depart into the wilderness. His journeyings in the wilderness, and so forth.
-CHAPTER 0`,
-"2-nephi-01": `CHAPTER 1
+"2-nephi-01": `THE SECOND BOOK OF NEPHI
+An account of the death of Lehi. Nephi's brethren rebel against him. The Lord warns Nephi to depart into the wilderness. His journeyings in the wilderness, and so forth.
+CHAPTER 1
 1 And now it came to pass that after I, Nephi, had made an end of teaching my brethren, our father, Lehi, also spake many things unto them, and rehearsed unto them, how great things the Lord had done for them in bringing them out of the land of Jerusalem.
 2 And he spake unto them concerning their rebellions upon the waters, and the mercies of God in sparing their lives, that they were not swallowed up in the sea.
 3 And he also spake unto them concerning the land of promise, which they had obtained--how merciful the Lord had been in warning us that we should flee out of the land of Jerusalem.
@@ -1549,10 +1548,10 @@ CHAPTER 0`,
 13 And now, my beloved brethren, all those who are of the house of Israel, and all ye ends of the earth, I speak unto you as the voice of one crying from the dust: Farewell until that great day shall come.
 14 And you that will not partake of the goodness of God, and respect the words of the Jews, and also my words, and the words which shall proceed forth out of the mouth of the Lamb of God, behold, I bid you an everlasting farewell, for these words shall condemn you at the last day.
 15 For what I seal on earth, shall be brought against you at the judgment bar; for thus hath the Lord commanded me, and I must obey. Amen.`,
-"jacob-00": `CHAPTER 0
-THE BOOK OF JACOB THE BROTHER OF NEPHI The words of his preaching unto his brethren. He confoundeth a man who seeketh to overthrow the doctrine of Christ. A few words concerning the history of the people of Nephi.
-CHAPTER 0`,
-"jacob-01": `CHAPTER 1
+"jacob-01": `THE BOOK OF JACOB
+THE BROTHER OF NEPHI
+The words of his preaching unto his brethren. He confoundeth a man who seeketh to overthrow the doctrine of Christ. A few words concerning the history of the people of Nephi.
+CHAPTER 1
 1 For behold, it came to pass that fifty and five years had passed away from the time that Lehi left Jerusalem; wherefore, Nephi gave me, Jacob, a commandment concerning the small plates, upon which these things are engraven.
 2 And he gave me, Jacob, a commandment that I should write upon these plates a few of the things which I consider to be most precious; that I should not touch, save it were lightly, concerning the history of this people which are called the people of Nephi.
 3 For he said that the history of his people should be engraven upon his other plates, and that I should preserve these plates and hand them down unto my seed, from generation to generation.
@@ -1762,10 +1761,8 @@ CHAPTER 0`,
 25 Wherefore, the people of Nephi did fortify against them with their arms, and with all their might, trusting in the God and rock of their salvation; wherefore, they became as yet, conquerors of their enemies.
 26 And it came to pass that I, Jacob, began to be old; and the record of this people being kept on the other plates of Nephi, wherefore, I conclude this record, declaring that I have written according to the best of my knowledge, by saying that the time passed away with us, and also our lives passed away like as it were unto us a dream, we being a lonesome and a solemn people, wanderers, cast out from Jerusalem, born in tribulation, in a wilderness, and hated of our brethren, which caused wars and contentions; wherefore, we did mourn out our days.
 27 And I, Jacob, saw that I must soon go down to my grave; wherefore, I said unto my son Enos: Take these plates. And I told him the things which my brother Nephi had commanded me, and he promised obedience unto the commands. And I make an end of my writing upon these plates, which writing has been small; and to the reader I bid farewell, hoping that many of my brethren may read my words. Brethren, adieu.`,
-"enos-00": `CHAPTER 0
-THE BOOK OF ENOS
-CHAPTER 0`,
-"enos-01": `CHAPTER 1
+"enos-01": `THE BOOK OF ENOS
+CHAPTER 1
 1 Behold, it came to pass that I, Enos, knowing my father that he was a just man--for he taught me in his language, and also in the nurture and admonition of the Lord--and blessed be the name of my God for it--
 2 And I will tell you of the wrestle which I had before God, before I received a remission of my sins.
 3 Behold, I went to hunt beasts in the forests; and the words which I had often heard my father speak concerning eternal life, and the joy of the saints, sunk deep into my heart.
@@ -1793,10 +1790,8 @@ CHAPTER 0`,
 25 And it came to pass that I began to be old, and an hundred and seventy and nine years had passed away from the time that our father Lehi left Jerusalem.
 26 And I saw that I must soon go down to my grave, having been wrought upon by the power of God that I must preach and prophesy unto this people, and declare the word according to the truth which is in Christ. And I have declared it in all my days, and have rejoiced in it above that of the world.
 27 And I soon go to the place of my rest, which is with my Redeemer; for I know that in him I shall rest. And I rejoice in the day when my mortal shall put on immortality, and shall stand before him; then shall I see his face with pleasure, and he will say unto me: Come unto me, ye blessed, there is a place prepared for you in the mansions of my Father. Amen.`,
-"jarom-00": `CHAPTER 0
-THE BOOK OF JAROM
-CHAPTER 0`,
-"jarom-01": `CHAPTER 1
+"jarom-01": `THE BOOK OF JAROM
+CHAPTER 1
 1 Now behold, I, Jarom, write a few words according to the commandment of my father, Enos, that our genealogy may be kept.
 2 And as these plates are small, and as these things are written for the intent of the benefit of our brethren the Lamanites, wherefore, it must needs be that I write a little; but I shall not write the things of my prophesying, nor of my revelations. For what could I write more than my fathers have written? For have not they revealed the plan of salvation? I say unto you, Yea; and this sufficeth me.
 3 Behold, it is expedient that much should be done among this people, because of the hardness of their hearts, and the deafness of their ears, and the blindness of their minds, and the stiffness of their necks; nevertheless, God is exceedingly merciful unto them, and has not as yet swept them off from the face of the land.
@@ -1812,10 +1807,8 @@ CHAPTER 0`,
 13 And it came to pass that two hundred and thirty and eight years had passed away--after the manner of wars, and contentions, and dissensions, for the space of much of the time.
 14 And I, Jarom, do not write more, for the plates are small. But behold, my brethren, ye can go to the other plates of Nephi; for behold, upon them the records of our wars are engraven, according to the writings of the kings, or those which they caused to be written.
 15 And I deliver these plates into the hands of my son Omni, that they may be kept according to the commandments of my fathers.`,
-"omni-00": `CHAPTER 0
-THE BOOK OF OMNI
-CHAPTER 0`,
-"omni-01": `CHAPTER 1
+"omni-01": `THE BOOK OF OMNI
+CHAPTER 1
 1 Behold, it came to pass that I, Omni, being commanded by my father, Jarom, that I should write somewhat upon these plates, to preserve our genealogy--
 2 Wherefore, in my days, I would that ye should know that I fought much with the sword to preserve my people, the Nephites, from falling into the hands of their enemies, the Lamanites. But behold, I of myself am a wicked man, and I have not kept the statutes and the commandments of the Lord as I ought to have done.
 3 And it came to pass that two hundred and seventy and six years had passed away, and we had many seasons of peace; and we had many seasons of serious war and bloodshed. Yea, and in fine, two hundred and eighty and two years had passed away, and I had kept these plates according to the commandments of my fathers; and I conferred them upon my son Amaron. And I make an end.
@@ -1846,10 +1839,8 @@ CHAPTER 0`,
 28 Wherefore, they went up into the wilderness. And their leader being a strong and mighty man, and a stiffnecked man, wherefore he caused a contention among them; and they were all slain, save fifty, in the wilderness, and they returned again to the land of Zarahemla.
 29 And it came to pass that they also took others to a considerable number, and took their journey again into the wilderness.
 30 And I, Amaleki, had a brother, who also went with them; and I have not since known concerning them. And I am about to lie down in my grave; and these plates are full. And I make an end of my speaking.`,
-"words-of-mormon-00": `CHAPTER 0
-THE WORDS OF MORMON
-CHAPTER 0`,
-"words-of-mormon-01": `CHAPTER 1
+"words-of-mormon-01": `THE WORDS OF MORMON
+CHAPTER 1
 1 And now I, Mormon, being about to deliver up the record which I have been making into the hands of my son Moroni, behold I have witnessed almost all the destruction of my people, the Nephites.
 2 And it is many hundred years after the coming of Christ that I deliver these records into the hands of my son; and it supposeth me that he will witness the entire destruction of my people. But may God grant that he may survive them, that he may write somewhat concerning them, and somewhat concerning Christ, that perhaps some day it may profit them.
 3 And now, I speak somewhat concerning that which I have written; for after I had made an abridgment from the plates of Nephi, down to the reign of this king Benjamin, of whom Amaleki spake, I searched among the records which had been delivered into my hands, and I found these plates, which contained this small account of the prophets, from Jacob down to the reign of this king Benjamin, and also many of the words of Nephi.
@@ -1868,10 +1859,8 @@ CHAPTER 0`,
 16 And after there had been false prophets, and false preachers and teachers among the people, and all these having been punished according to their crimes; and after there having been much contention and many dissensions away unto the Lamanites, behold, it came to pass that king Benjamin, with the assistance of the holy prophets who were among his people--
 17 For behold, king Benjamin was a holy man, and he did reign over his people in righteousness; and there were many holy men in the land, and they did speak the word of God with power and with authority; and they did use much sharpness because of the stiffneckedness of the people--
 18 Wherefore, with the help of these, king Benjamin, by laboring with all the might of his body and the faculty of his whole soul, and also the prophets, did once more establish peace in the land.`,
-"mosiah-00": `CHAPTER 0
-THE BOOK OF MOSIAH
-CHAPTER 0`,
-"mosiah-01": `CHAPTER 1
+"mosiah-01": `THE BOOK OF MOSIAH
+CHAPTER 1
 1 And now there was no more contention in all the land of Zarahemla, among all the people who belonged to king Benjamin, so that king Benjamin had continual peace all the remainder of his days.
 2 And it came to pass that he had three sons; and he called their names Mosiah, and Helorum, and Helaman. And he caused that they should be taught in all the language of his fathers, that thereby they might become men of understanding; and that they might know concerning the prophecies which had been spoken by the mouths of their fathers, which were delivered them by the hand of the Lord.
 3 And he also taught them concerning the records which were engraven on the plates of brass, saying: My sons, I would that ye should remember that were it not for these plates, which contain these records and these commandments, we must have suffered in ignorance, even at this present time, not knowing the mysteries of God.
@@ -2685,11 +2674,10 @@ CHAPTER 0`,
 45 And now it came to pass that his father died, being eighty and two years old, having lived to fulfil the commandments of God.
 46 And it came to pass that Mosiah died also, in the thirty and third year of his reign, being sixty and three years old; making in the whole, five hundred and nine years from the time Lehi left Jerusalem.
 47 And thus ended the reign of the kings over the people of Nephi; and thus ended the days of Alma, who was the founder of their church.`,
-"alma-00": `CHAPTER 0
-1 THE BOOK OF ALMA
-2 THE SON OF ALMA
-3 The account of Alma, who was the son of Alma the first, and chief judge over the people of Nephi, and also the high priest over the Church. An account of the reign of the judges, and the wars and contentions among the people. And also an account of a war between the Nephites and the Lamanites, according to the record of Alma, the first and chief judge.`,
-"alma-01": `CHAPTER 1
+"alma-01": `THE BOOK OF ALMA
+THE SON OF ALMA
+The account of Alma, who was the son of Alma the first, and chief judge over the people of Nephi, and also the high priest over the Church. An account of the reign of the judges, and the wars and contentions among the people. And also an account of a war between the Nephites and the Lamanites, according to the record of Alma, the first and chief judge.
+CHAPTER 1
 1 Now it came to pass that in the first year of the reign of the judges over the people of Nephi, from this time forward, king Mosiah having gone the way of all the earth, having warred a good warfare, walking uprightly before God, leaving none to reign in his stead; nevertheless he had established laws, and they were acknowledged by the people; therefore they were obliged to abide by the laws which he had made.
 2 And it came to pass that in the first year of the reign of Alma in the judgment-seat, there was a man brought before him to be judged, a man who was large, and was noted for his much strength.
 3 And he had gone about among the people, preaching to them that which he termed to be the word of God, bearing down against the church; declaring unto the people that every priest and teacher ought to become popular; and they ought not to labor with their hands, but that they ought to be supported by the people.
@@ -4727,11 +4715,9 @@ CHAPTER 0`,
 15 And also in this same year they came down with a numerous army to war against the people of Moronihah, or against the army of Moronihah, in the which they were beaten and driven back again to their own lands, suffering great loss.
 16 And thus ended the thirty and ninth year of the reign of the judges over the people of Nephi.
 17 And thus ended the account of Alma, and Helaman his son, and also Shiblon, who was his son.`,
-"helaman-00": `CHAPTER 0
-THE BOOK OF HELAMAN
-CHAPTER 0
-1 An account of the Nephites. Their wars and contentions, and their dissensions. And also the prophecies of many holy prophets, before the coming of Christ, according to the records of Helaman, who was the son of Helaman, and also according to the records of his sons, even down to the coming of Christ. And also many of the Lamanites are converted. An account of their conversion. An account of the righteousness of the Lamanites, and the wickedness and abominations of the Nephites, according to the record of Helaman and his sons, even down to the coming of Christ, which is called the book of Helaman.`,
-"helaman-01": `CHAPTER 1
+"helaman-01": `THE BOOK OF HELAMAN
+An account of the Nephites. Their wars and contentions, and their dissensions. And also the prophecies of many holy prophets, before the coming of Christ, according to the records of Helaman, who was the son of Helaman, and also according to the records of his sons, even down to the coming of Christ. And also many of the Lamanites are converted. An account of their conversion. An account of the righteousness of the Lamanites, and the wickedness and abominations of the Nephites, according to the record of Helaman and his sons, even down to the coming of Christ, which is called the book of Helaman.
+CHAPTER 1
 1 And now behold, it came to pass in the commencement of the fortieth year of the reign of the judges over the people of Nephi, there began to be a serious difficulty among the people of the Nephites.
 2 For behold, Pahoran had died, and gone the way of all the earth; therefore there began to be a serious contention concerning who should have the judgment-seat among the brethren, who were the sons of Pahoran.
 3 Now these are their names who did contend for the judgment-seat, who did also cause the people to contend: Pahoran, Paanchi, and Pacumeni.
@@ -5244,11 +5230,12 @@ CHAPTER 0
 23 And notwithstanding the signs and the wonders which were wrought among the people of the Lord, and the many miracles which they did, Satan did get great hold upon the hearts of the people upon all the face of the land.
 24 And thus ended the ninetieth year of the reign of the judges over the people of Nephi.
 25 And thus ended the book of Helaman, according to the record of Helaman and his sons.`,
-"3-nephi-00": `CHAPTER 0
-THIRD NEPHI THE BOOK OF NEPHI THE SON OF NEPHI, WHO WAS THE SON OF HELAMAN
-CHAPTER 0
-1 And Helaman was the son of Helaman, who was the son of Alma, who was the son of Alma, being a descendant of Nephi who was the son of Lehi, who came out of Jerusalem in the first year of the reign of Zedekiah, the king of Judah.`,
-"3-nephi-01": `CHAPTER 1
+"3-nephi-01": `THIRD NEPHI
+THE BOOK OF NEPHI
+THE SON OF NEPHI,
+WHO WAS THE SON OF HELAMAN
+And Helaman was the son of Helaman, who was the son of Alma, who was the son of Alma, being a descendant of Nephi who was the son of Lehi, who came out of Jerusalem in the first year of the reign of Zedekiah, the king of Judah.
+CHAPTER 1
 1 Now it came to pass that the ninety and first year had passed away and it was six hundred years from the time that Lehi left Jerusalem; and it was in the year that Lachoneus was the chief judge and the governor over the land.
 2 And Nephi, the son of Helaman, had departed out of the land of Zarahemla, giving charge unto his son Nephi, who was his eldest son, concerning the plates of brass, and all the records which had been kept, and all those things which had been kept sacred from the departure of Lehi out of Jerusalem.
 3 Then he departed out of the land, and whither he went, no man knoweth; and his son Nephi did keep the records in his stead, yea, the record of this people.
@@ -6063,11 +6050,11 @@ CHAPTER 0
 "3-nephi-30": `CHAPTER 30
 1 Hearken, O ye Gentiles, and hear the words of Jesus Christ, the Son of the living God, which he hath commanded me that I should speak concerning you, for, behold he commandeth me that I should write, saying:
 2 Turn, all ye Gentiles, from your wicked ways; and repent of your evil doings, of your lyings and deceivings, and of your whoredoms, and of your secret abominations, and your idolatries, and of your murders, and your priestcrafts, and your envyings, and your strifes, and from all your wickedness and abominations, and come unto me, and be baptized in my name, that ye may receive a remission of your sins, and be filled with the Holy Ghost, that ye may be numbered with my people who are of the house of Israel.`,
-"4-nephi-00": `CHAPTER 0
-FOURTH NEPHI THE BOOK OF NEPHI WHO IS THE SON OF NEPHI--ONE OF THE DISCIPLES OF JESUS CHRIST
-CHAPTER 0
-1 An account of the people of Nephi, according to his record.`,
-"4-nephi-01": `CHAPTER 1
+"4-nephi-01": `FOURTH NEPHI
+THE BOOK OF NEPHI
+WHO IS THE SON OF NEPHI--ONE OF THE DISCIPLES OF JESUS CHRIST
+An account of the people of Nephi, according to his record.
+CHAPTER 1
 1 And it came to pass that the thirty and fourth year passed away, and also the thirty and fifth, and behold the disciples of Jesus had formed a church of Christ in all the lands round about. And as many as did come unto them, and did truly repent of their sins, were baptized in the name of Jesus; and they did also receive the Holy Ghost.
 2 And it came to pass in the thirty and sixth year, the people were all converted unto the Lord, upon all the face of the land, both Nephites and Lamanites, and there were no contentions and disputations among them, and every man did deal justly one with another.
 3 And they had all things common among them; therefore there were not rich and poor, bond and free, but they were all made free, and partakers of the heavenly gift.
@@ -6117,10 +6104,8 @@ CHAPTER 0
 47 And it came to pass that after three hundred and five years had passed away, (and the people did still remain in wickedness) Amos died; and his brother, Ammaron, did keep the record in his stead.
 48 And it came to pass that when three hundred and twenty years had passed away, Ammaron, being constrained by the Holy Ghost, did hide up the records which were sacred--yea, even all the sacred records which had been handed down from generation to generation, which were sacred--even until the three hundred and twentieth year from the coming of Christ.
 49 And he did hide them up unto the Lord that they might come again unto the remnant of the house of Jacob according to the prophecies and the promises of the Lord. And thus is the end of the record of Ammaron.`,
-"mormon-00": `CHAPTER 0
-THE BOOK OF MORMON
-CHAPTER 0`,
-"mormon-01": `CHAPTER 1
+"mormon-01": `THE BOOK OF MORMON
+CHAPTER 1
 1 And now I, Mormon, make a record of the things which I have both seen and heard, and call it the Book of Mormon.
 2 And about the time that Ammaron hid up the records unto the Lord, he came unto me, (I being about ten years of age, and I began to be learned somewhat after the manner of the learning of my people) and Ammaron said unto me: I perceive that thou art a sober child, and art quick to observe;
 3 Therefore, when ye are about twenty and four years old I would that ye should remember the things that ye have observed concerning this people; and when ye are of that age go to the land Antum, unto a hill which shall be called Shim; and there have I deposited unto the Lord all the sacred engravings concerning this people.
@@ -6356,11 +6341,9 @@ CHAPTER 0`,
 35 And these things are written that we may rid our garments of the blood of our brethren, who have dwindled in unbelief.
 36 And behold, these things which we have desired concerning our brethren, yea, even their restoration to the knowledge of Christ, are according to the prayers of all the saints who have dwelt in the land.
 37 And may the Lord Jesus Christ grant that their prayers may be answered according to their faith; and may God the Father remember the covenant which he hath made with the house of Israel; and may he bless them forever, through faith on the name of Jesus Christ. Amen.`,
-"ether-00": `CHAPTER 0
-THE BOOK OF ETHER
-CHAPTER 0
-1 The record of the Jaredites, taken from the twenty-four plates found by the people of Limhi in the days of king Mosiah.`,
-"ether-01": `CHAPTER 1
+"ether-01": `THE BOOK OF ETHER
+The record of the Jaredites, taken from the twenty-four plates found by the people of Limhi in the days of king Mosiah.
+CHAPTER 1
 1 And now I, Moroni, proceed to give an account of those ancient inhabitants who were destroyed by the hand of the Lord upon the face of this north country.
 2 And I take mine account from the twenty and four plates which were found by the people of Limhi, which is called the Book of Ether.
 3 And as I suppose that the first part of this record, which speaks concerning the creation of the world, and also of Adam, and an account from that time even to the great tower, and whatsoever things transpired among the children of men until that time, is had among the Jews--
@@ -6808,10 +6791,8 @@ CHAPTER 0
 32 And it came to pass that Coriantumr fell to the earth, and became as if he had no life.
 33 And the Lord spake unto Ether, and said unto him: Go forth. And he went forth, and beheld that the words of the Lord had all been fulfilled; and he finished his record; (and the hundredth part I have not written) and he hid them in a manner that the people of Limhi did find them.
 34 Now the last words which are written by Ether are these: Whether the Lord will that I be translated, or that I suffer the will of the Lord in the flesh, it mattereth not, if it so be that I am saved in the kingdom of God. Amen.`,
-"moroni-00": `CHAPTER 0
-THE BOOK OF MORONI
-CHAPTER 0`,
-"moroni-01": `CHAPTER 1
+"moroni-01": `THE BOOK OF MORONI
+CHAPTER 1
 1 Now I, Moroni, after having made an end of abridging the account of the people of Jared, I had supposed not to have written more, but I have not as yet perished; and I make not myself known to the Lamanites lest they should destroy me.
 2 For behold, their wars are exceedingly fierce among themselves; and because of their hatred they put to death every Nephite that will not deny the Christ.
 3 And I, Moroni, will not deny the Christ; wherefore, I wander whithersoever I can for the safety of mine own life.
@@ -6984,7 +6965,4 @@ CHAPTER 0`,
 32 Yea, come unto Christ, and be perfected in him, and deny yourselves of all ungodliness; and if ye shall deny yourselves of all ungodliness and love God with all your might, mind and strength, then is his grace sufficient for you, that by his grace ye may be perfect in Christ; and if by the grace of God ye are perfect in Christ, ye can in nowise deny the power of God.
 33 And again, if ye by the grace of God are perfect in Christ, and deny not his power, then are ye sanctified in Christ by the grace of God, through the shedding of the blood of Christ, which is in the covenant of the Father unto the remission of your sins, that ye become holy, without spot.
 34 And now I bid unto all, farewell. I soon go to rest in the paradise of God, until my spirit and body shall again reunite, and I am brought forth triumphant through the air, to meet you before the pleasing bar of the great Jehovah, the Eternal Judge of both quick and dead. Amen.`
-
-
-
 }
