@@ -3,11 +3,24 @@
     <head>
         <title>Book of Mormon Audio</title>
         <style>
+            body {
+                overflow: hidden;
+            }
+            #leftSide {
+                height:95vh;
+                overflow: scroll;
+            }
+            #rightSide {
+                height:95vh;
+                overflow: scroll;
+            }
+
             .bomText {
                 font-family: "Times New Roman", Times, serif;
                 font-size: 1.5em;
             }
         </style>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,24 +29,22 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
     <body>
-        <nav id="header" class="navbar fixed-top navbar-light bg-light">
-            <div class="container">
-                <h1>Book of Mormon</h1>
-            </div>
-        </nav>
-
         <div class="container mt-3">
             <div class="row">
-                <div id="leftSide" class="col-3">
-                    <br><br><br>
+                <div class="col bg-light text-center">
+                    <h1>Book of Mormon Reader</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="leftSide" class="col-3 pt-3">
                     <ul id="bookElement"></ul>
                     <br><br><br><br>
                 </div>
 
                 <div id="centerSpacer" class="col-1"></div>
 
-                <div id="rightSide" class="col-8">
-                    <br><br><br>
+                <div id="rightSide" class="col-8 pt-3">
                     <div id="readingDiv">Choose a chapter to read on the left</div>
                     <br><br><br><br>
                 </div>
@@ -45,6 +56,7 @@
                     <button id="playButton" class="btn btn-secondary mr-3" onclick="handPlayButtonClick();" disabled>Choose chapter at left</button>
                     <span>Audio Speed: </span><input type="text" id="speedInput" value="2">
                     <button class="btn btn-primary ml-3">Activate Speed</button>
+                    <span class="ml-3">Percent done: </span><span id="percentDone" class="ml-3"></span>
                     <hr>
                     <div id="audioDiv"></div>
                 </div>
@@ -60,6 +72,7 @@
             // var isReading = -1;
             var currentChapter = "none";
             var currentStatus = "waiting"; // or "playing" or "pausing"
+            var timingHandle = "none";
 
             function setupBookElement(anAnchor) {
                 var stringsToRemove = [
@@ -138,6 +151,9 @@
                             htmlString = markupChapterText(chapters[thisObject.target.getAttribute("nicetitle")]);
                         }
                         readingDiv.innerHTML = htmlString;
+                        console.log("scrollTop value = " + readingDiv.scrollTop);
+                        // readingDiv.scrollIntoView(true);
+                        document.getElementById("topofchapter").scrollIntoView();
 
                         // Set up the audio objects
                         var filename = thisObject.target.id;
@@ -160,10 +176,17 @@
                             "ELparentElement": audioElement
                         });
 
+                        clearTimeout(timingHandle);
+                        timingHandle = startTiming(audioElement);
+
                         audioElement.onended = function() {
+                            clearTimeout(timingHandle);
+                            timingHandle = "none";
                             isReading = -1;
                             currentChapter = "none";
                             currentStatus = "waiting";
+                            $(".chapter-button").removeClass("btn-success");
+                            $(".chapter-button").addClass("btn-primary");
                         }
 
                         audioElement.playbackRate = document.getElementById("speedInput").value;
@@ -179,14 +202,46 @@
                 }
             }
 
+            function startTiming(anAudioElement) {
+                return setTimeout(function() {
+                    var percentages = JSON.parse(document.getElementById("percentages").value);
+
+                    var percentage = anAudioElement.currentTime / anAudioElement.duration;
+                    var easyPercentage = parseInt(percentage * 100);
+                    var chapterDiv = document.getElementById("topofchapter");
+
+                    var elementHeight = chapterDiv.offsetHeight;
+                    console.log("   elementHeight = " + elementHeight);
+                    console.log("   trying to set scrollTop to: " + parseInt(percentage * elementHeight));
+                    // chapterDiv.scrollTop = parseInt(percentage * elementHeight);
+                    if (percentages.indexOf(easyPercentage) !== -1) {
+                        document.getElementById("percentage-" + easyPercentage).scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                            inline: "nearest"
+                        });
+                    }
+
+                    document.getElementById("percentDone").innerHTML = (percentage * 100).toFixed(1);
+                    timingHandle = startTiming(anAudioElement);
+                }, 100);
+            }
+
             function markupChapterText(rawReadingText) {
-                var htmlString = "<div class='bomText'>";
+                var htmlString = "<div id='topofchapter' class='bomText'>";
                 var rawReadingLines = rawReadingText.split("\n");
+                var percentages = [];
                 var lineWords = "";
                 var chapterHeadingPassed = false;
 
                 for (var lineNum = 0; lineNum < rawReadingLines.length; lineNum++) {
-                    htmlString += "<p>";
+                    var newPercentage = parseInt(lineNum / rawReadingLines.length * 100);
+                    percentages.push(newPercentage);
+                }
+                htmlString += '<input type="hidden" id="percentages" value="' + JSON.stringify(percentages) + '">';
+
+                for (var lineNum = 0; lineNum < rawReadingLines.length; lineNum++) {
+                    htmlString += '<p id="percentage-' + percentages[lineNum] + '">';
                     lineWords = rawReadingLines[lineNum].split(' ');
                     console.log("lineWords[0][0] = " + lineWords[0][0].toLowerCase());
                     if (lineWords[0].toLowerCase() === "chapter") {
