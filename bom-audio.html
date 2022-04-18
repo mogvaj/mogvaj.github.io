@@ -6,6 +6,7 @@
             body {
                 overflow: hidden;
             }
+
             #leftSide {
                 height:95vh;
                 overflow: scroll;
@@ -205,19 +206,26 @@
             function startTiming(anAudioElement) {
                 return setTimeout(function() {
                     var percentages = JSON.parse(document.getElementById("percentages").value);
-
                     var percentage = anAudioElement.currentTime / anAudioElement.duration;
                     var easyPercentage = parseInt(percentage * 100);
                     var chapterDiv = document.getElementById("topofchapter");
+                    var blockValue = "start";
 
                     var elementHeight = chapterDiv.offsetHeight;
                     console.log("   elementHeight = " + elementHeight);
                     console.log("   trying to set scrollTop to: " + parseInt(percentage * elementHeight));
                     // chapterDiv.scrollTop = parseInt(percentage * elementHeight);
                     if (percentages.indexOf(easyPercentage) !== -1) {
+                        blockValue = "start";
+                        if (percentage > 25) {
+                            blockValue = "center";
+                            if (percentage > 50) {
+                                blockValue = "end";
+                            }
+                        }
                         document.getElementById("percentage-" + easyPercentage).scrollIntoView({
                             behavior: "smooth",
-                            block: "center",
+                            block: blockValue,
                             inline: "nearest"
                         });
                     }
@@ -305,14 +313,16 @@
                     playButton.classList.add("btn-secondary");
                 }
                 else if (currentStatus === "playing") {
-                    buttonText = "Pause";
+                    // buttonText = "Pause";
+                    buttonText = "&#x23F8";
                     playButton.disabled = false;
                     playButton.classList.remove("btn-secondary");
                     playButton.classList.add("btn-primary");
                     audioElement.play();
                 }
                 else if (currentStatus === "pausing") {
-                    buttonText = "Play";
+                    // buttonText = "Play";
+                    buttonText = "&#x23F5";
                     playButton.disabled = false;
                     playButton.classList.remove("btn-secondary");
                     playButton.classList.add("btn-primary");
