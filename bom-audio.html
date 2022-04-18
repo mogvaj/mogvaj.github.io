@@ -216,12 +216,9 @@
                     console.log("   trying to set scrollTop to: " + parseInt(percentage * elementHeight));
                     // chapterDiv.scrollTop = parseInt(percentage * elementHeight);
                     if (percentages.indexOf(easyPercentage) !== -1) {
-                        blockValue = "start";
-                        if (percentage > 25) {
-                            blockValue = "center";
-                            if (percentage > 50) {
-                                blockValue = "end";
-                            }
+                        blockValue = "center";
+                        if (percentage > 50) {
+                            blockValue = "end";
                         }
                         document.getElementById("percentage-" + easyPercentage).scrollIntoView({
                             behavior: "smooth",
