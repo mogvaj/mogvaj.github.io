@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>aaaLogin Test</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div>
+            <div id="titleDiv">
+                <h1>aaaLogin Test</h1>
+            </div>
+
+            <hr>
+
+            <div id="apicHostnameDiv" class="bg-secondary p-2">
+                <div class="sectionTitle">APIC FQDN:</div>
+                <ul>
+                    <input type="text" id="apicHostname"  class="form-control" value="">
+                </ul>
+            </div>
+            <div id="usernameFieldDiv" class="bg-secondary p-2">
+                <div class="sectionTitle">Username:</div>
+                <ul>
+                    <input type="text" id="usernameField" class="form-control">
+                </ul>
+            </div>
+            <div id="passwordFieldDiv" class="bg-secondary p-2">
+                <div class="sectionTitle">Password:</div>
+                <ul>
+                    <input type="password" id="passwordField" class="form-control">
+                </ul>
+            </div>
+
+            <br>
+
+            <button class="btn btn-primary" onclick="login();">Login</button>
+
+            <hr>
+
+            <div id="outputDiv"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            var apicHostname = "";
+            var username = "";
+            var password = "";
+
+            var creds = {
+                "token": "",
+                "urlToken": "",
+                "haveToken": false
+            };
+
+            function login() {
+                apicHostname = document.getElementById("apicHostname").value;
+                username = document.getElementById("usernameField").value;
+                password = document.getElementById("passwordField").value;
+
+                // var url = "https://" + apicHostname + "/api/aaaLogin.json?gui-token-request=yes";
+				var url = "https://" + apicHostname + "/api/aaaLogin.json";
+
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+					data: JSON.stringify({
+						"aaaUser": {
+							"attributes": {
+								"name": username,
+								"pwd": password
+							}
+						}
+					}),
+                    success: function(response) {
+                        console.log("Inside login AJAX success anonymous function....");
+                        var attributes = response['imdata'][0]['aaaLogin']['attributes'];
+                        creds.token = attributes['token'];
+                        creds.urlToken = attributes['urlToken'];
+                        creds.haveToken = true;
+                        console.log("Login token = " + creds.token);
+                        console.log("Login urlToken = " + creds.urlToken);
+                    },
+                    error: function(response) {
+                        console.log("Unable to login:");
+                        console.log("   Target FQDN: " + apicHostname);
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
+
+
