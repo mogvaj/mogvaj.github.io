@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>METAR Getter v0</title>
+        <style>
+            .pt-20 {
+                padding-top: 5%
+            }
+			.myHr {
+				display: block;
+				height: 1px;
+			    border: 0;
+				border-top: 1px solid #ccc;
+			    margin: 1em 0;
+				padding: 0;
+			}
+        </style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>METAR Getter</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="icaoIdentifier">Enter airport identifier:</label>
+                </div>
+                <div class="col">
+                    <input class="form-control" id="icaoIdentifier" value="KPIH"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="getButton" class="btn btn-primary" onclick="getMetar();">Get METAR</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <div id="outputDiv"></div>
+                </div>
+            </div>
+		</div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script>
+            class Metar {
+                constructor(aString) {
+                    // KPIH 202253Z 02015G27KT 10SM SCT085 13/M09 A2997 RMK AO2 PK WND 03027/2244 SLP144 T01281089
+                    this.metarString = aString.replace('"', '').replace('\n', '');
+                }
+
+                get(aFieldName) {
+                    var returnString = "Error";
+                    if (this.metarString.length > 10) {
+                        if (aFieldName === "icaoIdentifier") {
+                            returnString = this.metarString.split(" ")[0];
+                        }
+                        else if (aFieldName === "issuanceTime") {
+                            returnString = this.metarString.split(" ")[1];
+                        }
+                        else if (aFieldName === "wind") {
+                            returnString = this.metarString.split(" ")[2];
+                        }
+                    }
+                }
+            }
+
+            function getMetar() {
+                var anIcaoIdentifier = document.getElementById("icaoIdentifier").value;
+                
+                var fetchHeaders = new Headers({
+                    "Content-Type": "text/plain",
+                    "Accept": "text/plain; charset=utf-8"
+                });
+
+                var fetchInit = {
+                    "method": "GET",
+                    "headers": fetchHeaders
+                };
+
+                var fetchRequest = new Request("https://beta.aviationweather.gov/cgi-bin/data/metar.php?ids=" + anIcaoIdentifier);
+
+                fetch(fetchRequest, fetchInit)
+                    .then( function(response) {
+                        return response.text();
+                    })
+                    .then((data) => {
+                        console.log("data = " + data);
+                        var responseFields = data.split(" ");
+                        var htmlString = "METAR data for " + responseFields[0] + ":<br>";
+                        htmlString += data.replaceAll('"', '').replaceAll('\\n', '');
+                        document.getElementById("outputDiv").innerHTML = htmlString;
+                    })
+                    .catch(function(error) {
+                        console.log("There was an error: " + error);
+                    });
+            }
+        </script>
+    </body>
+</html>
