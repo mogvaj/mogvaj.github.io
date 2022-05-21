@@ -84,23 +84,32 @@
 
                 var fetchInit = {
                     "method": "GET",
-                    "headers": fetchHeaders
+                    "headers": fetchHeaders,
+                    "mode": "no-cors"
                 };
 
                 var fetchRequest = new Request("https://beta.aviationweather.gov/cgi-bin/data/metar.php?ids=" + anIcaoIdentifier);
 
                 fetch(fetchRequest, fetchInit)
                     .then( function(response) {
+                        console.log("In the first 'then'...");
+                        console.log("   response.status = " + response.status);
+                        console.log("   reponse.statusText = " + response.statusText);
+                        console.log("   reponse.ok = " + response.ok);
+                        console.log("   response.body = " + response.body);
                         return response.text();
                     })
-                    .then((data) => {
+                    .then( function(data) {
+                        console.log("In the second 'then'...");
+                        console.log("typeof data = " + typeof(data));
+                        console.log("length of data = " + data.length);
                         console.log("data = " + data);
                         var responseFields = data.split(" ");
                         var htmlString = "METAR data for " + responseFields[0] + ":<br>";
                         htmlString += data.replaceAll('"', '').replaceAll('\\n', '');
                         document.getElementById("outputDiv").innerHTML = htmlString;
                     })
-                    .catch(function(error) {
+                    .catch( function(error) {
                         console.log("There was an error: " + error);
                     });
             }
