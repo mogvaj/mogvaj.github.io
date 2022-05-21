@@ -85,7 +85,7 @@
                 var fetchInit = {
                     "method": "GET",
                     "headers": fetchHeaders,
-                    "mode": "no-cors"
+                    "mode": "cors"
                 };
 
                 var fetchRequest = new Request("https://beta.aviationweather.gov/cgi-bin/data/metar.php?ids=" + anIcaoIdentifier);
