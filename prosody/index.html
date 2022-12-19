@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prosody Renderer (Prototype)</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+
+            <div id="heading">
+                <h1>Prosody Renderer (Prototype)</h1>
+            </div>
+
+            <hr>
+
+            <div id="chooserDiv">
+                <h3>Choose a hymn:</h3>
+                <div id="selectDiv"></div>
+                <button class="btn btn-primary mt-3" onclick="renderScansion()">Render grid scansion</button>
+            </div>
+
+            <hr>
+
+            <div id="renderDiv"></div>
+
+            <hr>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+        <script src="js/utilities.js"></script>
+        <script src="js/hymns_en_1985.js"></script>
+        <script>
+            function makeChooser() {
+                var hymnSelect = createDOMElement({
+                    "ELtype": "select",
+                    "ELclasses": [ "form-control" ],
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "hymnSelect" }
+                    ],
+                    "ELparentElement": document.getElementById("selectDiv")
+                });
+
+                for (var i = 1; i < hymns_en_1985.collection.songs.length; i++) {
+                    var newOption = createDOMElement({
+                        "ELtype": "option",
+                        "ELattributes": [
+                            { "ELname": "id", "ELvalue": "option-" + i },
+                            { "ELname": "value", "ELvalue": i }
+                        ],
+                        "ELhtmlString": hymns_en_1985.collection.songs[i].number + " - " + hymns_en_1985.collection.songs[i].title,
+                        "ELparentElement": hymnSelect
+                    });
+                }
+            }
+
+            function renderScansion() {
+                var renderDiv = document.getElementById("renderDiv");
+                var selectedHymnNumber = document.getElementById("hymnSelect").value;
+                var hymn = hymns_en_1985.collection.songs[selectedHymnNumber];
+                var htmlString = "Hymn: " + selectedHymnNumber + "<br>";
+                htmlString += "Title: " + hymn.title + "<br>";
+
+                var topText = createDOMElement({
+                    "ELtype": "h4",
+                    "ELhtmlString": htmlString,
+                    "ELparentElement": renderDiv
+                });
+
+                // Figure out max number of feet per line
+                var maxFeet = 0;
+                var maxVerse = 0;
+                var maxPart = 0;
+                var maxLine = 0;
+
+                for (var verse = 0; verse < hymn.verses.length; verse++) {
+                    for (var line = 0; line < hymn.verses[verse].lines.length; line++) {
+                        for (var part = 0; part < hymn.verses[verse].lines[line].parts.length; part++) {
+                            if (hymn.verses[verse].lines[line].parts[part].feet.length > maxFeet) {
+                                maxFeet = hymn.verses[verse].lines[line].parts[part].feet.length;
+                                maxVerse = verse;
+                                maxLine = line;
+                                maxPart = part;
+                            }
+                        }
+                    }
+                }
+
+                // Go through the verses and make a grid for each verse
+                for (var verse = 0; verse < hymn.verses.length; verse++) {
+                    var newVerseTable = createDOMElement({
+                        "ELtype": "table",
+                        "ELclasses": [ "table" ],
+                        "ELparentElement": renderDiv
+                    });
+
+                    var newHeaderRow = createDOMElement({
+                        "ELtype": "tr",
+                        "ELparentElement": newVerseTable
+                    });
+
+                    var newPartColumn = createDOMElement({
+                        "ELtype": "th",
+                        "ELhtmlString": "Parts",
+                        "ELparentElement": newHeaderRow
+                    });
+
+                    // Make column headers for this verse
+                    for (var f = 0; f < maxFeet; f++) {
+                        var stressIndicator = "+";
+                        for (var beat = 0; beat < hymn.verses[maxVerse].lines[maxLine].parts[maxPart].feet[f].beats.length; beat++) {
+                            stressIndicator = "+";
+                            if (hymn.verses[maxVerse].lines[maxLine].parts[maxPart].feet[f].beats[beat].stressed === false) {
+                                stressIndicator = "-";
+                            }
+
+                            var lineStyling = "border-left: hidden;";
+                            if (beat === 0) {
+                                lineStyling = "border-left: 1px solid;";
+                            }
+                            var newHeaderCol = createDOMElement({
+                                "ELtype": "th",
+                                "ELclasses": [ "text-left" ],
+                                "ELattributes": [
+                                    { "ELname": "style", "ELvalue": lineStyling }
+                                ],
+                                "ELhtmlString": stressIndicator,
+                                "ELparentElement": newHeaderRow
+                            });
+                        }
+                    }
+
+                    // Make lines for this verse
+                    for (var line = 0; line < hymn.verses[verse].lines.length; line++) {
+                        for (var part = 0; part < hymn.verses[verse].lines[line].parts.length; part++) {
+                            var newLineRow = createDOMElement({
+                                "ELtype": "tr",
+                                "ELparentElement": newVerseTable
+                            });
+
+                            var partString = "";
+                            if (hymn.verses[verse].lines[line].parts.length > 1) {
+                                // There are different parts for different voices in this line
+                                for (var voice = 0; voice < hymn.verses[verse].lines[line].parts[part].voices.length; voice++) {
+                                    partString += hymn.verses[verse].lines[line].parts[part].voices[voice];
+                                    if (voice < (hymn.verses[verse].lines[line].parts[part].voices.length - 1)) {
+                                        partString += ", ";
+                                    }
+                                }
+                            }
+
+                            var newPartCell = createDOMElement({
+                                "ELtype": "td",
+                                "ELattributes": [
+                                    { "ELname": "style", "ELvalue": "border-left: hidden;" },
+                                    { "ELname": "style", "ELvalue": "border-right: hidden;" },
+                                    { "ELname": "style", "ELvalue": "border-bottom: hidden;" }
+                                ],
+                                "ELhtmlString": partString,
+                                "ELparentElement": newLineRow
+                            });
+
+                            // Put in the syllables
+                            for (var foot = 0; foot < hymn.verses[verse].lines[line].parts[part].feet.length; foot++) {
+                                for (var beat = 0; beat < hymn.verses[verse].lines[line].parts[part].feet[foot].beats.length; beat++) {
+                                    var newBeatCell = createDOMElement({
+                                        "ELtype": "td",
+                                        "ELclasses": [ "text-left" ],
+                                        "ELattributes": [
+                                            { "ELname": "style", "ELvalue": "border-left: hidden;" },
+                                            { "ELname": "style", "ELvalue": "border-right: hidden;" },
+                                            { "ELname": "style", "ELvalue": "border-bottom: hidden;" }
+                                        ],
+                                        "ELhtmlString": hymn.verses[verse].lines[line].parts[part].feet[foot].beats[beat].payload.value,
+                                        "ELparentElement": newLineRow
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Initialize
+            makeChooser();
+        </script>
+    </body>
+</html>
