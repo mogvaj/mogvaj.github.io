@@ -1045,7 +1045,7 @@ CHAPTER 1
 7 For if there be no Christ there be no God; and if there be no God we are not, for there could have been no creation. But there is a God, and he is Christ, and he cometh in the fulness of his own time.
 8 And now I write some of the words of Isaiah, that whoso of my people shall see these words may lift up their hearts and rejoice for all men. Now these are the words, and ye may liken them unto you and unto all men.`,
 "2-nephi-12": `CHAPTER 12
-0 Isaiah sees the latter-day temple, gathering of Israel, and millennial judgment and peace—The proud and wicked will be brought low at the Second Coming—Compare Isaiah 2. About 559–545 B.C.
+Isaiah sees the latter-day temple, gathering of Israel, and millennial judgment and peace—The proud and wicked will be brought low at the Second Coming—Compare Isaiah 2. About 559–545 B.C.
 1 The word that Isaiah, the son of Amoz, saw concerning Judah and Jerusalem:
 2 And it shall come to pass in the last days, when the mountain of the Lord’s house shall be established in the top of the mountains, and shall be exalted above the hills, and all nations shall flow unto it.
 3 And many people shall go and say, Come ye, and let us go up to the mountain of the Lord, to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths; for out of Zion shall go forth the law, and the word of the Lord from Jerusalem.
