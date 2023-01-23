@@ -1045,10 +1045,11 @@ CHAPTER 1
 7 For if there be no Christ there be no God; and if there be no God we are not, for there could have been no creation. But there is a God, and he is Christ, and he cometh in the fulness of his own time.
 8 And now I write some of the words of Isaiah, that whoso of my people shall see these words may lift up their hearts and rejoice for all men. Now these are the words, and ye may liken them unto you and unto all men.`,
 "2-nephi-12": `CHAPTER 12
+0 Isaiah sees the latter-day temple, gathering of Israel, and millennial judgment and peace—The proud and wicked will be brought low at the Second Coming—Compare Isaiah 2. About 559–545 B.C.
 1 The word that Isaiah, the son of Amoz, saw concerning Judah and Jerusalem:
-2 And it shall come to pass in the last days, when the mountain of the Lord's house shall be established in the top of the mountains, and shall be exalted above the hills, and all nations shall flow unto it.
+2 And it shall come to pass in the last days, when the mountain of the Lord’s house shall be established in the top of the mountains, and shall be exalted above the hills, and all nations shall flow unto it.
 3 And many people shall go and say, Come ye, and let us go up to the mountain of the Lord, to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths; for out of Zion shall go forth the law, and the word of the Lord from Jerusalem.
-4 And he shall judge among the nations, and shall rebuke many people: and they shall beat their swords into plow-shares, and their spears into pruning-hooks--nation shall not lift up sword against nation, neither shall they learn war any more.
+4 And he shall judge among the nations, and shall rebuke many people: and they shall beat their swords into plow-shares, and their spears into pruning-hooks—nation shall not lift up sword against nation, neither shall they learn war any more.
 5 O house of Jacob, come ye and let us walk in the light of the Lord; yea, come, for ye have all gone astray, every one to his wicked ways.
 6 Therefore, O Lord, thou hast forsaken thy people, the house of Jacob, because they be replenished from the east, and hearken unto soothsayers like the Philistines, and they please themselves in the children of strangers.
 7 Their land also is full of silver and gold, neither is there any end of their treasures; their land is also full of horses, neither is there any end of their chariots.
