@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Testament Audio</title>
+        <style>
+            body {
+                overflow: hidden;
+            }
+
+            #leftSide {
+                height:95vh;
+                overflow: scroll;
+            }
+            #rightSide {
+                height:95vh;
+                overflow: scroll;
+            }
+
+            .bookText {
+                font-family: "Times New Roman", Times, serif;
+                font-size: 1.5em;
+            }
+        </style>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col bg-light text-center">
+                    <h1>New Testament Reader</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="leftSide" class="col-3 pt-3">
+                    <ul id="bookElement"></ul>
+                    <br><br><br><br>
+                </div>
+
+                <div id="centerSpacer" class="col-1"></div>
+
+                <div id="rightSide" class="col-8 pt-3">
+                    <div id="readingDiv">Choose a chapter to read on the left</div>
+                    <br><br><br><br>
+                </div>
+            </div>
+
+            <nav id="footer" class="navbar fixed-bottom navbar-light bg-light">
+                <div class="container-fluid">
+                    <hr>
+                    <button id="playButton" class="btn btn-secondary mr-3" onclick="handPlayButtonClick();" disabled>Choose chapter at left</button>
+                    <span>Audio Speed: </span><input type="text" id="speedInput" value="2">
+                    <button class="btn btn-primary ml-3">Activate Speed</button>
+                    <span class="ml-3">Percent done: </span><span id="percentDone" class="ml-3"></span>
+                    <hr>
+                    <div id="audioDiv"></div>
+                </div>
+            </nav>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        <script src="chapters/nt-chapters.js"></script>
+
+        <script>
+            var currentChapter = "none";
+            var currentStatus = "waiting"; // or "playing" or "pausing"
+            var timingHandle = "none";
+
+            function setupBookElement(anAnchor) {
+                var stringsToRemove = [
+                    "male",
+                    "female",
+                    "voice",
+                    "64k",
+                    "eng",
+                    ".mp3"
+                ];
+
+                for (let i = 0; i < bookFiles.length; i++) {
+                    // console.log("Starting " + bookFiles[i] + "...");
+                    var newTitleArray = bookFiles[i].replace("-64k-eng.mp3", "").split('-');
+                    var newTitleString = "";
+                    var newTextFilename = "";
+
+                    var r = 0;
+                    for (var w = 3; w < newTitleArray.length; w++) {
+                        r = 0;
+                        for (q = 0; q < stringsToRemove.length; q++) {
+                            if (newTitleArray[w] === stringsToRemove[q]) {
+                                r++;
+                            }
+                        }
+
+                        if (r === 0) {
+                            if (newTextFilename.length > 0) {
+                                newTextFilename += "-";
+                            }
+                            newTextFilename += newTitleArray[w];
+                        }
+                    }
+
+                    var foundMatch = false;
+                    for (var w = 3; w < newTitleArray.length; w++) {
+                        r = 0;
+                        while (!foundMatch && r < stringsToRemove.length) {
+                            if (newTitleArray[w] === stringsToRemove[r]) {
+                                foundMatch = true;
+                            }
+                            else {
+                                r++;
+                            }
+                        }
+                        if (!foundMatch) {
+                            newTitleString += capitalizeFirstLetter(newTitleArray[w]);
+                        }
+
+                        newTitleString += " ";
+                    }
+                    newTitleString.trim();
+
+                    var newBookElement = createDOMElement({
+                        "ELtype": "button",
+                        "ELclasses": [ "btn", "btn-primary", "mt-1", "chapter-button" ],
+                        "ELattributes": [
+                            { "ELname": "id", "ELvalue": bookFiles[i] },
+                            { "ELname": "nicetitle", "ELvalue": newTextFilename }
+                        ],
+                        "ELhtmlString": newTitleString,
+                        "ELparentElement": anAnchor
+                    });
+                    var thisObject = this;
+                    newBookElement.addEventListener("click", function(thisObject) {
+                        // console.log("Clicked on: " + thisObject.target.id);
+
+                        // Show this as the chapter being read by turning the button green
+                        $(".chapter-button").removeClass("btn-success");
+                        $(".chapter-button").addClass("btn-primary");
+                        $(document.getElementById(thisObject.target.id)).removeClass("btn-primary");
+                        $(document.getElementById(thisObject.target.id)).addClass("btn-success");
+
+                        // Set up the text pane
+                        var readingDiv = document.getElementById("readingDiv");
+                        $(readingDiv).empty();
+                        htmlString = "<p>Choose a chapter on the left</p>";
+                        if (chapters[thisObject.target.getAttribute("nicetitle")]) {
+                            htmlString = markupChapterText(chapters[thisObject.target.getAttribute("nicetitle")]);
+                        }
+                        readingDiv.innerHTML = htmlString;
+                        console.log("scrollTop value = " + readingDiv.scrollTop);
+                        // readingDiv.scrollIntoView(true);
+                        document.getElementById("topofchapter").scrollIntoView();
+
+                        // Set up the audio objects
+                        var filename = thisObject.target.id;
+                        var audioDiv = document.getElementById("audioDiv");
+                        $(audioDiv).empty();
+                        var audioElement = createDOMElement({
+                            "ELtype": "audio",
+                            "ELattributes": [
+                                { "ELname": "id", "ELvalue": "audioElement" }
+                            ],
+                            "ELparentElement": audioDiv
+                        });
+
+                        var sourceElement = createDOMElement({
+                            "ELtype": "source",
+                            "ELattributes": [
+                                { "ELname": "src", "ELvalue": url + filename }, // "url" is a global variable
+                                { "ELname": "type", "ELvalue": "audio/mpeg" }
+                            ],
+                            "ELparentElement": audioElement
+                        });
+
+                        clearTimeout(timingHandle);
+                        timingHandle = startTiming(audioElement);
+
+                        audioElement.onended = function() {
+                            clearTimeout(timingHandle);
+                            timingHandle = "none";
+                            isReading = -1;
+                            currentChapter = "none";
+                            currentStatus = "waiting";
+                            $(".chapter-button").removeClass("btn-success");
+                            $(".chapter-button").addClass("btn-primary");
+                        }
+
+                        audioElement.playbackRate = document.getElementById("speedInput").value;
+                        audioElement.play();
+                        currentStatus = "playing";
+                        togglePlayButton();
+                    });
+
+                    var newBR = createDOMElement({
+                        "ELtype": "br",
+                        "ELparentElement": anAnchor
+                    });
+                }
+            }
+
+            function startTiming(anAudioElement) {
+                return setTimeout(function() {
+                    var percentages = JSON.parse(document.getElementById("percentages").value);
+                    var percentage = anAudioElement.currentTime / anAudioElement.duration;
+                    var easyPercentage = parseInt(percentage * 100);
+                    var chapterDiv = document.getElementById("topofchapter");
+                    var blockValue = "start";
+
+                    var elementHeight = chapterDiv.offsetHeight;
+                    console.log("   elementHeight = " + elementHeight);
+                    console.log("   trying to set scrollTop to: " + parseInt(percentage * elementHeight));
+                    // chapterDiv.scrollTop = parseInt(percentage * elementHeight);
+                    if (percentages.indexOf(easyPercentage) !== -1) {
+                        blockValue = "center";
+                        if (percentage > 50) {
+                            blockValue = "end";
+                        }
+                        document.getElementById("percentage-" + easyPercentage).scrollIntoView({
+                            behavior: "smooth",
+                            block: blockValue,
+                            inline: "nearest"
+                        });
+                    }
+
+                    document.getElementById("percentDone").innerHTML = (percentage * 100).toFixed(1);
+                    timingHandle = startTiming(anAudioElement);
+                }, 100);
+            }
+
+            function markupChapterText(rawReadingText) {
+                var htmlString = "<div id='topofchapter' class='bookText'>";
+                var rawReadingLines = rawReadingText.split("\n");
+                var percentages = [];
+                var lineWords = "";
+                var chapterHeadingPassed = false;
+
+                for (var lineNum = 0; lineNum < rawReadingLines.length; lineNum++) {
+                    var newPercentage = parseInt(lineNum / rawReadingLines.length * 100);
+                    percentages.push(newPercentage);
+                }
+                htmlString += '<input type="hidden" id="percentages" value="' + JSON.stringify(percentages) + '">';
+
+                for (var lineNum = 0; lineNum < rawReadingLines.length; lineNum++) {
+                    htmlString += '<p id="percentage-' + percentages[lineNum] + '">';
+                    lineWords = rawReadingLines[lineNum].split(' ');
+                    console.log("lineWords[0][0] = " + lineWords[0][0].toLowerCase());
+                    if (lineWords[0].toLowerCase() === "chapter") {
+                        // This line is the "Chapter #"
+                        chapterHeadingPassed = true;
+                        htmlString += "<b style='font-variant: small-caps;'>";
+                        htmlString += rawReadingLines[lineNum];
+                        htmlString += "</b>";
+                    }
+                    else if ("0123456789".indexOf(lineWords[0][0]) !== -1) {
+                        // This line is a verse
+                        htmlString += "<b>" + lineWords[0] + "</b> ";
+                        for (var z = 1; z < lineWords.length; z++) {
+                            htmlString += " " + lineWords[z];
+                        }
+                    }
+                    else {
+                        if (chapterHeadingPassed) {
+                            // This line is the chapter summary
+                            htmlString += "<i>";
+                            htmlString += rawReadingLines[lineNum];
+                            htmlString += "</i>";
+                        }
+                        else {
+                            // This line is a "prologue" (prior to the chapter heading)
+                            // Alternatively, could be a normal paragraph outside of a normal chapter
+                            htmlString += rawReadingLines[lineNum];
+                        }
+                        htmlString += "</p>";
+                    }
+                }
+                htmlString += "</div>";
+
+                return htmlString;
+            }
+
+            function handPlayButtonClick() {
+                var playButton = document.getElementById("playButton");
+                if (currentStatus === "waiting") {
+                    // do nothing
+                }
+                else if (currentStatus === "playing") {
+                    currentStatus = "pausing";
+                }
+                else if (currentStatus === "pausing") {
+                    currentStatus = "playing";
+                }
+
+                togglePlayButton();
+            }
+
+            function togglePlayButton() {
+                var playButton = document.getElementById("playButton");
+                var audioElement = document.getElementById("audioElement");
+                var buttonText = "";
+
+                if (currentStatus === "waiting") {
+                    buttonText = "Choose chapter at left";
+                    playButton.disabled = true;
+                    playButton.classList.remove("btn-primary");
+                    playButton.classList.add("btn-secondary");
+                }
+                else if (currentStatus === "playing") {
+                    // buttonText = "Pause";
+                    buttonText = "&#x23F8";
+                    playButton.disabled = false;
+                    playButton.classList.remove("btn-secondary");
+                    playButton.classList.add("btn-primary");
+                    audioElement.play();
+                }
+                else if (currentStatus === "pausing") {
+                    // buttonText = "Play";
+                    buttonText = "&#x23F5";
+                    playButton.disabled = false;
+                    playButton.classList.remove("btn-secondary");
+                    playButton.classList.add("btn-primary");
+                    audioElement.pause();
+                }
+
+                playButton.innerHTML = buttonText;
+            }
+
+            function capitalizeFirstLetter(aString) {
+                var returnString = aString;
+                if (typeof(aString) === typeof("string")) {
+                    if (aString.length > 0) {
+                        returnString = aString[0].toUpperCase() + aString.slice(1);
+                    }
+                }
+                return returnString;
+            }
+
+
+            // *********************************************************************
+            // createDOMElement(elData)
+            //
+            // Requires an input JSON object (example below):
+            //
+            //  {
+            //    "ELtype": "div",
+            //    "ELclasses": [ "modal", "fade" ],
+            //    "ELattributes": [
+            //      { "ELname": "role", "ELvalue": "dialog" }
+            //    ],
+            //    "ELhtmlString": "Hello, world!",
+            //    "ELparentElement": // a DOM element
+            //  }
+            //
+            // *********************************************************************
+            function createDOMElement(elData) {
+                if ("ELtype" in elData) {
+                    var newElement = document.createElement(elData.ELtype);
+
+                    if ("ELclasses" in elData) {
+                        for (i = 0; i < elData.ELclasses.length; i++) {
+                            newElement.classList.add(elData.ELclasses[i]);
+                        }
+                    }
+
+                    if ("ELattributes" in elData) {
+                        for (i = 0; i < elData.ELattributes.length; i++) {
+                            newElement.setAttribute(elData.ELattributes[i].ELname, elData.ELattributes[i].ELvalue);
+                        }
+                    }
+
+                    if ("ELhtmlString" in elData) {
+                        newElement.innerHTML = elData.ELhtmlString;
+                    }
+
+                    if ("ELparentElement" in elData) {
+                        elData.ELparentElement.appendChild(newElement);
+                    }
+
+                    return newElement;
+                }
+                else {
+                    return -1;
+                }
+            }
+
+            setupBookElement(document.getElementById("bookElement"));
+
+        </script>
+    </body>
+</html>
