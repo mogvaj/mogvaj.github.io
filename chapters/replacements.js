@@ -19,4 +19,5 @@ var replacements = {
             "isRegex": false,
         }
     },
+    "examplePictureFilename": "oct!78-4.jpg"
 };
