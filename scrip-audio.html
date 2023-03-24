@@ -217,8 +217,8 @@
                     });
                     var thisObject = this;
                     newBookElement.addEventListener("click", function(thisObject) {
-                        console.log("Clicked on: " + thisObject.target.id);
-                        console.log("   currentBook = " + currentBook);
+                        // console.log("Clicked on: " + thisObject.target.id);
+                        // console.log("   currentBook = " + currentBook);
 
                         // Show this as the chapter being read by turning the button green
                         $(".chapter-button").removeClass("btn-success");
@@ -356,11 +356,26 @@
                 var lineWords = "";
                 var chapterHeadingPassed = false;
 
+                console.log("Getting the total number of words in the chapter...");
+                var numWords = 0;
+                for (var i = 0; i < rawReadingLines.length; i++) {
+                    rawReadingLines[i] = rawReadingLines[i].trim();
+                    numWords += rawReadingLines[i].split(' ').length;
+                }
+                console.log("   Total = " + numWords);
+
+                var currentWordNum = 0;
                 for (var lineNum = 0; lineNum < rawReadingLines.length; lineNum++) {
-                    rawReadingLines[lineNum] = rawReadingLines[lineNum].trim();
                     // console.log("   rawReadingLines[" + lineNum + "] = " + rawReadingLines[lineNum]);
-                    var newPercentage = parseInt(lineNum / rawReadingLines.length * 100);
-                    percentages.push(newPercentage);
+                    if (numWords < 100) {
+                        var newPercentage = parseInt(lineNum / rawReadingLines.length * 100);
+                        percentages.push(newPercentage);
+                    }
+                    else {
+                        var newPercentage = parseInt(currentWordNum / numWords * 100);
+                        percentages.push(newPercentage);
+                        currentWordNum += rawReadingLines[lineNum].split(' ').length;
+                    }
                 }
                 htmlString += '<input type="hidden" id="percentages" value="' + JSON.stringify(percentages) + '">';
 
