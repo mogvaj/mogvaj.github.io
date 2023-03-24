@@ -22,6 +22,68 @@
             }
         </style>
 
+        <style>
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+            }
+
+            .switch input { 
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked + .slider {
+                background-color: #2196F3;
+            }
+
+            input:focus + .slider {
+                box-shadow: 0 0 1px #2196F3;
+            }
+
+            input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+        </style>
+
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -60,11 +122,23 @@
             <nav id="footer" class="navbar fixed-bottom navbar-light bg-light">
                 <div class="container-fluid">
                     <hr>
+
                     <button id="playButton" class="btn btn-secondary mr-3" onclick="handPlayButtonClick();" disabled>Choose chapter at left</button>
-                    <span>Audio Speed: </span><input type="text" id="speedInput" value="2">
+
+                    <span>Audio Speed: </span>
+                    <input type="text" id="speedInput" value="2">
                     <button class="btn btn-primary ml-3">Activate Speed</button>
-                    <span class="ml-3">Percent done: </span><span id="percentDone" class="ml-3"></span>
+
+                    <span>&nbsp;&nbsp;&nbsp;Autoplay:&nbsp;&nbsp;</span>
+                    <label class="switch">
+                        <input id="autoplayCheckbox" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+
+                    <span class="ml-3">Percent done: </span><span id="percentDone" class="ml-3">0</span>
+
                     <hr>
+
                     <div id="audioDiv"></div>
                 </div>
             </nav>
@@ -180,6 +254,8 @@
                         var sourceElement = createDOMElement({
                             "ELtype": "source",
                             "ELattributes": [
+                                { "ELname": "id", "ELvalue": "currentAudioFile" },
+                                { "ELname": "filename", "ELvalue": filename },
                                 { "ELname": "src", "ELvalue": books[currentBook].url + filename },
                                 { "ELname": "type", "ELvalue": "audio/mpeg" }
                             ],
@@ -193,10 +269,40 @@
                             clearTimeout(timingHandle);
                             timingHandle = "none";
                             isReading = -1;
-                            currentChapter = "none";
-                            currentStatus = "waiting";
                             $(".chapter-button").removeClass("btn-success");
                             $(".chapter-button").addClass("btn-primary");
+
+                            if (document.getElementById("autoplayCheckbox").checked) {
+                                // console.log("Play next chapter here");
+
+                                var tempUrlPath = document.getElementById("currentAudioFile").src.split('/');
+                                var currentButtonId = tempUrlPath[tempUrlPath.length - 1];
+                                // console.log("currentButtonId = " + currentButtonId);
+
+                                // var buttonList = document.getElementById("bookElement").children;
+                                var buttonList = document.getElementById("bookElement").getElementsByTagName("button");
+                                // console.log("buttonList.length = " + buttonList.length);
+
+                                var nextButtonId = "";
+                                for (var i = 0; i < buttonList.length; i++) {
+                                	if (buttonList[i].id === currentButtonId) {
+                                		if (i < (buttonList.length - 1)) {
+                                            // console.log("Found the current button at #" + i);
+
+                                			nextButtonId = buttonList[i+1].id;
+                                            // console.log("nextButtonId = " + nextButtonId);
+
+                                			document.getElementById(nextButtonId).click();
+                                		}
+                                		else {
+                                			// The current chapter is the last in the book
+                                			document.getElementById("autoplayCheckbox").checked = false;
+                                            currentChapter = "none";
+                                            currentStatus = "waiting";
+                                        }
+                            		}
+                            	}
+                            }
                         }
 
                         audioElement.playbackRate = document.getElementById("speedInput").value;
