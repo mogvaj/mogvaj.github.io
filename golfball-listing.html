@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Golf ball listing helper</title>
+    
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div id="selectorContainer"></div>
+            <div id="multicolorContainer"></div>
+            <div id="numBallsContainer"></div>
+            <div id="conditionContainer"></div>
+            <div id="buttonContainer"></div>
+            <hr>
+            <div id="outputDiv"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+        <script>
+            var balltypes = {
+                "bridgestoneAssorted": {
+                    "name": "Bridgestone Assorted"
+                },
+                "callawayAssorted": {
+                    "name": "Callaway Assorted"
+                },
+                "kirkland": {
+                    "name": "Kirkland"
+                },
+                "srixonAssorted": {
+                    "name": "Srixon Assorted"
+                },
+                "taylorMadeAssorted": {
+                    "name": "TaylorMade Assorted"
+                },
+                "titleistAssorted": {
+                    "name": "Titleist Assorted"
+                },
+                "titleistProV1": {
+                    "name": "Titleist ProV1"
+                },
+                "titleistProV1x": {
+                    "name": "Titleist ProV1x"
+                },
+                "ugly": {
+                    "name": "Ugly"
+                },
+                "viceAssorted": {
+                    "name": "Vice Assorted"
+                }
+            };
+
+            buildTypeSelector(document.getElementById("selectorContainer"));
+            buildMulticolorSelector(document.getElementById("multicolorContainer"));
+            buildNumBallsInput(document.getElementById("numBallsContainer"));
+            buildConditionSelector(document.getElementById("conditionContainer"))
+            buildButtons(document.getElementById("buttonContainer"));
+
+            function buildTypeSelector(aParentElement) {
+                var labelElement = createDOMElement({
+                    "ELtype": "h3",
+                    "ELclasses": [ "font-weight-bold" ],
+                    "ELattributes": [
+                        { "ELname": "for", "ELvalue": "typeSelect" }
+                    ],
+                    "ELhtmlString": "Select a golf ball type:",
+                    "ELparentElement": aParentElement
+                });
+
+                var selectElement = createDOMElement({
+                    "ELtype": "select",
+                    "ELclasses": [ "form-control" ],
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "typeSelect" }
+                    ],
+                    "ELparentElement": aParentElement
+                });
+
+                var ballKeys = Object.keys(balltypes);
+                for (var i = 0; i < ballKeys.length; i++) {
+                    var newOption = createDOMElement({
+                        "ELtype": "option",
+                        "ELattributes": [
+                            { "ELname": "value", "ELvalue": ballKeys[i] }
+                        ],
+                        "ELhtmlString": balltypes[ballKeys[i]].name,
+                        "ELparentElement": selectElement
+                    });
+                }
+
+                var blankLine = createDOMElement({
+                    "ELtype": "br",
+                    "ELparentElement": aParentElement
+                });
+            }
+
+            function buildMulticolorSelector(aParentElement) {
+                var labelElement = createDOMElement({
+                    "ELtype": "h3",
+                    "ELclasses": [ "font-weight-bold" ],
+                    "ELhtmlString": "Is this a multicolored batch?",
+                    "ELparentElement": aParentElement
+                });
+
+                var yesRadioButton = createDOMElement({
+                    "ELtype": "input",
+                    "ELattributes": [
+                        { "ELname": "type", "ELvalue": "radio" },
+                        { "ELname": "id", "ELvalue": "multicolorRadioYes" },
+                        { "ELname": "name", "ELvalue": "multicolorRadio" },
+                        { "ELname": "value", "ELvalue": "yes" },
+                    ],
+                    "ELparentElement": aParentElement
+                });
+
+                var yesLabelElement = createDOMElement({
+                    "ELtype": "label",
+                    "ELattributes": [
+                        { "ELname": "for", "ELvalue": "multicolorRadioYes" }
+                    ],
+                    "ELhtmlString": "Yes",
+                    "ELparentElement": aParentElement
+                });
+
+                var blankLine = createDOMElement({
+                    "ELtype": "br",
+                    "ELparentElement": aParentElement
+                });
+
+                var noRadioButton = createDOMElement({
+                    "ELtype": "input",
+                    "ELattributes": [
+                        { "ELname": "type", "ELvalue": "radio" },
+                        { "ELname": "id", "ELvalue": "multicolorRadioNo" },
+                        { "ELname": "name", "ELvalue": "multicolorRadio" },
+                        { "ELname": "value", "ELvalue": "no" },
+                        { "ELname": "checked", "ELvalue": "" }
+                    ],
+                    "ELparentElement": aParentElement
+                });
+
+                var noLabelElement = createDOMElement({
+                    "ELtype": "label",
+                    "ELattributes": [
+                        { "ELname": "for", "ELvalue": "multicolorRadioNo" }
+                    ],
+                    "ELhtmlString": "No",
+                    "ELparentElement": aParentElement
+                });
+
+                for (var i = 0; i < 2; i++) {
+                    var blankLine = createDOMElement({
+                        "ELtype": "br",
+                        "ELparentElement": aParentElement
+                    });
+                }
+            }
+
+            function buildNumBallsInput(aParentElement) {
+                var labelElement = createDOMElement({
+                    "ELtype": "h3",
+                    "ELclasses": [ "font-weight-bold" ],
+                    "ELhtmlString": "Enter the number of balls in this batch:",
+                    "ELparentElement": aParentElement
+                });
+
+                var inputElement = createDOMElement({
+                    "ELtype": "input",
+                    "ELclasses": [ "form-control" ],
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "numBalls" },
+                        { "ELname": "value", "ELvalue": "20" }
+                    ],
+                    "ELparentElement": aParentElement
+                });
+
+                for (var i = 0; i < 2; i++) {
+                    var blankLine = createDOMElement({
+                        "ELtype": "br",
+                        "ELparentElement": aParentElement
+                    });
+                }
+            }
+
+            function buildConditionSelector(aParentElement) {
+                var labelElement = createDOMElement({
+                    "ELtype": "h3",
+                    "ELclasses": [ "font-weight-bold" ],
+                    "ELhtmlString": "Select a condition:",
+                    "ELparentElement": aParentElement
+                });
+
+                var selectElement = createDOMElement({
+                    "ELtype": "select",
+                    "ELclasses": [ "form-control" ],
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "conditionSelect" }
+                    ],
+                    "ELparentElement": aParentElement
+                });
+
+                var conditionKeys = [
+                    "Like New",
+                    "Good",
+                    "Fair",
+                    "Used"
+                ];
+
+                for (var i = 0; i < conditionKeys.length; i++) {
+                    var newOption = createDOMElement({
+                        "ELtype": "option",
+                        "ELattributes": [
+                            { "ELname": "value", "ELvalue": conditionKeys[i] }
+                        ],
+                        "ELhtmlString": conditionKeys[i],
+                        "ELparentElement": selectElement
+                    });
+
+                    if (conditionKeys[i] === "Good") {
+                        newOption.setAttribute("selected", "true");
+                    }
+                }
+
+                for (var i = 0; i < 2; i++) {
+                    var blankLine = createDOMElement({
+                        "ELtype": "br",
+                        "ELparentElement": aParentElement
+                    });
+                }
+            }
+
+            function buildButtons(aParentElement) {
+                var generateKSLButton = createDOMElement({
+                    "ELtype": "button",
+                    "ELclasses": [ "btn",  "btn-primary" ],
+                    "ELattributes": [
+                        { "ELname": "type", "ELvalue": "button" },
+                        { "ELname": "onclick", "ELvalue": "generate('ksl');" }
+                    ],
+                    "ELhtmlString": "Generate KSL Listing",
+                    "ELparentElement": aParentElement
+                });
+
+                var generateFBButton = createDOMElement({
+                    "ELtype": "button",
+                    "ELclasses": [ "btn",  "btn-primary", "ml-3" ],
+                    "ELattributes": [
+                        { "ELname": "type", "ELvalue": "button" },
+                        { "ELname": "onclick", "ELvalue": "generate('fb');" }
+                    ],
+                    "ELhtmlString": "Generate Facebook Listing",
+                    "ELparentElement": aParentElement
+                });
+            }
+
+            function generate(aListingType) {
+                var parentElement = document.getElementById("outputDiv");
+                $(parentElement).empty();
+
+                var titleDiv = createDOMElement({
+                    "ELtype": "div",
+                    "ELclasses": [ "font-weight-bold" ],
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "titleDiv" },
+                    ],
+                    "ELhtmlString": "Title: ",
+                    "ELparentElement": parentElement
+                });
+
+                var titleString = "";
+                titleString += document.getElementById("numBalls").value;
+                titleString += " ";
+                titleString += balltypes[document.getElementById("typeSelect").value].name.toUpperCase();
+                if (document.getElementById("multicolorRadioYes").checked === true) {
+                    titleString += " ";
+                    titleString += "MULTICOLORED";
+                }
+                titleString += " GOLF BALLS - ";
+                titleString += document.getElementById("conditionSelect").value.toUpperCase();
+                titleString += " CONDITION";
+
+                var titleText = createDOMElement({
+                    "ELtype": "span",
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "titleSpan" },
+                    ],
+                    "ELhtmlString": titleString,
+                    "ELparentElement": titleDiv
+                });
+
+                var titleCopyButton = createDOMElement({
+                    "ELtype": "button",
+                    "ELclasses": [ "btn", "btn-primary" ],
+                    "ELattributes": [
+                        { "ELname": "type", "ELvalue": "button" },
+                        { "ELname": "onclick", "ELvalue": "addToClipboard('titleSpan');" }
+                    ],
+                    "ELhtmlString": "Copy Title to Clipboard",
+                    "ELparentElement": parentElement
+                });
+
+                for (var i = 0; i < 2; i++) {
+                    var blankLine = createDOMElement({
+                        "ELtype": "br",
+                        "ELparentElement": parentElement
+                    });
+                }
+
+                var descriptionDiv = createDOMElement({
+                    "ELtype": "div",
+                    "ELclasses": [ "font-weight-bold" ],
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "descriptionDiv" },
+                    ],
+                    "ELhtmlString": "Description:<br> ",
+                    "ELparentElement": parentElement
+                });
+
+                var descriptionString = "";
+                descriptionString += "Selling ";
+                descriptionString += document.getElementById("numBalls").value;
+                descriptionString += " ";
+                descriptionString += balltypes[document.getElementById("typeSelect").value].name;
+                if (document.getElementById("multicolorRadioYes").checked === true) {
+                    descriptionString += " ";
+                    descriptionString += "multicolored";
+                }
+                descriptionString += " golf balls. ";
+                if (balltypes[document.getElementById("typeSelect").value].name !== "Ugly") {
+                    descriptionString += "None recovered from water. ";
+
+                }
+                descriptionString += "All in ";
+                descriptionString += document.getElementById("conditionSelect").value.toLowerCase();
+                descriptionString += " condition. No cuts. Pickup in Lehi. ";
+                if (aListingType.toUpperCase() === "KSL") {
+                    descriptionString += "Text is preferred. ";
+                }
+                descriptionString += "See our other listings for more golf balls.";
+
+                var descriptionText = createDOMElement({
+                    "ELtype": "span",
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "descriptionSpan" },
+                    ],
+                    "ELhtmlString": descriptionString,
+                    "ELparentElement": descriptionDiv
+                });
+
+                var descriptionCopyButton = createDOMElement({
+                    "ELtype": "button",
+                    "ELclasses": [ "btn", "btn-primary" ],
+                    "ELattributes": [
+                        { "ELname": "type", "ELvalue": "button" },
+                        { "ELname": "onclick", "ELvalue": "addToClipboard('descriptionSpan');" }
+                    ],
+                    "ELhtmlString": "Copy Description to Clipboard",
+                    "ELparentElement": parentElement
+                });
+
+            }
+
+            function addToClipboard(anElementId) {
+                var stringToCopy = document.getElementById(anElementId).innerText;
+
+                const el = document.createElement('textarea');
+                el.value = stringToCopy;
+                el.setAttribute('readonly', '');
+                el.style.position = 'absolute';
+                el.style.left = '-9999px';
+                document.body.appendChild(el);
+                el.select();
+                document.execCommand('copy');
+                document.body.removeChild(el);
+            }
+
+
+            //=================================================================================================
+			//=================================================================================================
+			//                                           Utility Functions
+			//=================================================================================================
+			//=================================================================================================
+
+
+			// *********************************************************************
+			// createDOMElement(elData)
+			//
+			// Requires an input JSON object (example below):
+			//
+			//  {
+			//    "ELtype": "div",
+			//    "ELclasses": [ "modal", "fade" ],
+			//    "ELattributes": [
+			//      { "ELname": "role", "ELvalue": "dialog" }
+			//    ],
+			//    "ELhtmlString": "Hello, world!",
+			//    "ELparentElement": // a DOM element
+			//  }
+			//
+			// *********************************************************************
+			function createDOMElement(elData) {
+				if ("ELtype" in elData) {
+					var newElement = document.createElement(elData.ELtype);
+
+					if ("ELclasses" in elData) {
+					for (i = 0; i < elData.ELclasses.length; i++) {
+						newElement.classList.add(elData.ELclasses[i]);
+					}
+					}
+
+					if ("ELattributes" in elData) {
+					for (i = 0; i < elData.ELattributes.length; i++) {
+						newElement.setAttribute(elData.ELattributes[i].ELname, elData.ELattributes[i].ELvalue);
+					}
+					}
+
+					if ("ELhtmlString" in elData) {
+					newElement.innerHTML = elData.ELhtmlString;
+					}
+
+					if ("ELparentElement" in elData) {
+					elData.ELparentElement.appendChild(newElement);
+					}
+
+					return newElement;
+				}
+				else {
+					return -1;
+				}
+			}
+        </script>
+    </body>
+</html>
