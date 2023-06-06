@@ -203,21 +203,6 @@
                     "ELparentElement": aParentElement
                 });
 
-
-                /*
-                    <form>
-                        <div class="form-row">
-                            <div class="col-auto">
-                                <div class="input-group mb-2">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">@</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                */
-
                 var formElement = createDOMElement({
                     "ELtype": "form",
                     "ELparentElement": aParentElement
@@ -492,6 +477,9 @@
                 titleText += document.getElementById("numBalls").value;
                 titleText += "-";
                 titleText += balltypes[document.getElementById("typeSelect").value].name.toLowerCase().replace(" ", "-");
+                if (document.getElementById("multicolorRadioYes").value == "yes") {
+                    titleText += "-multicolored";
+                }
                 var colTitle = createDOMElement({
                     "ELtype": "td",
                     "ELattributes": [
@@ -571,13 +559,13 @@
                 htmlString += document.getElementById("titleCell").innerHTML;
                 htmlString += "</td><td>";
                 htmlString += document.getElementById("numBallsCell").innerHTML;
-                htmlString += "</td><td>";
+                htmlString += "</td><td>=DOLLAR(";
                 htmlString += document.getElementById("unitPriceCell").innerHTML;
-                htmlString += "</td>";
+                htmlString += ",2)</td>";
 
                 htmlString += "<td>=DOLLAR(INDIRECT(\"C\" & ROW()) * INDIRECT(\"D\" & ROW()))</td>";
-                htmlString += "<td>=ROUND(INDIRECT(\"E\" & ROW())*2,0)/2</td>";
-                htmlString += "<td>=FLOOR(INDIRECT(\"E\" & ROW()),1)</td>";
+                htmlString += "<td>=DOLLAR(ROUND(INDIRECT(\"E\" & ROW())*2,0)/2)</td>";
+                htmlString += "<td>=DOLLAR(FLOOR(INDIRECT(\"E\" & ROW()),1))</td>";
 
                 for (var i = 0; i < 2; i++) {
                     htmlString += "<td></td>";
