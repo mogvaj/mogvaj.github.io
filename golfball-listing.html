@@ -15,6 +15,7 @@
             <div id="selectorContainer"></div>
             <div id="multicolorContainer"></div>
             <div id="numBallsContainer"></div>
+            <div id="priceContainer"></div>
             <div id="conditionContainer"></div>
             <div id="buttonContainer"></div>
             <hr>
@@ -31,6 +32,9 @@
                 },
                 "callawayAssorted": {
                     "name": "Callaway Assorted"
+                },
+                "callawaySoftAssorted": {
+                    "name": "Callaway Soft Assorted"
                 },
                 "kirkland": {
                     "name": "Kirkland"
@@ -61,6 +65,7 @@
             buildTypeSelector(document.getElementById("selectorContainer"));
             buildMulticolorSelector(document.getElementById("multicolorContainer"));
             buildNumBallsInput(document.getElementById("numBallsContainer"));
+            buildPriceInput(document.getElementById("priceContainer"));
             buildConditionSelector(document.getElementById("conditionContainer"))
             buildButtons(document.getElementById("buttonContainer"));
 
@@ -190,6 +195,83 @@
                 }
             }
 
+            function buildPriceInput(aParentElement) {
+                var labelElement = createDOMElement({
+                    "ELtype": "h3",
+                    "ELclasses": [ "font-weight-bold" ],
+                    "ELhtmlString": "Enter the price for this batch:",
+                    "ELparentElement": aParentElement
+                });
+
+
+                /*
+                    <form>
+                        <div class="form-row">
+                            <div class="col-auto">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">@</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                */
+
+                var formElement = createDOMElement({
+                    "ELtype": "form",
+                    "ELparentElement": aParentElement
+                });
+
+                var formRow = createDOMElement({
+                    "ELtype": "div",
+                    "ELclasses": [ "form-row" ],
+                    "ELparentElement": formElement
+                });
+
+                var colAuto = createDOMElement({
+                    "ELtype": "div",
+                    "ELclasses": [ "col-auto" ],
+                    "ELparentElement": formRow
+                });
+
+                var inputGroup = createDOMElement({
+                    "ELtype": "div",
+                    "ELclasses": [ "input-group" ],
+                    "ELparentElement": colAuto
+                });
+
+                var inputGroupPrepend = createDOMElement({
+                    "ELtype": "div",
+                    "ELclasses": [ "input-group-prepend" ],
+                    "ELparentElement": inputGroup
+                });
+
+                var dollarSign = createDOMElement({
+                    "ELtype": "div",
+                    "ELclasses": [ "input-group-text" ],
+                    "ELhtmlString": "$",
+                    "ELparentElement": inputGroupPrepend
+                });
+
+                var inputElement = createDOMElement({
+                    "ELtype": "input",
+                    "ELclasses": [ "form-control" ],
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "price" },
+                        { "ELname": "value", "ELvalue": "0" }
+                    ],
+                    "ELparentElement": inputGroup
+                });
+
+                for (var i = 0; i < 2; i++) {
+                    var blankLine = createDOMElement({
+                        "ELtype": "br",
+                        "ELparentElement": aParentElement
+                    });
+                }
+            }
+
             function buildConditionSelector(aParentElement) {
                 var labelElement = createDOMElement({
                     "ELtype": "h3",
@@ -240,7 +322,7 @@
             function buildButtons(aParentElement) {
                 var generateKSLButton = createDOMElement({
                     "ELtype": "button",
-                    "ELclasses": [ "btn",  "btn-primary" ],
+                    "ELclasses": [ "btn",  "btn-success" ],
                     "ELattributes": [
                         { "ELname": "type", "ELvalue": "button" },
                         { "ELname": "onclick", "ELvalue": "generate('ksl');" }
@@ -251,7 +333,7 @@
 
                 var generateFBButton = createDOMElement({
                     "ELtype": "button",
-                    "ELclasses": [ "btn",  "btn-primary", "ml-3" ],
+                    "ELclasses": [ "btn",  "btn-success", "ml-3" ],
                     "ELattributes": [
                         { "ELname": "type", "ELvalue": "button" },
                         { "ELname": "onclick", "ELvalue": "generate('fb');" }
@@ -265,6 +347,7 @@
                 var parentElement = document.getElementById("outputDiv");
                 $(parentElement).empty();
 
+                // Generate the Title text
                 var titleDiv = createDOMElement({
                     "ELtype": "div",
                     "ELclasses": [ "font-weight-bold" ],
@@ -314,6 +397,7 @@
                     });
                 }
 
+                // Generate the description text
                 var descriptionDiv = createDOMElement({
                     "ELtype": "div",
                     "ELclasses": [ "font-weight-bold" ],
@@ -326,6 +410,9 @@
 
                 var descriptionString = "";
                 descriptionString += "Selling ";
+                if (balltypes[document.getElementById("typeSelect").value].name === "Ugly") {
+                    descriptionString += "multiple batches of ";
+                }
                 descriptionString += document.getElementById("numBalls").value;
                 descriptionString += " ";
                 descriptionString += balltypes[document.getElementById("typeSelect").value].name;
@@ -336,7 +423,9 @@
                 descriptionString += " golf balls. ";
                 if (balltypes[document.getElementById("typeSelect").value].name !== "Ugly") {
                     descriptionString += "None recovered from water. ";
-
+                }
+                else {
+                    descriptionString += "Actual balls may differ from those in this listing's photo. ";
                 }
                 descriptionString += "All in ";
                 descriptionString += document.getElementById("conditionSelect").value.toLowerCase();
@@ -366,6 +455,99 @@
                     "ELparentElement": parentElement
                 });
 
+                for (var i = 0; i < 2; i++) {
+                    var blankLine = createDOMElement({
+                        "ELtype": "br",
+                        "ELparentElement": parentElement
+                    });
+                }
+
+
+                // Generate the spreadsheet entry
+                var tableDiv = createDOMElement({
+                    "ELtype": "div",
+                    "ELclasses": [ "font-weight-bold" ],
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "tableDiv" },
+                    ],
+                    "ELhtmlString": "Spreadsheet entry:<br> ",
+                    "ELparentElement": parentElement
+                });
+
+                var table = createDOMElement({
+                    "ELtype": "table",
+                    "ELclasses": [ "table", "table-bordered" ],
+                    "ELparentElement": tableDiv
+                });
+
+                var row = createDOMElement({
+                    "ELtype": "tr",
+                    "ELparentElement": table
+                });
+
+                var today = new Date;
+                var titleText = today.getFullYear();
+                titleText += ("0" + (today.getMonth() + 1)).slice(-2);
+                titleText += "-";
+                titleText += document.getElementById("numBalls").value;
+                titleText += "-";
+                titleText += balltypes[document.getElementById("typeSelect").value].name.toLowerCase().replace(" ", "-");
+                var colTitle = createDOMElement({
+                    "ELtype": "td",
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "titleCell" }
+                    ],
+                    "ELhtmlString": titleText,
+                    "ELparentElement": row
+                });
+
+                var colQuantity = createDOMElement({
+                    "ELtype": "td",
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "numBallsCell" }
+                    ],
+                    "ELhtmlString": document.getElementById("numBalls").value,
+                    "ELparentElement": row
+                });
+
+                var unitPrice = document.getElementById("price").value / document.getElementById("numBalls").value;
+                var colUnitPrice = createDOMElement({
+                    "ELtype": "td",
+                    "ELattributes": [
+                        { "ELname": "id", "ELvalue": "unitPriceCell" }
+                    ],
+                    "ELhtmlString": unitPrice,
+                    "ELparentElement": row
+                });
+
+                for (var i = 0; i < 5; i++) {
+                    var newEmptyCol = createDOMElement({
+                        "ELtype": "td",
+                        "ELparentElement": row
+                    });
+                }
+
+                for (var i = 0; i < 2; i++) {
+                    var newDateCol = createDOMElement({
+                        "ELtype": "td",
+                        "ELattributes": [
+                            { "ELname": "id", "ELvalue": ("dateCell-" + i) }
+                        ],
+                        "ELhtmlString": today.getMonth() + "/" + today.getDate() + "/" + today.getFullYear(),
+                        "ELparentElement": row
+                    });
+                }
+
+                var spreadsheetCopyButton = createDOMElement({
+                    "ELtype": "button",
+                    "ELclasses": [ "btn", "btn-primary" ],
+                    "ELattributes": [
+                        { "ELname": "type", "ELvalue": "button" },
+                        { "ELname": "onclick", "ELvalue": "copySpreadsheet();" }
+                    ],
+                    "ELhtmlString": "Copy Spreadsheet to Clipboard",
+                    "ELparentElement": parentElement
+                });
             }
 
             function addToClipboard(anElementId) {
@@ -379,6 +561,44 @@
                 document.body.appendChild(el);
                 el.select();
                 document.execCommand('copy');
+                document.body.removeChild(el);
+            }
+
+            function copySpreadsheet() {
+                var htmlString = "";
+
+                htmlString += "<table><row><td>";
+                htmlString += document.getElementById("titleCell").innerHTML;
+                htmlString += "</td><td>";
+                htmlString += document.getElementById("numBallsCell").innerHTML;
+                htmlString += "</td><td>";
+                htmlString += document.getElementById("unitPriceCell").innerHTML;
+                htmlString += "</td>";
+
+                htmlString += "<td>=DOLLAR(INDIRECT(\"C\" & ROW()) * INDIRECT(\"D\" & ROW()))</td>";
+                htmlString += "<td>=ROUND(INDIRECT(\"E\" & ROW())*2,0)/2</td>";
+                htmlString += "<td>=FLOOR(INDIRECT(\"E\" & ROW()),1)</td>";
+
+                for (var i = 0; i < 2; i++) {
+                    htmlString += "<td></td>";
+                }
+                for (var i = 0; i < 2; i++) {
+                    htmlString += "<td>";
+                    htmlString += document.getElementById("dateCell-0").innerHTML;
+                    htmlString += "</td>";
+                }
+                htmlString += "</row></table>";
+
+                var el = document.createElement('div');
+                el.id = "spreadsheetHTML";
+                el.innerText = htmlString;
+                el.setAttribute('hidden', '');
+                el.style.position = 'absolute';
+                el.style.left = '-9999px';
+                document.body.appendChild(el);
+
+                addToClipboard('spreadsheetHTML');
+
                 document.body.removeChild(el);
             }
 
