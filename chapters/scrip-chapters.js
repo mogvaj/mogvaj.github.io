@@ -158,6 +158,53 @@ var books = {
             "2015-11-1480-1-corinthians-15-male-voice-64k-eng.mp3",
             "2015-11-1490-1-corinthians-16-male-voice-64k-eng.mp3",
 
+            "2015-11-1500-2-corinthians-01-male-voice-64k-eng.mp3",
+            "2015-11-1510-2-corinthians-02-male-voice-64k-eng.mp3",
+            "2015-11-1520-2-corinthians-03-male-voice-64k-eng.mp3",
+            "2015-11-1530-2-corinthians-04-male-voice-64k-eng.mp3",
+            "2015-11-1540-2-corinthians-05-male-voice-64k-eng.mp3",
+            "2015-11-1550-2-corinthians-06-male-voice-64k-eng.mp3",
+            "2015-11-1560-2-corinthians-07-male-voice-64k-eng.mp3",
+            "2015-11-1570-2-corinthians-08-male-voice-64k-eng.mp3",
+            "2015-11-1580-2-corinthians-09-male-voice-64k-eng.mp3",
+            "2015-11-1590-2-corinthians-10-male-voice-64k-eng.mp3",
+            "2015-11-1600-2-corinthians-11-male-voice-64k-eng.mp3",
+            "2015-11-1610-2-corinthians-12-male-voice-64k-eng.mp3",
+            "2015-11-1620-2-corinthians-13-male-voice-64k-eng.mp3",
+
+            "2015-11-1630-galatians-01-male-voice-64k-eng.mp3",
+            "2015-11-1640-galatians-02-male-voice-64k-eng.mp3",
+            "2015-11-1650-galatians-03-male-voice-64k-eng.mp3",
+            "2015-11-1660-galatians-04-male-voice-64k-eng.mp3",
+            "2015-11-1670-galatians-05-male-voice-64k-eng.mp3",
+            "2015-11-1680-galatians-06-male-voice-64k-eng.mp3",
+
+            "2015-11-1690-ephesians-01-male-voice-64k-eng.mp3",
+            "2015-11-1700-ephesians-02-male-voice-64k-eng.mp3",
+            "2015-11-1710-ephesians-03-male-voice-64k-eng.mp3",
+            "2015-11-1720-ephesians-04-male-voice-64k-eng.mp3",
+            "2015-11-1730-ephesians-05-male-voice-64k-eng.mp3",
+            "2015-11-1740-ephesians-06-male-voice-64k-eng.mp3",
+
+            "2015-11-1750-philippians-01-male-voice-64k-eng.mp3",
+            "2015-11-1760-philippians-02-male-voice-64k-eng.mp3",
+            "2015-11-1770-philippians-03-male-voice-64k-eng.mp3",
+            "2015-11-1780-philippians-04-male-voice-64k-eng.mp3",
+
+            "2015-11-1790-colossians-01-male-voice-64k-eng.mp3",
+            "2015-11-1800-colossians-02-male-voice-64k-eng.mp3",
+            "2015-11-1810-colossians-03-male-voice-64k-eng.mp3",
+            "2015-11-1820-colossians-04-male-voice-64k-eng.mp3",
+
+            "2015-11-1830-1-thessalonians-01-male-voice-64k-eng.mp3",
+            "2015-11-1840-1-thessalonians-02-male-voice-64k-eng.mp3",
+            "2015-11-1850-1-thessalonians-03-male-voice-64k-eng.mp3",
+            "2015-11-1860-1-thessalonians-04-male-voice-64k-eng.mp3",
+            "2015-11-1870-1-thessalonians-05-male-voice-64k-eng.mp3",
+
+            "2015-11-1880-2-thessalonians-01-male-voice-64k-eng.mp3",
+            "2015-11-1890-2-thessalonians-02-male-voice-64k-eng.mp3",
+            "2015-11-1900-2-thessalonians-03-male-voice-64k-eng.mp3",
         ],
         "chapters": {
             "matthew-01": `THE GOSPEL ACCORDING TO
@@ -6131,7 +6178,1011 @@ var books = {
             22 If any man love not the Lord Jesus Christ, let him be Anathema Maran-atha.
             23 The grace of our Lord Jesus Christ be with you.
             24 My love be with you all in Christ Jesus. Amen.
-            ¶ The first epistle to the Corinthians was written from Philippi by Stephanas, and Fortunatus, and Achaicus, and Timotheus.`
+            ¶ The first epistle to the Corinthians was written from Philippi by Stephanas, and Fortunatus, and Achaicus, and Timotheus.`,
+            "2-corinthians-01": `THE SECOND EPISTLE OF PAUL THE APOSTLE TO THE
+            CORINTHIANS
+            CHAPTER 1
+            God comforts and cares for His Saints—The Saints are sealed and given assurance by the Spirit in their hearts.
+            1 Paul, an apostle of Jesus Christ by the will of God, and Timothy our brother, unto the church of God which is at Corinth, with all the saints which are in all Achaia:
+            2 Grace be to you and peace from God our Father, and from the Lord Jesus Christ.
+            3 Blessed be God, even the Father of our Lord Jesus Christ, the Father of mercies, and the God of all comfort;
+            4 Who comforteth us in all our tribulation, that we may be able to comfort them which are in any trouble, by the comfort wherewith we ourselves are comforted of God.
+            5 For as the sufferings of Christ abound in us, so our consolation also aboundeth by Christ.
+            6 And whether we be afflicted, it is for your consolation and salvation, which is effectual in the enduring of the same sufferings which we also suffer: or whether we be comforted, it is for your consolation and salvation.
+            7 And our hope of you is steadfast, knowing, that as ye are partakers of the sufferings, so shall ye be also of the consolation.
+            8 For we would not, brethren, have you ignorant of our trouble which came to us in Asia, that we were pressed out of measure, above strength, insomuch that we despaired even of life:
+            9 But we had the sentence of death in ourselves, that we should not trust in ourselves, but in God which raiseth the dead:
+            10 Who delivered us from so great a death, and doth deliver: in whom we trust that he will yet deliver us;
+            11 Ye also helping together by prayer for us, that for the gift bestowed upon us by the means of many persons thanks may be given by many on our behalf.
+            12 For our rejoicing is this, the testimony of our conscience, that in simplicity and godly sincerity, not with fleshly wisdom, but by the grace of God, we have had our conversation in the world, and more abundantly to you-ward.
+            13 For we write none other things unto you, than what ye read or acknowledge; and I trust ye shall acknowledge even to the end;
+            14 As also ye have acknowledged us in part, that we are your rejoicing, even as ye also are ours in the day of the Lord Jesus.
+            15 And in this confidence I was minded to come unto you before, that ye might have a second benefit;
+            16 And to pass by you into Macedonia, and to come again out of Macedonia unto you, and of you to be brought on my way toward Judæa.
+            17 When I therefore was thus minded, did I use lightness? or the things that I purpose, do I purpose according to the flesh, that with me there should be yea yea, and nay nay?
+            18 But as God is true, our word toward you was not yea and nay.
+            19 For the Son of God, Jesus Christ, who was preached among you by us, even by me and Silvanus and Timotheus, was not yea and nay, but in him was yea.
+            20 For all the promises of God in him are yea, and in him Amen, unto the glory of God by us.
+            21 Now he which stablisheth us with you in Christ, and hath anointed us, is God;
+            22 Who hath also sealed us, and given the earnest of the Spirit in our hearts.
+            23 Moreover I call God for a record upon my soul, that to spare you I came not as yet unto Corinth.
+            24 Not for that we have dominion over your faith, but are helpers of your joy: for by faith ye stand.`,
+            "2-corinthians-02": `CHAPTER 2
+            Saints should love and forgive one another—They always triumph in Christ.
+            1 But I determined this with myself, that I would not come again to you in heaviness.
+            2 For if I make you sorry, who is he then that maketh me glad, but the same which is made sorry by me?
+            3 And I wrote this same unto you, lest, when I came, I should have sorrow from them of whom I ought to rejoice; having confidence in you all, that my joy is the joy of you all.
+            4 For out of much affliction and anguish of heart I wrote unto you with many tears; not that ye should be grieved, but that ye might know the love which I have more abundantly unto you.
+            5 But if any have caused grief, he hath not grieved me, but in part: that I may not overcharge you all.
+            6 Sufficient to such a man is this punishment, which was inflicted of many.
+            7 So that contrariwise ye ought rather to forgive him, and comfort him, lest perhaps such a one should be swallowed up with overmuch sorrow.
+            8 Wherefore I beseech you that ye would confirm your love toward him.
+            9 For to this end also did I write, that I might know the proof of you, whether ye be obedient in all things.
+            10 To whom ye forgive any thing, I forgive also: for if I forgave any thing, to whom I forgave it, for your sakes forgave I it in the person of Christ;
+            11 Lest Satan should get an advantage of us: for we are not ignorant of his devices.
+            12 Furthermore, when I came to Troas to preach Christ’s gospel, and a door was opened unto me of the Lord,
+            13 I had no rest in my spirit, because I found not Titus my brother: but taking my leave of them, I went from thence into Macedonia.
+            14 Now thanks be unto God, which always causeth us to triumph in Christ, and maketh manifest the savour of his knowledge by us in every place.
+            15 For we are unto God a sweet savour of Christ, in them that are saved, and in them that perish:
+            16 To the one we are the savour of death unto death; and to the other the savour of life unto life. And who is sufficient for these things?
+            17 For we are not as many, which corrupt the word of God: but as of sincerity, but as of God, in the sight of God speak we in Christ.`,
+            "2-corinthians-03": `CHAPTER 3
+            The gospel surpasses the law of Moses—Where the Spirit of the Lord is, there is liberty.
+            1 Do we begin again to commend ourselves? or need we, as some others, epistles of commendation to you, or letters of commendation from you?
+            2 Ye are our epistle written in our hearts, known and read of all men:
+            3 Forasmuch as ye are manifestly declared to be the epistle of Christ ministered by us, written not with ink, but with the Spirit of the living God; not in tables of stone, but in fleshy tables of the heart.
+            4 And such trust have we through Christ to God-ward:
+            5 Not that we are sufficient of ourselves to think any thing as of ourselves; but our sufficiency is of God;
+            6 Who also hath made us able ministers of the new testament; not of the letter, but of the spirit: for the letter killeth, but the spirit giveth life.
+            7 But if the ministration of death, written and engraven in stones, was glorious, so that the children of Israel could not steadfastly behold the face of Moses for the glory of his countenance; which glory was to be done away:
+            8 How shall not the ministration of the spirit be rather glorious?
+            9 For if the ministration of condemnation be glory, much more doth the ministration of righteousness exceed in glory.
+            10 For even that which was made glorious had no glory in this respect, by reason of the glory that excelleth.
+            11 For if that which is done away was glorious, much more that which remaineth is glorious.
+            12 Seeing then that we have such hope, we use great plainness of speech:
+            13 And not as Moses, which put a veil over his face, that the children of Israel could not steadfastly look to the end of that which is abolished:
+            14 But their minds were blinded: for until this day remaineth the same veil untaken away in the reading of the old testament; which veil is done away in Christ.
+            15 But even unto this day, when Moses is read, the veil is upon their heart.
+            16 Nevertheless when it shall turn to the Lord, the veil shall be taken away.
+            17 Now the Lord is that Spirit: and where the Spirit of the Lord is, there is liberty.
+            18 But we all, with open face beholding as in a glass the glory of the Lord, are changed into the same image from glory to glory, even as by the Spirit of the Lord.`,
+            "2-corinthians-04": `CHAPTER 4
+            Gospel light shines on the Saints—Mortal trials are nothing as contrasted with eternal glory.
+            1 Therefore seeing we have this ministry, as we have received mercy, we faint not;
+            2 But have renounced the hidden things of dishonesty, not walking in craftiness, nor handling the word of God deceitfully; but by manifestation of the truth commending ourselves to every man’s conscience in the sight of God.
+            3 But if our gospel be hid, it is hid to them that are lost:
+            4 In whom the god of this world hath blinded the minds of them which believe not, lest the light of the glorious gospel of Christ, who is the image of God, should shine unto them.
+            5 For we preach not ourselves, but Christ Jesus the Lord; and ourselves your servants for Jesus’ sake.
+            6 For God, who commanded the light to shine out of darkness, hath shined in our hearts, to give the light of the knowledge of the glory of God in the face of Jesus Christ.
+            7 But we have this treasure in earthen vessels, that the excellency of the power may be of God, and not of us.
+            8 We are troubled on every side, yet not distressed; we are perplexed, but not in despair;
+            9 Persecuted, but not forsaken; cast down, but not destroyed;
+            10 Always bearing about in the body the dying of the Lord Jesus, that the life also of Jesus might be made manifest in our body.
+            11 For we which live are alway delivered unto death for Jesus’ sake, that the life also of Jesus might be made manifest in our mortal flesh.
+            12 So then death worketh in us, but life in you.
+            13 We having the same spirit of faith, according as it is written, I believed, and therefore have I spoken; we also believe, and therefore speak;
+            14 Knowing that he which raised up the Lord Jesus shall raise up us also by Jesus, and shall present us with you.
+            15 For all things are for your sakes, that the abundant grace might through the thanksgiving of many redound to the glory of God.
+            16 For which cause we faint not; but though our outward man perish, yet the inward man is renewed day by day.
+            17 For our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory;
+            18 While we look not at the things which are seen, but at the things which are not seen: for the things which are seen are temporal; but the things which are not seen are eternal.`,
+            "2-corinthians-05": `CHAPTER 5
+            Saints walk by faith and seek tabernacles of immortal glory—The gospel reconciles man to God—God’s ministers carry the word of reconciliation to the world.
+            1 For we know that if our earthly house of this tabernacle were dissolved, we have a building of God, an house not made with hands, eternal in the heavens.
+            2 For in this we groan, earnestly desiring to be clothed upon with our house which is from heaven:
+            3 If so be that being clothed we shall not be found naked.
+            4 For we that are in this tabernacle do groan, being burdened: not for that we would be unclothed, but clothed upon, that mortality might be swallowed up of life.
+            5 Now he that hath wrought us for the selfsame thing is God, who also hath given unto us the earnest of the Spirit.
+            6 Therefore we are always confident, knowing that, whilst we are at home in the body, we are absent from the Lord:
+            7 (For we walk by faith, not by sight:)
+            8 We are confident, I say, and willing rather to be absent from the body, and to be present with the Lord.
+            9 Wherefore we labour, that, whether present or absent, we may be accepted of him.
+            10 For we must all appear before the judgment seat of Christ; that every one may receive the things done in his body, according to that he hath done, whether it be good or bad.
+            11 Knowing therefore the terror of the Lord, we persuade men; but we are made manifest unto God; and I trust also are made manifest in your consciences.
+            12 For we commend not ourselves again unto you, but give you occasion to glory on our behalf, that ye may have somewhat to answer them which glory in appearance, and not in heart.
+            13 For whether we be beside ourselves, it is to God: or whether we be sober, it is for your cause.
+            14 For the love of Christ constraineth us; because we thus judge, that if one died for all, then were all dead:
+            15 And that he died for all, that they which live should not henceforth live unto themselves, but unto him which died for them, and rose again.
+            16 Wherefore henceforth know we no man after the flesh: yea, though we have known Christ after the flesh, yet now henceforth know we him no more.
+            17 Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.
+            18 And all things are of God, who hath reconciled us to himself by Jesus Christ, and hath given to us the ministry of reconciliation;
+            19 To wit, that God was in Christ, reconciling the world unto himself, not imputing their trespasses unto them; and hath committed unto us the word of reconciliation.
+            20 Now then we are ambassadors for Christ, as though God did beseech you by us: we pray you in Christ’s stead, be ye reconciled to God.
+            21 For he hath made him to be sin for us, who knew no sin; that we might be made the righteousness of God in him.`,
+            "2-corinthians-06": `CHAPTER 6
+            Now is the day of salvation—God’s ministers must walk uprightly and bear all things—Saints should not be unequally yoked with unbelievers.
+            1 We then, as workers together with him, beseech you also that ye receive not the grace of God in vain.
+            2 (For he saith, I have heard thee in a time accepted, and in the day of salvation have I succoured thee: behold, now is the accepted time; behold, now is the day of salvation.)
+            3 Giving no offence in any thing, that the ministry be not blamed:
+            4 But in all things approving ourselves as the ministers of God, in much patience, in afflictions, in necessities, in distresses,
+            5 In stripes, in imprisonments, in tumults, in labours, in watchings, in fastings;
+            6 By pureness, by knowledge, by longsuffering, by kindness, by the Holy Ghost, by love unfeigned,
+            7 By the word of truth, by the power of God, by the armour of righteousness on the right hand and on the left,
+            8 By honour and dishonour, by evil report and good report: as deceivers, and yet true;
+            9 As unknown, and yet well known; as dying, and, behold, we live; as chastened, and not killed;
+            10 As sorrowful, yet alway rejoicing; as poor, yet making many rich; as having nothing, and yet possessing all things.
+            11 O ye Corinthians, our mouth is open unto you, our heart is enlarged.
+            12 Ye are not straitened in us, but ye are straitened in your own bowels.
+            13 Now for a recompence in the same, (I speak as unto my children,) be ye also enlarged.
+            14 Be ye not unequally yoked together with unbelievers: for what fellowship hath righteousness with unrighteousness? and what communion hath light with darkness?
+            15 And what concord hath Christ with Belial? or what part hath he that believeth with an infidel?
+            16 And what agreement hath the temple of God with idols? for ye are the temple of the living God; as God hath said, I will dwell in them, and walk in them; and I will be their God, and they shall be my people.
+            17 Wherefore come out from among them, and be ye separate, saith the Lord, and touch not the unclean thing; and I will receive you,
+            18 And will be a Father unto you, and ye shall be my sons and daughters, saith the Lord Almighty.`,
+            "2-corinthians-07": `CHAPTER 7
+            Godly sorrow for sin leads to repentance—The sorrow of the world leads to death.
+            1 Having therefore these promises, dearly beloved, let us cleanse ourselves from all filthiness of the flesh and spirit, perfecting holiness in the fear of God.
+            2 Receive us; we have wronged no man, we have corrupted no man, we have defrauded no man.
+            3 I speak not this to condemn you: for I have said before, that ye are in our hearts to die and live with you.
+            4 Great is my boldness of speech toward you, great is my glorying of you: I am filled with comfort, I am exceeding joyful in all our tribulation.
+            5 For, when we were come into Macedonia, our flesh had no rest, but we were troubled on every side; without were fightings, within were fears.
+            6 Nevertheless God, that comforteth those that are cast down, comforted us by the coming of Titus;
+            7 And not by his coming only, but by the consolation wherewith he was comforted in you, when he told us your earnest desire, your mourning, your fervent mind toward me; so that I rejoiced the more.
+            8 For though I made you sorry with a letter, I do not repent, though I did repent: for I perceive that the same epistle hath made you sorry, though it were but for a season.
+            9 Now I rejoice, not that ye were made sorry, but that ye sorrowed to repentance: for ye were made sorry after a godly manner, that ye might receive damage by us in nothing.
+            10 For godly sorrow worketh repentance to salvation not to be repented of: but the sorrow of the world worketh death.
+            11 For behold this selfsame thing, that ye sorrowed after a godly sort, what carefulness it wrought in you, yea, what clearing of yourselves, yea, what indignation, yea, what fear, yea, what vehement desire, yea, what zeal, yea, what revenge! In all things ye have approved yourselves to be clear in this matter.
+            12 Wherefore, though I wrote unto you, I did it not for his cause that had done the wrong, nor for his cause that suffered wrong, but that our care for you in the sight of God might appear unto you.
+            13 Therefore we were comforted in your comfort: yea, and exceedingly the more joyed we for the joy of Titus, because his spirit was refreshed by you all.
+            14 For if I have boasted any thing to him of you, I am not ashamed; but as we spake all things to you in truth, even so our boasting, which I made before Titus, is found a truth.
+            15 And his inward affection is more abundant toward you, whilst he remembereth the obedience of you all, how with fear and trembling ye received him.
+            16 I rejoice therefore that I have confidence in you in all things.`,
+            "2-corinthians-08": `CHAPTER 8
+            True Saints impart of their substance to the poor—Christ, out of His poverty, brought eternal riches.
+            1 Moreover, brethren, we do you to wit of the grace of God bestowed on the churches of Macedonia;
+            2 How that in a great trial of affliction the abundance of their joy and their deep poverty abounded unto the riches of their liberality.
+            3 For to their power, I bear record, yea, and beyond their power they were willing of themselves;
+            4 Praying us with much entreaty that we would receive the gift, and take upon us the fellowship of the ministering to the saints.
+            5 And this they did, not as we hoped, but first gave their own selves to the Lord, and unto us by the will of God.
+            6 Insomuch that we desired Titus, that as he had begun, so he would also finish in you the same grace also.
+            7 Therefore, as ye abound in every thing, in faith, and utterance, and knowledge, and in all diligence, and in your love to us, see that ye abound in this grace also.
+            8 I speak not by commandment, but by occasion of the forwardness of others, and to prove the sincerity of your love.
+            9 For ye know the grace of our Lord Jesus Christ, that, though he was rich, yet for your sakes he became poor, that ye through his poverty might be rich.
+            10 And herein I give my advice: for this is expedient for you, who have begun before, not only to do, but also to be forward a year ago.
+            11 Now therefore perform the doing of it; that as there was a readiness to will, so there may be a performance also out of that which ye have.
+            12 For if there be first a willing mind, it is accepted according to that a man hath, and not according to that he hath not.
+            13 For I mean not that other men be eased, and ye burdened:
+            14 But by an equality, that now at this time your abundance may be a supply for their want, that their abundance also may be a supply for your want: that there may be equality:
+            15 As it is written, He that had gathered much had nothing over; and he that had gathered little had no lack.
+            16 But thanks be to God, which put the same earnest care into the heart of Titus for you.
+            17 For indeed he accepted the exhortation; but being more forward, of his own accord he went unto you.
+            18 And we have sent with him the brother, whose praise is in the gospel throughout all the churches;
+            19 And not that only, but who was also chosen of the churches to travel with us with this grace, which is administered by us to the glory of the same Lord, and declaration of your ready mind:
+            20 Avoiding this, that no man should blame us in this abundance which is administered by us:
+            21 Providing for honest things, not only in the sight of the Lord, but also in the sight of men.
+            22 And we have sent with them our brother, whom we have oftentimes proved diligent in many things, but now much more diligent, upon the great confidence which I have in you.
+            23 Whether any do inquire of Titus, he is my partner and fellowhelper concerning you: or our brethren be inquired of, they are the messengers of the churches, and the glory of Christ.
+            24 Wherefore shew ye to them, and before the churches, the proof of your love, and of our boasting on your behalf.`,
+            "2-corinthians-09": `CHAPTER 9
+            God loves and rewards a cheerful giver—Thanks be to God for His unspeakable gift.
+            1 For as touching the ministering to the saints, it is superfluous for me to write to you:
+            2 For I know the forwardness of your mind, for which I boast of you to them of Macedonia, that Achaia was ready a year ago; and your zeal hath provoked very many.
+            3 Yet have I sent the brethren, lest our boasting of you should be in vain in this behalf; that, as I said, ye may be ready:
+            4 Lest haply if they of Macedonia come with me, and find you unprepared, we (that we say not, ye) should be ashamed in this same confident boasting.
+            5 Therefore I thought it necessary to exhort the brethren, that they would go before unto you, and make up beforehand your bounty, whereof ye had notice before, that the same might be ready, as a matter of bounty, and not as of covetousness.
+            6 But this I say, He which soweth sparingly shall reap also sparingly; and he which soweth bountifully shall reap also bountifully.
+            7 Every man according as he purposeth in his heart, so let him give; not grudgingly, or of necessity: for God loveth a cheerful giver.
+            8 And God is able to make all grace abound toward you; that ye, always having all sufficiency in all things, may abound to every good work:
+            9 (As it is written, He hath dispersed abroad; he hath given to the poor: his righteousness remaineth for ever.
+            10 Now he that ministereth seed to the sower both minister bread for your food, and multiply your seed sown, and increase the fruits of your righteousness;)
+            11 Being enriched in every thing to all bountifulness, which causeth through us thanksgiving to God.
+            12 For the administration of this service not only supplieth the want of the saints, but is abundant also by many thanksgivings unto God;
+            13 Whiles by the experiment of this ministration they glorify God for your professed subjection unto the gospel of Christ, and for your liberal distribution unto them, and unto all men;
+            14 And by their prayer for you, which long after you for the exceeding grace of God in you.
+            15 Thanks be unto God for his unspeakable gift.`,
+            "2-corinthians-10": `CHAPTER 10
+            Bring every thought into obedience—Paul glories in the Lord.
+            1 Now I Paul myself beseech you by the meekness and gentleness of Christ, who in presence am base among you, but being absent am bold toward you:
+            2 But I beseech you, that I may not be bold when I am present with that confidence, wherewith I think to be bold against some, which think of us as if we walked according to the flesh.
+            3 For though we walk in the flesh, we do not war after the flesh:
+            4 (For the weapons of our warfare are not carnal, but mighty through God to the pulling down of strong holds;)
+            5 Casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and bringing into captivity every thought to the obedience of Christ;
+            6 And having in a readiness to revenge all disobedience, when your obedience is fulfilled.
+            7 Do ye look on things after the outward appearance? If any man trust to himself that he is Christ’s, let him of himself think this again, that, as he is Christ’s, even so are we Christ’s.
+            8 For though I should boast somewhat more of our authority, which the Lord hath given us for edification, and not for your destruction, I should not be ashamed:
+            9 That I may not seem as if I would terrify you by letters.
+            10 For his letters, say they, are weighty and powerful; but his bodily presence is weak, and his speech contemptible.
+            11 Let such an one think this, that, such as we are in word by letters when we are absent, such will we be also in deed when we are present.
+            12 For we dare not make ourselves of the number, or compare ourselves with some that commend themselves: but they measuring themselves by themselves, and comparing themselves among themselves, are not wise.
+            13 But we will not boast of things without our measure, but according to the measure of the rule which God hath distributed to us, a measure to reach even unto you.
+            14 For we stretch not ourselves beyond our measure, as though we reached not unto you: for we are come as far as to you also in preaching the gospel of Christ:
+            15 Not boasting of things without our measure, that is, of other men’s labours; but having hope, when your faith is increased, that we shall be enlarged by you according to our rule abundantly,
+            16 To preach the gospel in the regions beyond you, and not to boast in another man’s line of things made ready to our hand.
+            17 But he that glorieth, let him glory in the Lord.
+            18 For not he that commendeth himself is approved, but whom the Lord commendeth.`,
+            "2-corinthians-11": `CHAPTER 11
+            Maintain the simplicity that is in Christ—Satan sends forth false apostles—Paul glories in his sufferings for Christ.
+            1 Would to God ye could bear with me a little in my folly: and indeed bear with me.
+            2 For I am jealous over you with godly jealousy: for I have espoused you to one husband, that I may present you as a chaste virgin to Christ.
+            3 But I fear, lest by any means, as the serpent beguiled Eve through his subtilty, so your minds should be corrupted from the simplicity that is in Christ.
+            4 For if he that cometh preacheth another Jesus, whom we have not preached, or if ye receive another spirit, which ye have not received, or another gospel, which ye have not accepted, ye might well bear with him.
+            5 For I suppose I was not a whit behind the very chiefest apostles.
+            6 But though I be rude in speech, yet not in knowledge; but we have been throughly made manifest among you in all things.
+            7 Have I committed an offence in abasing myself that ye might be exalted, because I have preached to you the gospel of God freely?
+            8 I robbed other churches, taking wages of them, to do you service.
+            9 And when I was present with you, and wanted, I was chargeable to no man: for that which was lacking to me the brethren which came from Macedonia supplied: and in all things I have kept myself from being burdensome unto you, and so will I keep myself.
+            10 As the truth of Christ is in me, no man shall stop me of this boasting in the regions of Achaia.
+            11 Wherefore? because I love you not? God knoweth.
+            12 But what I do, that I will do, that I may cut off occasion from them which desire occasion; that wherein they glory, they may be found even as we.
+            13 For such are false apostles, deceitful workers, transforming themselves into the apostles of Christ.
+            14 And no marvel; for Satan himself is transformed into an angel of light.
+            15 Therefore it is no great thing if his ministers also be transformed as the ministers of righteousness; whose end shall be according to their works.
+            16 I say again, Let no man think me a fool; if otherwise, yet as a fool receive me, that I may boast myself a little.
+            17 That which I speak, I speak it not after the Lord, but as it were foolishly, in this confidence of boasting.
+            18 Seeing that many glory after the flesh, I will glory also.
+            19 For ye suffer fools gladly, seeing ye yourselves are wise.
+            20 For ye suffer, if a man bring you into bondage, if a man devour you, if a man take of you, if a man exalt himself, if a man smite you on the face.
+            21 I speak as concerning reproach, as though we had been weak. Howbeit whereinsoever any is bold, (I speak foolishly,) I am bold also.
+            22 Are they Hebrews? so am I. Are they Israelites? so am I. Are they the seed of Abraham? so am I.
+            23 Are they ministers of Christ? (I speak as a fool) I am more; in labours more abundant, in stripes above measure, in prisons more frequent, in deaths oft.
+            24 Of the Jews five times received I forty stripes save one.
+            25 Thrice was I beaten with rods, once was I stoned, thrice I suffered shipwreck, a night and a day I have been in the deep;
+            26 In journeyings often, in perils of waters, in perils of robbers, in perils by mine own countrymen, in perils by the heathen, in perils in the city, in perils in the wilderness, in perils in the sea, in perils among false brethren;
+            27 In weariness and painfulness, in watchings often, in hunger and thirst, in fastings often, in cold and nakedness.
+            28 Beside those things that are without, that which cometh upon me daily, the care of all the churches.
+            29 Who is weak, and I am not weak? who is offended, and I burn not?
+            30 If I must needs glory, I will glory of the things which concern mine infirmities.
+            31 The God and Father of our Lord Jesus Christ, which is blessed for evermore, knoweth that I lie not.
+            32 In Damascus the governor under Aretas the king kept the city of the Damascenes with a garrison, desirous to apprehend me:
+            33 And through a window in a basket was I let down by the wall, and escaped his hands.`,
+            "2-corinthians-12": `CHAPTER 12
+            Paul is caught up to the third heaven—The Lord gives men weaknesses that they may triumph over them—Paul manifests the signs of an Apostle.
+            1 It is not expedient for me doubtless to glory. I will come to visions and revelations of the Lord.
+            2 I knew a man in Christ above fourteen years ago, (whether in the body, I cannot tell; or whether out of the body, I cannot tell: God knoweth;) such an one caught up to the third heaven.
+            3 And I knew such a man, (whether in the body, or out of the body, I cannot tell: God knoweth;)
+            4 How that he was caught up into paradise, and heard unspeakable words, which it is not lawful for a man to utter.
+            5 Of such an one will I glory: yet of myself I will not glory, but in mine infirmities.
+            6 For though I would desire to glory, I shall not be a fool; for I will say the truth: but now I forbear, lest any man should think of me above that which he seeth me to be, or that he heareth of me.
+            7 And lest I should be exalted above measure through the abundance of the revelations, there was given to me a thorn in the flesh, the messenger of Satan to buffet me, lest I should be exalted above measure.
+            8 For this thing I besought the Lord thrice, that it might depart from me.
+            9 And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness. Most gladly therefore will I rather glory in my infirmities, that the power of Christ may rest upon me.
+            10 Therefore I take pleasure in infirmities, in reproaches, in necessities, in persecutions, in distresses for Christ’s sake: for when I am weak, then am I strong.
+            11 I am become a fool in glorying; ye have compelled me: for I ought to have been commended of you: for in nothing am I behind the very chiefest apostles, though I be nothing.
+            12 Truly the signs of an apostle were wrought among you in all patience, in signs, and wonders, and mighty deeds.
+            13 For what is it wherein ye were inferior to other churches, except it be that I myself was not burdensome to you? forgive me this wrong.
+            14 Behold, the third time I am ready to come to you; and I will not be burdensome to you: for I seek not yours, but you: for the children ought not to lay up for the parents, but the parents for the children.
+            15 And I will very gladly spend and be spent for you; though the more abundantly I love you, the less I be loved.
+            16 But be it so, I did not burden you: nevertheless, being crafty, I caught you with guile.
+            17 Did I make a gain of you by any of them whom I sent unto you?
+            18 I desired Titus, and with him I sent a brother. Did Titus make a gain of you? walked we not in the same spirit? walked we not in the same steps?
+            19 Again, think ye that we excuse ourselves unto you? we speak before God in Christ: but we do all things, dearly beloved, for your edifying.
+            20 For I fear, lest, when I come, I shall not find you such as I would, and that I shall be found unto you such as ye would not: lest there be debates, envyings, wraths, strifes, backbitings, whisperings, swellings, tumults:
+            21 And lest, when I come again, my God will humble me among you, and that I shall bewail many which have sinned already, and have not repented of the uncleanness and fornication and lasciviousness which they have committed.`,
+            "2-corinthians-13": `CHAPTER 13
+            Saints should test themselves as to righteousness—Be perfect and of one mind; live in peace.
+            1 This is the third time I am coming to you. In the mouth of two or three witnesses shall every word be established.
+            2 I told you before, and foretell you, as if I were present, the second time; and being absent now I write to them which heretofore have sinned, and to all other, that, if I come again, I will not spare:
+            3 Since ye seek a proof of Christ speaking in me, which to you-ward is not weak, but is mighty in you.
+            4 For though he was crucified through weakness, yet he liveth by the power of God. For we also are weak in him, but we shall live with him by the power of God toward you.
+            5 Examine yourselves, whether ye be in the faith; prove your own selves. Know ye not your own selves, how that Jesus Christ is in you, except ye be reprobates?
+            6 But I trust that ye shall know that we are not reprobates.
+            7 Now I pray to God that ye do no evil; not that we should appear approved, but that ye should do that which is honest, though we be as reprobates.
+            8 For we can do nothing against the truth, but for the truth.
+            9 For we are glad, when we are weak, and ye are strong: and this also we wish, even your perfection.
+            10 Therefore I write these things being absent, lest being present I should use sharpness, according to the power which the Lord hath given me to edification, and not to destruction.
+            11 Finally, brethren, farewell. Be perfect, be of good comfort, be of one mind, live in peace; and the God of love and peace shall be with you.
+            12 Greet one another with an holy kiss.
+            13 All the saints salute you.
+            14 The grace of the Lord Jesus Christ, and the love of God, and the communion of the Holy Ghost, be with you all. Amen.
+            ¶ The second epistle to the Corinthians was written from Philippi, a city of Macedonia, by Titus and Lucas.`,
+            "galatians-01": `THE EPISTLE OF PAUL THE APOSTLE
+            TO THE
+            GALATIANS
+            CHAPTER 1
+            Preachers of false gospels are accursed—Paul received the gospel by revelation—He believed, was taught, and preached to the Gentiles.
+            1 Paul, an apostle, (not of men, neither by man, but by Jesus Christ, and God the Father, who raised him from the dead;)
+            2 And all the brethren which are with me, unto the churches of Galatia:
+            3 Grace be to you and peace from God the Father, and from our Lord Jesus Christ,
+            4 Who gave himself for our sins, that he might deliver us from this present evil world, according to the will of God and our Father:
+            5 To whom be glory for ever and ever. Amen.
+            6 I marvel that ye are so soon removed from him that called you into the grace of Christ unto another gospel:
+            7 Which is not another; but there be some that trouble you, and would pervert the gospel of Christ.
+            8 But though we, or an angel from heaven, preach any other gospel unto you than that which we have preached unto you, let him be accursed.
+            9 As we said before, so say I now again, If any man preach any other gospel unto you than that ye have received, let him be accursed.
+            10 For do I now persuade men, or God? or do I seek to please men? for if I yet pleased men, I should not be the servant of Christ.
+            11 But I certify you, brethren, that the gospel which was preached of me is not after man.
+            12 For I neither received it of man, neither was I taught it, but by the revelation of Jesus Christ.
+            13 For ye have heard of my conversation in time past in the Jews’ religion, how that beyond measure I persecuted the church of God, and wasted it:
+            14 And profited in the Jews’ religion above many my equals in mine own nation, being more exceedingly zealous of the traditions of my fathers.
+            15 But when it pleased God, who separated me from my mother’s womb, and called me by his grace,
+            16 To reveal his Son in me, that I might preach him among the heathen; immediately I conferred not with flesh and blood:
+            17 Neither went I up to Jerusalem to them which were apostles before me; but I went into Arabia, and returned again unto Damascus.
+            18 Then after three years I went up to Jerusalem to see Peter, and abode with him fifteen days.
+            19 But other of the apostles saw I none, save James the Lord’s brother.
+            20 Now the things which I write unto you, behold, before God, I lie not.
+            21 Afterwards I came into the regions of Syria and Cilicia;
+            22 And was unknown by face unto the churches of Judæa which were in Christ:
+            23 But they had heard only, That he which persecuted us in times past now preacheth the faith which once he destroyed.
+            24 And they glorified God in me.`,
+            "galatians-02": `CHAPTER 2
+            Paul goes to Jerusalem—He contends for the true gospel—Salvation comes through Christ.
+            1 Then fourteen years after I went up again to Jerusalem with Barnabas, and took Titus with me also.
+            2 And I went up by revelation, and communicated unto them that gospel which I preach among the Gentiles, but privately to them which were of reputation, lest by any means I should run, or had run, in vain.
+            3 But neither Titus, who was with me, being a Greek, was compelled to be circumcised:
+            4 And that because of false brethren unawares brought in, who came in privily to spy out our liberty which we have in Christ Jesus, that they might bring us into bondage:
+            5 To whom we gave place by subjection, no, not for an hour; that the truth of the gospel might continue with you.
+            6 But of these who seemed to be somewhat, (whatsoever they were, it maketh no matter to me: God accepteth no man’s person:) for they who seemed to be somewhat in conference added nothing to me:
+            7 But contrariwise, when they saw that the gospel of the uncircumcision was committed unto me, as the gospel of the circumcision was unto Peter;
+            8 (For he that wrought effectually in Peter to the apostleship of the circumcision, the same was mighty in me toward the Gentiles:)
+            9 And when James, Cephas, and John, who seemed to be pillars, perceived the grace that was given unto me, they gave to me and Barnabas the right hands of fellowship; that we should go unto the heathen, and they unto the circumcision.
+            10 Only they would that we should remember the poor; the same which I also was forward to do.
+            11 But when Peter was come to Antioch, I withstood him to the face, because he was to be blamed.
+            12 For before that certain came from James, he did eat with the Gentiles: but when they were come, he withdrew and separated himself, fearing them which were of the circumcision.
+            13 And the other Jews dissembled likewise with him; insomuch that Barnabas also was carried away with their dissimulation.
+            14 But when I saw that they walked not uprightly according to the truth of the gospel, I said unto Peter before them all, If thou, being a Jew, livest after the manner of Gentiles, and not as do the Jews, why compellest thou the Gentiles to live as do the Jews?
+            15 We who are Jews by nature, and not sinners of the Gentiles,
+            16 Knowing that a man is not justified by the works of the law, but by the faith of Jesus Christ, even we have believed in Jesus Christ, that we might be justified by the faith of Christ, and not by the works of the law: for by the works of the law shall no flesh be justified.
+            17 But if, while we seek to be justified by Christ, we ourselves also are found sinners, is therefore Christ the minister of sin? God forbid.
+            18 For if I build again the things which I destroyed, I make myself a transgressor.
+            19 For I through the law am dead to the law, that I might live unto God.
+            20 I am crucified with Christ: nevertheless I live; yet not I, but Christ liveth in me: and the life which I now live in the flesh I live by the faith of the Son of God, who loved me, and gave himself for me.
+            21 I do not frustrate the grace of God: for if righteousness come by the law, then Christ is dead in vain.`,
+            "galatians-03": `CHAPTER 3
+            God gave the gospel to Abraham—The Mosaic law was added because of transgressions—The law was a schoolmaster until Christ—The Saints are children of God by faith—All who are of the faith and baptized into Christ become Abraham’s seed.
+            1 O foolish Galatians, who hath bewitched you, that ye should not obey the truth, before whose eyes Jesus Christ hath been evidently set forth, crucified among you?
+            2 This only would I learn of you, Received ye the Spirit by the works of the law, or by the hearing of faith?
+            3 Are ye so foolish? having begun in the Spirit, are ye now made perfect by the flesh?
+            4 Have ye suffered so many things in vain? if it be yet in vain.
+            5 He therefore that ministereth to you the Spirit, and worketh miracles among you, doeth he it by the works of the law, or by the hearing of faith?
+            6 Even as Abraham believed God, and it was accounted to him for righteousness.
+            7 Know ye therefore that they which are of faith, the same are the children of Abraham.
+            8 And the scripture, foreseeing that God would justify the heathen through faith, preached before the gospel unto Abraham, saying, In thee shall all nations be blessed.
+            9 So then they which be of faith are blessed with faithful Abraham.
+            10 For as many as are of the works of the law are under the curse: for it is written, Cursed is every one that continueth not in all things which are written in the book of the law to do them.
+            11 But that no man is justified by the law in the sight of God, it is evident: for, The just shall live by faith.
+            12 And the law is not of faith: but, The man that doeth them shall live in them.
+            13 Christ hath redeemed us from the curse of the law, being made a curse for us: for it is written, Cursed is every one that hangeth on a tree:
+            14 That the blessing of Abraham might come on the Gentiles through Jesus Christ; that we might receive the promise of the Spirit through faith.
+            15 Brethren, I speak after the manner of men; Though it be but a man’s covenant, yet if it be confirmed, no man disannulleth, or addeth thereto.
+            16 Now to Abraham and his seed were the promises made. He saith not, And to seeds, as of many; but as of one, And to thy seed, which is Christ.
+            17 And this I say, that the covenant, that was confirmed before of God in Christ, the law, which was four hundred and thirty years after, cannot disannul, that it should make the promise of none effect.
+            18 For if the inheritance be of the law, it is no more of promise: but God gave it to Abraham by promise.
+            19 Wherefore then serveth the law? It was added because of transgressions, till the seed should come to whom the promise was made; and it was ordained by angels in the hand of a mediator.
+            20 Now a mediator is not a mediator of one, but God is one.
+            21 Is the law then against the promises of God? God forbid: for if there had been a law given which could have given life, verily righteousness should have been by the law.
+            22 But the scripture hath concluded all under sin, that the promise by faith of Jesus Christ might be given to them that believe.
+            23 But before faith came, we were kept under the law, shut up unto the faith which should afterwards be revealed.
+            24 Wherefore the law was our schoolmaster to bring us unto Christ, that we might be justified by faith.
+            25 But after that faith is come, we are no longer under a schoolmaster.
+            26 For ye are all the children of God by faith in Christ Jesus.
+            27 For as many of you as have been baptized into Christ have put on Christ.
+            28 There is neither Jew nor Greek, there is neither bond nor free, there is neither male nor female: for ye are all one in Christ Jesus.
+            29 And if ye be Christ’s, then are ye Abraham’s seed, and heirs according to the promise.`,
+            "galatians-04": `CHAPTER 4
+            The Saints are children of God by adoption—Paul calls the Galatians back to Christ—He compares the two covenants.
+            1 Now I say, That the heir, as long as he is a child, differeth nothing from a servant, though he be lord of all;
+            2 But is under tutors and governors until the time appointed of the father.
+            3 Even so we, when we were children, were in bondage under the elements of the world:
+            4 But when the fulness of the time was come, God sent forth his Son, made of a woman, made under the law,
+            5 To redeem them that were under the law, that we might receive the adoption of sons.
+            6 And because ye are sons, God hath sent forth the Spirit of his Son into your hearts, crying, Abba, Father.
+            7 Wherefore thou art no more a servant, but a son; and if a son, then an heir of God through Christ.
+            8 Howbeit then, when ye knew not God, ye did service unto them which by nature are no gods.
+            9 But now, after that ye have known God, or rather are known of God, how turn ye again to the weak and beggarly elements, whereunto ye desire again to be in bondage?
+            10 Ye observe days, and months, and times, and years.
+            11 I am afraid of you, lest I have bestowed upon you labour in vain.
+            12 Brethren, I beseech you, be as I am; for I am as ye are: ye have not injured me at all.
+            13 Ye know how through infirmity of the flesh I preached the gospel unto you at the first.
+            14 And my temptation which was in my flesh ye despised not, nor rejected; but received me as an angel of God, even as Christ Jesus.
+            15 Where is then the blessedness ye spake of? for I bear you record, that, if it had been possible, ye would have plucked out your own eyes, and have given them to me.
+            16 Am I therefore become your enemy, because I tell you the truth?
+            17 They zealously affect you, but not well; yea, they would exclude you, that ye might affect them.
+            18 But it is good to be zealously affected always in a good thing, and not only when I am present with you.
+            19 My little children, of whom I travail in birth again until Christ be formed in you,
+            20 I desire to be present with you now, and to change my voice; for I stand in doubt of you.
+            21 Tell me, ye that desire to be under the law, do ye not hear the law?
+            22 For it is written, that Abraham had two sons, the one by a bondmaid, the other by a freewoman.
+            23 But he who was of the bondwoman was born after the flesh; but he of the freewoman was by promise.
+            24 Which things are an allegory: for these are the two covenants; the one from the mount Sinai, which gendereth to bondage, which is Agar.
+            25 For this Agar is mount Sinai in Arabia, and answereth to Jerusalem which now is, and is in bondage with her children.
+            26 But Jerusalem which is above is free, which is the mother of us all.
+            27 For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which hath an husband.
+            28 Now we, brethren, as Isaac was, are the children of promise.
+            29 But as then he that was born after the flesh persecuted him that was born after the Spirit, even so it is now.
+            30 Nevertheless what saith the scripture? Cast out the bondwoman and her son: for the son of the bondwoman shall not be heir with the son of the freewoman.
+            31 So then, brethren, we are not children of the bondwoman, but of the free.`,
+            "galatians-05": `CHAPTER 5
+            Stand fast in gospel liberty—Seek faith, love, Christ, and the Spirit—The works of the flesh and the fruits of the Spirit are named.
+            1 Stand fast therefore in the liberty wherewith Christ hath made us free, and be not entangled again with the yoke of bondage.
+            2 Behold, I Paul say unto you, that if ye be circumcised, Christ shall profit you nothing.
+            3 For I testify again to every man that is circumcised, that he is a debtor to do the whole law.
+            4 Christ is become of no effect unto you, whosoever of you are justified by the law; ye are fallen from grace.
+            5 For we through the Spirit wait for the hope of righteousness by faith.
+            6 For in Jesus Christ neither circumcision availeth any thing, nor uncircumcision; but faith which worketh by love.
+            7 Ye did run well; who did hinder you that ye should not obey the truth?
+            8 This persuasion cometh not of him that calleth you.
+            9 A little leaven leaveneth the whole lump.
+            10 I have confidence in you through the Lord, that ye will be none otherwise minded: but he that troubleth you shall bear his judgment, whosoever he be.
+            11 And I, brethren, if I yet preach circumcision, why do I yet suffer persecution? then is the offence of the cross ceased.
+            12 I would they were even cut off which trouble you.
+            13 For, brethren, ye have been called unto liberty; only use not liberty for an occasion to the flesh, but by love serve one another.
+            14 For all the law is fulfilled in one word, even in this; Thou shalt love thy neighbour as thyself.
+            15 But if ye bite and devour one another, take heed that ye be not consumed one of another.
+            16 This I say then, Walk in the Spirit, and ye shall not fulfil the lust of the flesh.
+            17 For the flesh lusteth against the Spirit, and the Spirit against the flesh: and these are contrary the one to the other: so that ye cannot do the things that ye would.
+            18 But if ye be led of the Spirit, ye are not under the law.
+            19 Now the works of the flesh are manifest, which are these; Adultery, fornication, uncleanness, lasciviousness,
+            20 Idolatry, witchcraft, hatred, variance, emulations, wrath, strife, seditions, heresies,
+            21 Envyings, murders, drunkenness, revellings, and such like: of the which I tell you before, as I have also told you in time past, that they which do such things shall not inherit the kingdom of God.
+            22 But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith,
+            23 Meekness, temperance: against such there is no law.
+            24 And they that are Christ’s have crucified the flesh with the affections and lusts.
+            25 If we live in the Spirit, let us also walk in the Spirit.
+            26 Let us not be desirous of vain glory, provoking one another, envying one another.`,
+            "galatians-06": `CHAPTER 6
+            Bear one another’s burdens—As you sow, so shall you reap—Be not weary in well-doing.
+            1 Brethren, if a man be overtaken in a fault, ye which are spiritual, restore such an one in the spirit of meekness; considering thyself, lest thou also be tempted.
+            2 Bear ye one another’s burdens, and so fulfil the law of Christ.
+            3 For if a man think himself to be something, when he is nothing, he deceiveth himself.
+            4 But let every man prove his own work, and then shall he have rejoicing in himself alone, and not in another.
+            5 For every man shall bear his own burden.
+            6 Let him that is taught in the word communicate unto him that teacheth in all good things.
+            7 Be not deceived; God is not mocked: for whatsoever a man soweth, that shall he also reap.
+            8 For he that soweth to his flesh shall of the flesh reap corruption; but he that soweth to the Spirit shall of the Spirit reap life everlasting.
+            9 And let us not be weary in well doing: for in due season we shall reap, if we faint not.
+            10 As we have therefore opportunity, let us do good unto all men, especially unto them who are of the household of faith.
+            11 Ye see how large a letter I have written unto you with mine own hand.
+            12 As many as desire to make a fair shew in the flesh, they constrain you to be circumcised; only lest they should suffer persecution for the cross of Christ.
+            13 For neither they themselves who are circumcised keep the law; but desire to have you circumcised, that they may glory in your flesh.
+            14 But God forbid that I should glory, save in the cross of our Lord Jesus Christ, by whom the world is crucified unto me, and I unto the world.
+            15 For in Christ Jesus neither circumcision availeth any thing, nor uncircumcision, but a new creature.
+            16 And as many as walk according to this rule, peace be on them, and mercy, and upon the Israel of God.
+            17 From henceforth let no man trouble me: for I bear in my body the marks of the Lord Jesus.
+            18 Brethren, the grace of our Lord Jesus Christ be with your spirit. Amen.
+            ¶ Unto the Galatians written from Rome.`,
+            "ephesians-01": `THE EPISTLE OF PAUL THE APOSTLE
+            TO THE
+            EPHESIANS
+            CHAPTER 1
+            The Saints are foreordained to receive the gospel—The gospel is to be restored in the latter days—The Saints are sealed by the Holy Spirit of Promise—They know God and Christ by revelation.
+            1 Paul, an apostle of Jesus Christ by the will of God, to the saints which are at Ephesus, and to the faithful in Christ Jesus:
+            2 Grace be to you, and peace, from God our Father, and from the Lord Jesus Christ.
+            3 Blessed be the God and Father of our Lord Jesus Christ, who hath blessed us with all spiritual blessings in heavenly places in Christ:
+            4 According as he hath chosen us in him before the foundation of the world, that we should be holy and without blame before him in love:
+            5 Having predestinated us unto the adoption of children by Jesus Christ to himself, according to the good pleasure of his will,
+            6 To the praise of the glory of his grace, wherein he hath made us accepted in the beloved.
+            7 In whom we have redemption through his blood, the forgiveness of sins, according to the riches of his grace;
+            8 Wherein he hath abounded toward us in all wisdom and prudence;
+            9 Having made known unto us the mystery of his will, according to his good pleasure which he hath purposed in himself:
+            10 That in the dispensation of the fulness of times he might gather together in one all things in Christ, both which are in heaven, and which are on earth; even in him:
+            11 In whom also we have obtained an inheritance, being predestinated according to the purpose of him who worketh all things after the counsel of his own will:
+            12 That we should be to the praise of his glory, who first trusted in Christ.
+            13 In whom ye also trusted, after that ye heard the word of truth, the gospel of your salvation: in whom also after that ye believed, ye were sealed with that holy Spirit of promise,
+            14 Which is the earnest of our inheritance until the redemption of the purchased possession, unto the praise of his glory.
+            15 Wherefore I also, after I heard of your faith in the Lord Jesus, and love unto all the saints,
+            16 Cease not to give thanks for you, making mention of you in my prayers;
+            17 That the God of our Lord Jesus Christ, the Father of glory, may give unto you the spirit of wisdom and revelation in the knowledge of him:
+            18 The eyes of your understanding being enlightened; that ye may know what is the hope of his calling, and what the riches of the glory of his inheritance in the saints,
+            19 And what is the exceeding greatness of his power to us-ward who believe, according to the working of his mighty power,
+            20 Which he wrought in Christ, when he raised him from the dead, and set him at his own right hand in the heavenly places,
+            21 Far above all principality, and power, and might, and dominion, and every name that is named, not only in this world, but also in that which is to come:
+            22 And hath put all things under his feet, and gave him to be the head over all things to the church,
+            23 Which is his body, the fulness of him that filleth all in all.`,
+            "ephesians-02": `CHAPTER 2
+            We are saved by grace through faith—The blood of Christ saves Jew and Gentile alike—The Church is built upon the foundation of apostles and prophets.
+            1 And you hath he quickened, who were dead in trespasses and sins;
+            2 Wherein in time past ye walked according to the course of this world, according to the prince of the power of the air, the spirit that now worketh in the children of disobedience:
+            3 Among whom also we all had our conversation in times past in the lusts of our flesh, fulfilling the desires of the flesh and of the mind; and were by nature the children of wrath, even as others.
+            4 But God, who is rich in mercy, for his great love wherewith he loved us,
+            5 Even when we were dead in sins, hath quickened us together with Christ, (by grace ye are saved;)
+            6 And hath raised us up together, and made us sit together in heavenly places in Christ Jesus:
+            7 That in the ages to come he might shew the exceeding riches of his grace in his kindness toward us through Christ Jesus.
+            8 For by grace are ye saved through faith; and that not of yourselves: it is the gift of God:
+            9 Not of works, lest any man should boast.
+            10 For we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them.
+            11 Wherefore remember, that ye being in time past Gentiles in the flesh, who are called Uncircumcision by that which is called the Circumcision in the flesh made by hands;
+            12 That at that time ye were without Christ, being aliens from the commonwealth of Israel, and strangers from the covenants of promise, having no hope, and without God in the world:
+            13 But now in Christ Jesus ye who sometimes were far off are made nigh by the blood of Christ.
+            14 For he is our peace, who hath made both one, and hath broken down the middle wall of partition between us;
+            15 Having abolished in his flesh the enmity, even the law of commandments contained in ordinances; for to make in himself of twain one new man, so making peace;
+            16 And that he might reconcile both unto God in one body by the cross, having slain the enmity thereby:
+            17 And came and preached peace to you which were afar off, and to them that were nigh.
+            18 For through him we both have access by one Spirit unto the Father.
+            19 Now therefore ye are no more strangers and foreigners, but fellowcitizens with the saints, and of the household of God;
+            20 And are built upon the foundation of the apostles and prophets, Jesus Christ himself being the chief corner stone;
+            21 In whom all the building fitly framed together groweth unto an holy temple in the Lord:
+            22 In whom ye also are builded together for an habitation of God through the Spirit.`,
+            "ephesians-03": `CHAPTER 3
+            The Gentiles are fellow heirs with Israel—The love of Christ surpasses all understanding.
+            1 For this cause I Paul, the prisoner of Jesus Christ for you Gentiles,
+            2 If ye have heard of the dispensation of the grace of God which is given me to you-ward:
+            3 How that by revelation he made known unto me the mystery; (as I wrote afore in few words,
+            4 Whereby, when ye read, ye may understand my knowledge in the mystery of Christ)
+            5 Which in other ages was not made known unto the sons of men, as it is now revealed unto his holy apostles and prophets by the Spirit;
+            6 That the Gentiles should be fellowheirs, and of the same body, and partakers of his promise in Christ by the gospel:
+            7 Whereof I was made a minister, according to the gift of the grace of God given unto me by the effectual working of his power.
+            8 Unto me, who am less than the least of all saints, is this grace given, that I should preach among the Gentiles the unsearchable riches of Christ;
+            9 And to make all men see what is the fellowship of the mystery, which from the beginning of the world hath been hid in God, who created all things by Jesus Christ:
+            10 To the intent that now unto the principalities and powers in heavenly places might be known by the church the manifold wisdom of God,
+            11 According to the eternal purpose which he purposed in Christ Jesus our Lord:
+            12 In whom we have boldness and access with confidence by the faith of him.
+            13 Wherefore I desire that ye faint not at my tribulations for you, which is your glory.
+            14 For this cause I bow my knees unto the Father of our Lord Jesus Christ,
+            15 Of whom the whole family in heaven and earth is named,
+            16 That he would grant you, according to the riches of his glory, to be strengthened with might by his Spirit in the inner man;
+            17 That Christ may dwell in your hearts by faith; that ye, being rooted and grounded in love,
+            18 May be able to comprehend with all saints what is the breadth, and length, and depth, and height;
+            19 And to know the love of Christ, which passeth knowledge, that ye might be filled with all the fulness of God.
+            20 Now unto him that is able to do exceeding abundantly above all that we ask or think, according to the power that worketh in us,
+            21 Unto him be glory in the church by Christ Jesus throughout all ages, world without end. Amen.`,
+            "ephesians-04": `CHAPTER 4
+            There is one Lord, one faith, and one baptism—Apostles and prophets are essential to the Church—The Saints are exhorted to live righteously—They are sealed unto the day of redemption.
+            1 I therefore, the prisoner of the Lord, beseech you that ye walk worthy of the vocation wherewith ye are called,
+            2 With all lowliness and meekness, with longsuffering, forbearing one another in love;
+            3 Endeavouring to keep the unity of the Spirit in the bond of peace.
+            4 There is one body, and one Spirit, even as ye are called in one hope of your calling;
+            5 One Lord, one faith, one baptism,
+            6 One God and Father of all, who is above all, and through all, and in you all.
+            7 But unto every one of us is given grace according to the measure of the gift of Christ.
+            8 Wherefore he saith, When he ascended up on high, he led captivity captive, and gave gifts unto men.
+            9 (Now that he ascended, what is it but that he also descended first into the lower parts of the earth?
+            10 He that descended is the same also that ascended up far above all heavens, that he might fill all things.)
+            11 And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers;
+            12 For the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ:
+            13 Till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ:
+            14 That we henceforth be no more children, tossed to and fro, and carried about with every wind of doctrine, by the sleight of men, and cunning craftiness, whereby they lie in wait to deceive;
+            15 But speaking the truth in love, may grow up into him in all things, which is the head, even Christ:
+            16 From whom the whole body fitly joined together and compacted by that which every joint supplieth, according to the effectual working in the measure of every part, maketh increase of the body unto the edifying of itself in love.
+            17 This I say therefore, and testify in the Lord, that ye henceforth walk not as other Gentiles walk, in the vanity of their mind,
+            18 Having the understanding darkened, being alienated from the life of God through the ignorance that is in them, because of the blindness of their heart:
+            19 Who being past feeling have given themselves over unto lasciviousness, to work all uncleanness with greediness.
+            20 But ye have not so learned Christ;
+            21 If so be that ye have heard him, and have been taught by him, as the truth is in Jesus:
+            22 That ye put off concerning the former conversation the old man, which is corrupt according to the deceitful lusts;
+            23 And be renewed in the spirit of your mind;
+            24 And that ye put on the new man, which after God is created in righteousness and true holiness.
+            25 Wherefore putting away lying, speak every man truth with his neighbour: for we are members one of another.
+            26 Be ye angry, and sin not: let not the sun go down upon your wrath:
+            27 Neither give place to the devil.
+            28 Let him that stole steal no more: but rather let him labour, working with his hands the thing which is good, that he may have to give to him that needeth.
+            29 Let no corrupt communication proceed out of your mouth, but that which is good to the use of edifying, that it may minister grace unto the hearers.
+            30 And grieve not the holy Spirit of God, whereby ye are sealed unto the day of redemption.
+            31 Let all bitterness, and wrath, and anger, and clamour, and evil speaking, be put away from you, with all malice:
+            32 And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ’s sake hath forgiven you.`,
+            "ephesians-05": `CHAPTER 5
+            The Saints are exhorted to avoid uncleanness and walk uprightly—Husbands and wives should love each other.
+            1 Be ye therefore followers of God, as dear children;
+            2 And walk in love, as Christ also hath loved us, and hath given himself for us an offering and a sacrifice to God for a sweetsmelling savour.
+            3 But fornication, and all uncleanness, or covetousness, let it not be once named among you, as becometh saints;
+            4 Neither filthiness, nor foolish talking, nor jesting, which are not convenient: but rather giving of thanks.
+            5 For this ye know, that no whoremonger, nor unclean person, nor covetous man, who is an idolater, hath any inheritance in the kingdom of Christ and of God.
+            6 Let no man deceive you with vain words: for because of these things cometh the wrath of God upon the children of disobedience.
+            7 Be not ye therefore partakers with them.
+            8 For ye were sometimes darkness, but now are ye light in the Lord: walk as children of light:
+            9 (For the fruit of the Spirit is in all goodness and righteousness and truth;)
+            10 Proving what is acceptable unto the Lord.
+            11 And have no fellowship with the unfruitful works of darkness, but rather reprove them.
+            12 For it is a shame even to speak of those things which are done of them in secret.
+            13 But all things that are reproved are made manifest by the light: for whatsoever doth make manifest is light.
+            14 Wherefore he saith, Awake thou that sleepest, and arise from the dead, and Christ shall give thee light.
+            15 See then that ye walk circumspectly, not as fools, but as wise,
+            16 Redeeming the time, because the days are evil.
+            17 Wherefore be ye not unwise, but understanding what the will of the Lord is.
+            18 And be not drunk with wine, wherein is excess; but be filled with the Spirit;
+            19 Speaking to yourselves in psalms and hymns and spiritual songs, singing and making melody in your heart to the Lord;
+            20 Giving thanks always for all things unto God and the Father in the name of our Lord Jesus Christ;
+            21 Submitting yourselves one to another in the fear of God.
+            22 Wives, submit yourselves unto your own husbands, as unto the Lord.
+            23 For the husband is the head of the wife, even as Christ is the head of the church: and he is the saviour of the body.
+            24 Therefore as the church is subject unto Christ, so let the wives be to their own husbands in every thing.
+            25 Husbands, love your wives, even as Christ also loved the church, and gave himself for it;
+            26 That he might sanctify and cleanse it with the washing of water by the word,
+            27 That he might present it to himself a glorious church, not having spot, or wrinkle, or any such thing; but that it should be holy and without blemish.
+            28 So ought men to love their wives as their own bodies. He that loveth his wife loveth himself.
+            29 For no man ever yet hated his own flesh; but nourisheth and cherisheth it, even as the Lord the church:
+            30 For we are members of his body, of his flesh, and of his bones.
+            31 For this cause shall a man leave his father and mother, and shall be joined unto his wife, and they two shall be one flesh.
+            32 This is a great mystery: but I speak concerning Christ and the church.
+            33 Nevertheless let every one of you in particular so love his wife even as himself; and the wife see that she reverence her husband.`,
+            "ephesians-06": `CHAPTER 6
+            Children should honor their parents—Servants and masters are judged by the same law—Saints should put on the whole armor of God.
+            1 Children, obey your parents in the Lord: for this is right.
+            2 Honour thy father and mother; (which is the first commandment with promise;)
+            3 That it may be well with thee, and thou mayest live long on the earth.
+            4 And, ye fathers, provoke not your children to wrath: but bring them up in the nurture and admonition of the Lord.
+            5 Servants, be obedient to them that are your masters according to the flesh, with fear and trembling, in singleness of your heart, as unto Christ;
+            6 Not with eyeservice, as menpleasers; but as the servants of Christ, doing the will of God from the heart;
+            7 With good will doing service, as to the Lord, and not to men:
+            8 Knowing that whatsoever good thing any man doeth, the same shall he receive of the Lord, whether he be bond or free.
+            9 And, ye masters, do the same things unto them, forbearing threatening: knowing that your Master also is in heaven; neither is there respect of persons with him.
+            10 Finally, my brethren, be strong in the Lord, and in the power of his might.
+            11 Put on the whole armour of God, that ye may be able to stand against the wiles of the devil.
+            12 For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in high places.
+            13 Wherefore take unto you the whole armour of God, that ye may be able to withstand in the evil day, and having done all, to stand.
+            14 Stand therefore, having your loins girt about with truth, and having on the breastplate of righteousness;
+            15 And your feet shod with the preparation of the gospel of peace;
+            16 Above all, taking the shield of faith, wherewith ye shall be able to quench all the fiery darts of the wicked.
+            17 And take the helmet of salvation, and the sword of the Spirit, which is the word of God:
+            18 Praying always with all prayer and supplication in the Spirit, and watching thereunto with all perseverance and supplication for all saints;
+            19 And for me, that utterance may be given unto me, that I may open my mouth boldly, to make known the mystery of the gospel,
+            20 For which I am an ambassador in bonds: that therein I may speak boldly, as I ought to speak.
+            21 But that ye also may know my affairs, and how I do, Tychicus, a beloved brother and faithful minister in the Lord, shall make known to you all things:
+            22 Whom I have sent unto you for the same purpose, that ye might know our affairs, and that he might comfort your hearts.
+            23 Peace be to the brethren, and love with faith, from God the Father and the Lord Jesus Christ.
+            24 Grace be with all them that love our Lord Jesus Christ in sincerity. Amen.
+            ¶ Written from Rome unto the Ephesians by Tychicus.`,
+            "philippians-01": `THE EPISTLE OF PAUL THE APOSTLE
+            TO THE
+            PHILIPPIANS
+            CHAPTER 1
+            All that happened to Paul furthered the gospel cause—Our conduct should be worthy of the gospel.
+            1 Paul and Timotheus, the servants of Jesus Christ, to all the saints in Christ Jesus which are at Philippi, with the bishops and deacons:
+            2 Grace be unto you, and peace, from God our Father, and from the Lord Jesus Christ.
+            3 I thank my God upon every remembrance of you,
+            4 Always in every prayer of mine for you all making request with joy,
+            5 For your fellowship in the gospel from the first day until now;
+            6 Being confident of this very thing, that he which hath begun a good work in you will perform it until the day of Jesus Christ:
+            7 Even as it is meet for me to think this of you all, because I have you in my heart; inasmuch as both in my bonds, and in the defence and confirmation of the gospel, ye all are partakers of my grace.
+            8 For God is my record, how greatly I long after you all in the bowels of Jesus Christ.
+            9 And this I pray, that your love may abound yet more and more in knowledge and in all judgment;
+            10 That ye may approve things that are excellent; that ye may be sincere and without offence till the day of Christ;
+            11 Being filled with the fruits of righteousness, which are by Jesus Christ, unto the glory and praise of God.
+            12 But I would ye should understand, brethren, that the things which happened unto me have fallen out rather unto the furtherance of the gospel;
+            13 So that my bonds in Christ are manifest in all the palace, and in all other places;
+            14 And many of the brethren in the Lord, waxing confident by my bonds, are much more bold to speak the word without fear.
+            15 Some indeed preach Christ even of envy and strife; and some also of good will:
+            16 The one preach Christ of contention, not sincerely, supposing to add affliction to my bonds:
+            17 But the other of love, knowing that I am set for the defence of the gospel.
+            18 What then? notwithstanding, every way, whether in pretence, or in truth, Christ is preached; and I therein do rejoice, yea, and will rejoice.
+            19 For I know that this shall turn to my salvation through your prayer, and the supply of the Spirit of Jesus Christ,
+            20 According to my earnest expectation and my hope, that in nothing I shall be ashamed, but that with all boldness, as always, so now also Christ shall be magnified in my body, whether it be by life, or by death.
+            21 For to me to live is Christ, and to die is gain.
+            22 But if I live in the flesh, this is the fruit of my labour: yet what I shall choose I wot not.
+            23 For I am in a strait betwixt two, having a desire to depart, and to be with Christ; which is far better:
+            24 Nevertheless to abide in the flesh is more needful for you.
+            25 And having this confidence, I know that I shall abide and continue with you all for your furtherance and joy of faith;
+            26 That your rejoicing may be more abundant in Jesus Christ for me by my coming to you again.
+            27 Only let your conversation be as it becometh the gospel of Christ: that whether I come and see you, or else be absent, I may hear of your affairs, that ye stand fast in one spirit, with one mind striving together for the faith of the gospel;
+            28 And in nothing terrified by your adversaries: which is to them an evident token of perdition, but to you of salvation, and that of God.
+            29 For unto you it is given in the behalf of Christ, not only to believe on him, but also to suffer for his sake;
+            30 Having the same conflict which ye saw in me, and now hear to be in me.`,
+            "philippians-02": `CHAPTER 2
+            Saints should be of one mind and one spirit—Every knee will bow to Christ—Saints must work out their salvation—Paul faces martyrdom with joy.
+            1 If there be therefore any consolation in Christ, if any comfort of love, if any fellowship of the Spirit, if any bowels and mercies,
+            2 Fulfil ye my joy, that ye be likeminded, having the same love, being of one accord, of one mind.
+            3 Let nothing be done through strife or vainglory; but in lowliness of mind let each esteem other better than themselves.
+            4 Look not every man on his own things, but every man also on the things of others.
+            5 Let this mind be in you, which was also in Christ Jesus:
+            6 Who, being in the form of God, thought it not robbery to be equal with God:
+            7 But made himself of no reputation, and took upon him the form of a servant, and was made in the likeness of men:
+            8 And being found in fashion as a man, he humbled himself, and became obedient unto death, even the death of the cross.
+            9 Wherefore God also hath highly exalted him, and given him a name which is above every name:
+            10 That at the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth;
+            11 And that every tongue should confess that Jesus Christ is Lord, to the glory of God the Father.
+            12 Wherefore, my beloved, as ye have always obeyed, not as in my presence only, but now much more in my absence, work out your own salvation with fear and trembling.
+            13 For it is God which worketh in you both to will and to do of his good pleasure.
+            14 Do all things without murmurings and disputings:
+            15 That ye may be blameless and harmless, the sons of God, without rebuke, in the midst of a crooked and perverse nation, among whom ye shine as lights in the world;
+            16 Holding forth the word of life; that I may rejoice in the day of Christ, that I have not run in vain, neither laboured in vain.
+            17 Yea, and if I be offered upon the sacrifice and service of your faith, I joy, and rejoice with you all.
+            18 For the same cause also do ye joy, and rejoice with me.
+            19 But I trust in the Lord Jesus to send Timotheus shortly unto you, that I also may be of good comfort, when I know your state.
+            20 For I have no man likeminded, who will naturally care for your state.
+            21 For all seek their own, not the things which are Jesus Christ’s.
+            22 But ye know the proof of him, that, as a son with the father, he hath served with me in the gospel.
+            23 Him therefore I hope to send presently, so soon as I shall see how it will go with me.
+            24 But I trust in the Lord that I also myself shall come shortly.
+            25 Yet I supposed it necessary to send to you Epaphroditus, my brother, and companion in labour, and fellowsoldier, but your messenger, and he that ministered to my wants.
+            26 For he longed after you all, and was full of heaviness, because that ye had heard that he had been sick.
+            27 For indeed he was sick nigh unto death: but God had mercy on him; and not on him only, but on me also, lest I should have sorrow upon sorrow.
+            28 I sent him therefore the more carefully, that, when ye see him again, ye may rejoice, and that I may be the less sorrowful.
+            29 Receive him therefore in the Lord with all gladness; and hold such in reputation:
+            30 Because for the work of Christ he was nigh unto death, not regarding his life, to supply your lack of service toward me.`,
+            "philippians-03": `CHAPTER 3
+            Paul sacrifices all things for Christ—True ministers set examples of righteousness.
+            1 Finally, my brethren, rejoice in the Lord. To write the same things to you, to me indeed is not grievous, but for you it is safe.
+            2 Beware of dogs, beware of evil workers, beware of the concision.
+            3 For we are the circumcision, which worship God in the spirit, and rejoice in Christ Jesus, and have no confidence in the flesh.
+            4 Though I might also have confidence in the flesh. If any other man thinketh that he hath whereof he might trust in the flesh, I more:
+            5 Circumcised the eighth day, of the stock of Israel, of the tribe of Benjamin, an Hebrew of the Hebrews; as touching the law, a Pharisee;
+            6 Concerning zeal, persecuting the church; touching the righteousness which is in the law, blameless.
+            7 But what things were gain to me, those I counted loss for Christ.
+            8 Yea doubtless, and I count all things but loss for the excellency of the knowledge of Christ Jesus my Lord: for whom I have suffered the loss of all things, and do count them but dung, that I may win Christ,
+            9 And be found in him, not having mine own righteousness, which is of the law, but that which is through the faith of Christ, the righteousness which is of God by faith:
+            10 That I may know him, and the power of his resurrection, and the fellowship of his sufferings, being made conformable unto his death;
+            11 If by any means I might attain unto the resurrection of the dead.
+            12 Not as though I had already attained, either were already perfect: but I follow after, if that I may apprehend that for which also I am apprehended of Christ Jesus.
+            13 Brethren, I count not myself to have apprehended: but this one thing I do, forgetting those things which are behind, and reaching forth unto those things which are before,
+            14 I press toward the mark for the prize of the high calling of God in Christ Jesus.
+            15 Let us therefore, as many as be perfect, be thus minded: and if in any thing ye be otherwise minded, God shall reveal even this unto you.
+            16 Nevertheless, whereto we have already attained, let us walk by the same rule, let us mind the same thing.
+            17 Brethren, be followers together of me, and mark them which walk so as ye have us for an ensample.
+            18 (For many walk, of whom I have told you often, and now tell you even weeping, that they are the enemies of the cross of Christ:
+            19 Whose end is destruction, whose God is their belly, and whose glory is in their shame, who mind earthly things.)
+            20 For our conversation is in heaven; from whence also we look for the Saviour, the Lord Jesus Christ:
+            21 Who shall change our vile body, that it may be fashioned like unto his glorious body, according to the working whereby he is able even to subdue all things unto himself.`,
+            "philippians-04": `CHAPTER 4
+            Stand fast in the Lord—We believe in being honest, true, and chaste.
+            1 Therefore, my brethren dearly beloved and longed for, my joy and crown, so stand fast in the Lord, my dearly beloved.
+            2 I beseech Euodias, and beseech Syntyche, that they be of the same mind in the Lord.
+            3 And I entreat thee also, true yokefellow, help those women which laboured with me in the gospel, with Clement also, and with other my fellowlabourers, whose names are in the book of life.
+            4 Rejoice in the Lord alway: and again I say, Rejoice.
+            5 Let your moderation be known unto all men. The Lord is at hand.
+            6 Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.
+            7 And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.
+            8 Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.
+            9 Those things, which ye have both learned, and received, and heard, and seen in me, do: and the God of peace shall be with you.
+            10 But I rejoiced in the Lord greatly, that now at the last your care of me hath flourished again; wherein ye were also careful, but ye lacked opportunity.
+            11 Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content.
+            12 I know both how to be abased, and I know how to abound: every where and in all things I am instructed both to be full and to be hungry, both to abound and to suffer need.
+            13 I can do all things through Christ which strengtheneth me.
+            14 Notwithstanding ye have well done, that ye did communicate with my affliction.
+            15 Now ye Philippians know also, that in the beginning of the gospel, when I departed from Macedonia, no church communicated with me as concerning giving and receiving, but ye only.
+            16 For even in Thessalonica ye sent once and again unto my necessity.
+            17 Not because I desire a gift: but I desire fruit that may abound to your account.
+            18 But I have all, and abound: I am full, having received of Epaphroditus the things which were sent from you, an odour of a sweet smell, a sacrifice acceptable, wellpleasing to God.
+            19 But my God shall supply all your need according to his riches in glory by Christ Jesus.
+            20 Now unto God and our Father be glory for ever and ever. Amen.
+            21 Salute every saint in Christ Jesus. The brethren which are with me greet you.
+            22 All the saints salute you, chiefly they that are of Cæsar’s household.
+            23 The grace of our Lord Jesus Christ be with you all. Amen.
+            ¶ It was written to the Philippians from Rome by Epaphroditus.`,
+            "colossians-01": `THE EPISTLE OF PAUL THE APOSTLE
+            TO THE
+            COLOSSIANS
+            CHAPTER 1
+            Redemption comes through Christ—He created all things, is in the image of God, and is the Firstborn of the Father.
+            1 Paul, an apostle of Jesus Christ by the will of God, and Timotheus our brother,
+            2 To the saints and faithful brethren in Christ which are at Colosse: Grace be unto you, and peace, from God our Father and the Lord Jesus Christ.
+            3 We give thanks to God and the Father of our Lord Jesus Christ, praying always for you,
+            4 Since we heard of your faith in Christ Jesus, and of the love which ye have to all the saints,
+            5 For the hope which is laid up for you in heaven, whereof ye heard before in the word of the truth of the gospel;
+            6 Which is come unto you, as it is in all the world; and bringeth forth fruit, as it doth also in you, since the day ye heard of it, and knew the grace of God in truth:
+            7 As ye also learned of Epaphras our dear fellowservant, who is for you a faithful minister of Christ;
+            8 Who also declared unto us your love in the Spirit.
+            9 For this cause we also, since the day we heard it, do not cease to pray for you, and to desire that ye might be filled with the knowledge of his will in all wisdom and spiritual understanding;
+            10 That ye might walk worthy of the Lord unto all pleasing, being fruitful in every good work, and increasing in the knowledge of God;
+            11 Strengthened with all might, according to his glorious power, unto all patience and longsuffering with joyfulness;
+            12 Giving thanks unto the Father, which hath made us meet to be partakers of the inheritance of the saints in light:
+            13 Who hath delivered us from the power of darkness, and hath translated us into the kingdom of his dear Son:
+            14 In whom we have redemption through his blood, even the forgiveness of sins:
+            15 Who is the image of the invisible God, the firstborn of every creature:
+            16 For by him were all things created, that are in heaven, and that are in earth, visible and invisible, whether they be thrones, or dominions, or principalities, or powers: all things were created by him, and for him:
+            17 And he is before all things, and by him all things consist.
+            18 And he is the head of the body, the church: who is the beginning, the firstborn from the dead; that in all things he might have the preeminence.
+            19 For it pleased the Father that in him should all fulness dwell;
+            20 And, having made peace through the blood of his cross, by him to reconcile all things unto himself; by him, I say, whether they be things in earth, or things in heaven.
+            21 And you, that were sometime alienated and enemies in your mind by wicked works, yet now hath he reconciled
+            22 In the body of his flesh through death, to present you holy and unblameable and unreproveable in his sight:
+            23 If ye continue in the faith grounded and settled, and be not moved away from the hope of the gospel, which ye have heard, and which was preached to every creature which is under heaven; whereof I Paul am made a minister;
+            24 Who now rejoice in my sufferings for you, and fill up that which is behind of the afflictions of Christ in my flesh for his body’s sake, which is the church:
+            25 Whereof I am made a minister, according to the dispensation of God which is given to me for you, to fulfil the word of God;
+            26 Even the mystery which hath been hid from ages and from generations, but now is made manifest to his saints:
+            27 To whom God would make known what is the riches of the glory of this mystery among the Gentiles; which is Christ in you, the hope of glory:
+            28 Whom we preach, warning every man, and teaching every man in all wisdom; that we may present every man perfect in Christ Jesus:
+            29 Whereunto I also labour, striving according to his working, which worketh in me mightily.`,
+            "colossians-02": `CHAPTER 2
+            The fulness of the Godhead dwells in Christ—Beware of being deceived by the traditions of men—The handwriting against us was nailed to the cross of Christ.
+            1 For I would that ye knew what great conflict I have for you, and for them at Laodicea, and for as many as have not seen my face in the flesh;
+            2 That their hearts might be comforted, being knit together in love, and unto all riches of the full assurance of understanding, to the acknowledgement of the mystery of God, and of the Father, and of Christ;
+            3 In whom are hid all the treasures of wisdom and knowledge.
+            4 And this I say, lest any man should beguile you with enticing words.
+            5 For though I be absent in the flesh, yet am I with you in the spirit, joying and beholding your order, and the steadfastness of your faith in Christ.
+            6 As ye have therefore received Christ Jesus the Lord, so walk ye in him:
+            7 Rooted and built up in him, and stablished in the faith, as ye have been taught, abounding therein with thanksgiving.
+            8 Beware lest any man spoil you through philosophy and vain deceit, after the tradition of men, after the rudiments of the world, and not after Christ.
+            9 For in him dwelleth all the fulness of the Godhead bodily.
+            10 And ye are complete in him, which is the head of all principality and power:
+            11 In whom also ye are circumcised with the circumcision made without hands, in putting off the body of the sins of the flesh by the circumcision of Christ:
+            12 Buried with him in baptism, wherein also ye are risen with him through the faith of the operation of God, who hath raised him from the dead.
+            13 And you, being dead in your sins and the uncircumcision of your flesh, hath he quickened together with him, having forgiven you all trespasses;
+            14 Blotting out the handwriting of ordinances that was against us, which was contrary to us, and took it out of the way, nailing it to his cross;
+            15 And having spoiled principalities and powers, he made a shew of them openly, triumphing over them in it.
+            16 Let no man therefore judge you in meat, or in drink, or in respect of an holyday, or of the new moon, or of the sabbath days:
+            17 Which are a shadow of things to come; but the body is of Christ.
+            18 Let no man beguile you of your reward in a voluntary humility and worshipping of angels, intruding into those things which he hath not seen, vainly puffed up by his fleshly mind,
+            19 And not holding the Head, from which all the body by joints and bands having nourishment ministered, and knit together, increaseth with the increase of God.
+            20 Wherefore if ye be dead with Christ from the rudiments of the world, why, as though living in the world, are ye subject to ordinances,
+            21 (Touch not; taste not; handle not;
+            22 Which all are to perish with the using;) after the commandments and doctrines of men?
+            23 Which things have indeed a shew of wisdom in will worship, and humility, and neglecting of the body; not in any honour to the satisfying of the flesh.`,
+            "colossians-03": `CHAPTER 3
+            Some lives are hidden with God in Christ—The Saints are told to be holy and to serve the Lord Jesus Christ.
+            1 If ye then be risen with Christ, seek those things which are above, where Christ sitteth on the right hand of God.
+            2 Set your affection on things above, not on things on the earth.
+            3 For ye are dead, and your life is hid with Christ in God.
+            4 When Christ, who is our life, shall appear, then shall ye also appear with him in glory.
+            5 Mortify therefore your members which are upon the earth; fornication, uncleanness, inordinate affection, evil concupiscence, and covetousness, which is idolatry:
+            6 For which things’ sake the wrath of God cometh on the children of disobedience:
+            7 In the which ye also walked some time, when ye lived in them.
+            8 But now ye also put off all these; anger, wrath, malice, blasphemy, filthy communication out of your mouth.
+            9 Lie not one to another, seeing that ye have put off the old man with his deeds;
+            10 And have put on the new man, which is renewed in knowledge after the image of him that created him:
+            11 Where there is neither Greek nor Jew, circumcision nor uncircumcision, Barbarian, Scythian, bond nor free: but Christ is all, and in all.
+            12 Put on therefore, as the elect of God, holy and beloved, bowels of mercies, kindness, humbleness of mind, meekness, longsuffering;
+            13 Forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do ye.
+            14 And above all these things put on charity, which is the bond of perfectness.
+            15 And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful.
+            16 Let the word of Christ dwell in you richly in all wisdom; teaching and admonishing one another in psalms and hymns and spiritual songs, singing with grace in your hearts to the Lord.
+            17 And whatsoever ye do in word or deed, do all in the name of the Lord Jesus, giving thanks to God and the Father by him.
+            18 Wives, submit yourselves unto your own husbands, as it is fit in the Lord.
+            19 Husbands, love your wives, and be not bitter against them.
+            20 Children, obey your parents in all things: for this is well pleasing unto the Lord.
+            21 Fathers, provoke not your children to anger, lest they be discouraged.
+            22 Servants, obey in all things your masters according to the flesh; not with eyeservice, as menpleasers; but in singleness of heart, fearing God:
+            23 And whatsoever ye do, do it heartily, as to the Lord, and not unto men;
+            24 Knowing that of the Lord ye shall receive the reward of the inheritance: for ye serve the Lord Christ.
+            25 But he that doeth wrong shall receive for the wrong which he hath done: and there is no respect of persons.`,
+            "colossians-04": `CHAPTER 4
+            The Saints are told to be wise in all things—Luke and others greet the Colossians.
+            1 Masters, give unto your servants that which is just and equal; knowing that ye also have a Master in heaven.
+            2 Continue in prayer, and watch in the same with thanksgiving;
+            3 Withal praying also for us, that God would open unto us a door of utterance, to speak the mystery of Christ, for which I am also in bonds:
+            4 That I may make it manifest, as I ought to speak.
+            5 Walk in wisdom toward them that are without, redeeming the time.
+            6 Let your speech be alway with grace, seasoned with salt, that ye may know how ye ought to answer every man.
+            7 All my state shall Tychicus declare unto you, who is a beloved brother, and a faithful minister and fellowservant in the Lord:
+            8 Whom I have sent unto you for the same purpose, that he might know your estate, and comfort your hearts;
+            9 With Onesimus, a faithful and beloved brother, who is one of you. They shall make known unto you all things which are done here.
+            10 Aristarchus my fellowprisoner saluteth you, and Marcus, sister’s son to Barnabas, (touching whom ye received commandments: if he come unto you, receive him;)
+            11 And Jesus, which is called Justus, who are of the circumcision. These only are my fellowworkers unto the kingdom of God, which have been a comfort unto me.
+            12 Epaphras, who is one of you, a servant of Christ, saluteth you, always labouring fervently for you in prayers, that ye may stand perfect and complete in all the will of God.
+            13 For I bear him record, that he hath a great zeal for you, and them that are in Laodicea, and them in Hierapolis.
+            14 Luke, the beloved physician, and Demas, greet you.
+            15 Salute the brethren which are in Laodicea, and Nymphas, and the church which is in his house.
+            16 And when this epistle is read among you, cause that it be read also in the church of the Laodiceans; and that ye likewise read the epistle from Laodicea.
+            17 And say to Archippus, Take heed to the ministry which thou hast received in the Lord, that thou fulfil it.
+            18 The salutation by the hand of me Paul. Remember my bonds. Grace be with you. Amen.
+            ¶ Written from Rome to the Colossians by Tychicus and Onesimus.`,
+            "1-thessalonians-01": `THE FIRST EPISTLE OF PAUL THE APOSTLE TO THE
+            THESSALONIANS
+            CHAPTER 1
+            The gospel comes both in word and in power.
+            1 Paul, and Silvanus, and Timotheus, unto the church of the Thessalonians which is in God the Father and in the Lord Jesus Christ: Grace be unto you, and peace, from God our Father, and the Lord Jesus Christ.
+            2 We give thanks to God always for you all, making mention of you in our prayers;
+            3 Remembering without ceasing your work of faith, and labour of love, and patience of hope in our Lord Jesus Christ, in the sight of God and our Father;
+            4 Knowing, brethren beloved, your election of God.
+            5 For our gospel came not unto you in word only, but also in power, and in the Holy Ghost, and in much assurance; as ye know what manner of men we were among you for your sake.
+            6 And ye became followers of us, and of the Lord, having received the word in much affliction, with joy of the Holy Ghost:
+            7 So that ye were ensamples to all that believe in Macedonia and Achaia.
+            8 For from you sounded out the word of the Lord not only in Macedonia and Achaia, but also in every place your faith to God-ward is spread abroad; so that we need not to speak any thing.
+            9 For they themselves shew of us what manner of entering in we had unto you, and how ye turned to God from idols to serve the living and true God;
+            10 And to wait for his Son from heaven, whom he raised from the dead, even Jesus, which delivered us from the wrath to come.`,
+            "1-thessalonians-02": `CHAPTER 2
+            True ministers preach in a godly manner—Converts are the glory and joy of missionaries.
+            1 For yourselves, brethren, know our entrance in unto you, that it was not in vain:
+            2 But even after that we had suffered before, and were shamefully entreated, as ye know, at Philippi, we were bold in our God to speak unto you the gospel of God with much contention.
+            3 For our exhortation was not of deceit, nor of uncleanness, nor in guile:
+            4 But as we were allowed of God to be put in trust with the gospel, even so we speak; not as pleasing men, but God, which trieth our hearts.
+            5 For neither at any time used we flattering words, as ye know, nor a cloak of covetousness; God is witness:
+            6 Nor of men sought we glory, neither of you, nor yet of others, when we might have been burdensome, as the apostles of Christ.
+            7 But we were gentle among you, even as a nurse cherisheth her children:
+            8 So being affectionately desirous of you, we were willing to have imparted unto you, not the gospel of God only, but also our own souls, because ye were dear unto us.
+            9 For ye remember, brethren, our labour and travail: for labouring night and day, because we would not be chargeable unto any of you, we preached unto you the gospel of God.
+            10 Ye are witnesses, and God also, how holily and justly and unblameably we behaved ourselves among you that believe:
+            11 As ye know how we exhorted and comforted and charged every one of you, as a father doth his children,
+            12 That ye would walk worthy of God, who hath called you unto his kingdom and glory.
+            13 For this cause also thank we God without ceasing, because, when ye received the word of God which ye heard of us, ye received it not as the word of men, but as it is in truth, the word of God, which effectually worketh also in you that believe.
+            14 For ye, brethren, became followers of the churches of God which in Judæa are in Christ Jesus: for ye also have suffered like things of your own countrymen, even as they have of the Jews:
+            15 Who both killed the Lord Jesus, and their own prophets, and have persecuted us; and they please not God, and are contrary to all men:
+            16 Forbidding us to speak to the Gentiles that they might be saved, to fill up their sins alway: for the wrath is come upon them to the uttermost.
+            17 But we, brethren, being taken from you for a short time in presence, not in heart, endeavoured the more abundantly to see your face with great desire.
+            18 Wherefore we would have come unto you, even I Paul, once and again; but Satan hindered us.
+            19 For what is our hope, or joy, or crown of rejoicing? Are not even ye in the presence of our Lord Jesus Christ at his coming?
+            20 For ye are our glory and joy.`,
+            "1-thessalonians-03": `CHAPTER 3
+            The Saints are told to perfect that which is lacking in their faith.
+            1 Wherefore when we could no longer forbear, we thought it good to be left at Athens alone;
+            2 And sent Timotheus, our brother, and minister of God, and our fellowlabourer in the gospel of Christ, to establish you, and to comfort you concerning your faith:
+            3 That no man should be moved by these afflictions: for yourselves know that we are appointed thereunto.
+            4 For verily, when we were with you, we told you before that we should suffer tribulation; even as it came to pass, and ye know.
+            5 For this cause, when I could no longer forbear, I sent to know your faith, lest by some means the tempter have tempted you, and our labour be in vain.
+            6 But now when Timotheus came from you unto us, and brought us good tidings of your faith and charity, and that ye have good remembrance of us always, desiring greatly to see us, as we also to see you:
+            7 Therefore, brethren, we were comforted over you in all our affliction and distress by your faith:
+            8 For now we live, if ye stand fast in the Lord.
+            9 For what thanks can we render to God again for you, for all the joy wherewith we joy for your sakes before our God;
+            10 Night and day praying exceedingly that we might see your face, and might perfect that which is lacking in your faith?
+            11 Now God himself and our Father, and our Lord Jesus Christ, direct our way unto you.
+            12 And the Lord make you to increase and abound in love one toward another, and toward all men, even as we do toward you:
+            13 To the end he may stablish your hearts unblameable in holiness before God, even our Father, at the coming of our Lord Jesus Christ with all his saints.`,
+            "1-thessalonians-04": `CHAPTER 4
+            The Saints are told to be holy, sanctify themselves, and love one another—The Lord will come, and the dead will rise.
+            1 Furthermore then we beseech you, brethren, and exhort you by the Lord Jesus, that as ye have received of us how ye ought to walk and to please God, so ye would abound more and more.
+            2 For ye know what commandments we gave you by the Lord Jesus.
+            3 For this is the will of God, even your sanctification, that ye should abstain from fornication:
+            4 That every one of you should know how to possess his vessel in sanctification and honour;
+            5 Not in the lust of concupiscence, even as the Gentiles which know not God:
+            6 That no man go beyond and defraud his brother in any matter: because that the Lord is the avenger of all such, as we also have forewarned you and testified.
+            7 For God hath not called us unto uncleanness, but unto holiness.
+            8 He therefore that despiseth, despiseth not man, but God, who hath also given unto us his holy Spirit.
+            9 But as touching brotherly love ye need not that I write unto you: for ye yourselves are taught of God to love one another.
+            10 And indeed ye do it toward all the brethren which are in all Macedonia: but we beseech you, brethren, that ye increase more and more;
+            11 And that ye study to be quiet, and to do your own business, and to work with your own hands, as we commanded you;
+            12 That ye may walk honestly toward them that are without, and that ye may have lack of nothing.
+            13 But I would not have you to be ignorant, brethren, concerning them which are asleep, that ye sorrow not, even as others which have no hope.
+            14 For if we believe that Jesus died and rose again, even so them also which sleep in Jesus will God bring with him.
+            15 For this we say unto you by the word of the Lord, that we which are alive and remain unto the coming of the Lord shall not prevent them which are asleep.
+            16 For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first:
+            17 Then we which are alive and remain shall be caught up together with them in the clouds, to meet the Lord in the air: and so shall we ever be with the Lord.
+            18 Wherefore comfort one another with these words.`,
+            "1-thessalonians-05": `CHAPTER 5
+            The Saints will know the season of the Second Coming of Christ—Live the way Saints should live—Rejoice evermore—Do not despise prophesyings.
+            1 But of the times and the seasons, brethren, ye have no need that I write unto you.
+            2 For yourselves know perfectly that the day of the Lord so cometh as a thief in the night.
+            3 For when they shall say, Peace and safety; then sudden destruction cometh upon them, as travail upon a woman with child; and they shall not escape.
+            4 But ye, brethren, are not in darkness, that that day should overtake you as a thief.
+            5 Ye are all the children of light, and the children of the day: we are not of the night, nor of darkness.
+            6 Therefore let us not sleep, as do others; but let us watch and be sober.
+            7 For they that sleep sleep in the night; and they that be drunken are drunken in the night.
+            8 But let us, who are of the day, be sober, putting on the breastplate of faith and love; and for an helmet, the hope of salvation.
+            9 For God hath not appointed us to wrath, but to obtain salvation by our Lord Jesus Christ,
+            10 Who died for us, that, whether we wake or sleep, we should live together with him.
+            11 Wherefore comfort yourselves together, and edify one another, even as also ye do.
+            12 And we beseech you, brethren, to know them which labour among you, and are over you in the Lord, and admonish you;
+            13 And to esteem them very highly in love for their work’s sake. And be at peace among yourselves.
+            14 Now we exhort you, brethren, warn them that are unruly, comfort the feebleminded, support the weak, be patient toward all men.
+            15 See that none render evil for evil unto any man; but ever follow that which is good, both among yourselves, and to all men.
+            16 Rejoice evermore.
+            17 Pray without ceasing.
+            18 In every thing give thanks: for this is the will of God in Christ Jesus concerning you.
+            19 Quench not the Spirit.
+            20 Despise not prophesyings.
+            21 Prove all things; hold fast that which is good.
+            22 Abstain from all appearance of evil.
+            23 And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ.
+            24 Faithful is he that calleth you, who also will do it.
+            25 Brethren, pray for us.
+            26 Greet all the brethren with an holy kiss.
+            27 I charge you by the Lord that this epistle be read unto all the holy brethren.
+            28 The grace of our Lord Jesus Christ be with you. Amen.
+            ¶ The first epistle unto the Thessalonians was written from Athens.*`,
+            "2-thessalonians-01": `THE SECOND EPISTLE OF PAUL THE APOSTLE TO THE
+            THESSALONIANS
+            CHAPTER 1
+            At His Second Coming, the Lord Jesus will take vengeance upon the ungodly.
+            1 Paul, and Silvanus, and Timotheus, unto the church of the Thessalonians in God our Father and the Lord Jesus Christ:
+            2 Grace unto you, and peace, from God our Father and the Lord Jesus Christ.
+            3 We are bound to thank God always for you, brethren, as it is meet, because that your faith groweth exceedingly, and the charity of every one of you all toward each other aboundeth;
+            4 So that we ourselves glory in you in the churches of God for your patience and faith in all your persecutions and tribulations that ye endure:
+            5 Which is a manifest token of the righteous judgment of God, that ye may be counted worthy of the kingdom of God, for which ye also suffer:
+            6 Seeing it is a righteous thing with God to recompense tribulation to them that trouble you;
+            7 And to you who are troubled rest with us, when the Lord Jesus shall be revealed from heaven with his mighty angels,
+            8 In flaming fire taking vengeance on them that know not God, and that obey not the gospel of our Lord Jesus Christ:
+            9 Who shall be punished with everlasting destruction from the presence of the Lord, and from the glory of his power;
+            10 When he shall come to be glorified in his saints, and to be admired in all them that believe (because our testimony among you was believed) in that day.
+            11 Wherefore also we pray always for you, that our God would count you worthy of this calling, and fulfil all the good pleasure of his goodness, and the work of faith with power:
+            12 That the name of our Lord Jesus Christ may be glorified in you, and ye in him, according to the grace of our God and the Lord Jesus Christ.`,
+            "2-thessalonians-02": `CHAPTER 2
+            Apostasy is to precede the Second Coming—The gospel prepares men for eternal glory.
+            1 Now we beseech you, brethren, by the coming of our Lord Jesus Christ, and by our gathering together unto him,
+            2 That ye be not soon shaken in mind, or be troubled, neither by spirit, nor by word, nor by letter as from us, as that the day of Christ is at hand.
+            3 Let no man deceive you by any means: for that day shall not come, except there come a falling away first, and that man of sin be revealed, the son of perdition;
+            4 Who opposeth and exalteth himself above all that is called God, or that is worshipped; so that he as God sitteth in the temple of God, shewing himself that he is God.
+            5 Remember ye not, that, when I was yet with you, I told you these things?
+            6 And now ye know what withholdeth that he might be revealed in his time.
+            7 For the mystery of iniquity doth already work: only he who now letteth will let, until he be taken out of the way.
+            8 And then shall that Wicked be revealed, whom the Lord shall consume with the spirit of his mouth, and shall destroy with the brightness of his coming:
+            9 Even him, whose coming is after the working of Satan with all power and signs and lying wonders,
+            10 And with all deceivableness of unrighteousness in them that perish; because they received not the love of the truth, that they might be saved.
+            11 And for this cause God shall send them strong delusion, that they should believe a lie:
+            12 That they all might be damned who believed not the truth, but had pleasure in unrighteousness.
+            13 But we are bound to give thanks alway to God for you, brethren beloved of the Lord, because God hath from the beginning chosen you to salvation through sanctification of the Spirit and belief of the truth:
+            14 Whereunto he called you by our gospel, to the obtaining of the glory of our Lord Jesus Christ.
+            15 Therefore, brethren, stand fast, and hold the traditions which ye have been taught, whether by word, or our epistle.
+            16 Now our Lord Jesus Christ himself, and God, even our Father, which hath loved us, and hath given us everlasting consolation and good hope through grace,
+            17 Comfort your hearts, and stablish you in every good word and work.`,
+            "2-thessalonians-03": `CHAPTER 3
+            Pray for the triumph of the gospel cause—Paul preaches the gospel of work—Be not weary in well-doing.
+            1 Finally, brethren, pray for us, that the word of the Lord may have free course, and be glorified, even as it is with you:
+            2 And that we may be delivered from unreasonable and wicked men: for all men have not faith.
+            3 But the Lord is faithful, who shall stablish you, and keep you from evil.
+            4 And we have confidence in the Lord touching you, that ye both do and will do the things which we command you.
+            5 And the Lord direct your hearts into the love of God, and into the patient waiting for Christ.
+            6 Now we command you, brethren, in the name of our Lord Jesus Christ, that ye withdraw yourselves from every brother that walketh disorderly, and not after the tradition which he received of us.
+            7 For yourselves know how ye ought to follow us: for we behaved not ourselves disorderly among you;
+            8 Neither did we eat any man’s bread for nought; but wrought with labour and travail night and day, that we might not be chargeable to any of you:
+            9 Not because we have not power, but to make ourselves an ensample unto you to follow us.
+            10 For even when we were with you, this we commanded you, that if any would not work, neither should he eat.
+            11 For we hear that there are some which walk among you disorderly, working not at all, but are busybodies.
+            12 Now them that are such we command and exhort by our Lord Jesus Christ, that with quietness they work, and eat their own bread.
+            13 But ye, brethren, be not weary in well doing.
+            14 And if any man obey not our word by this epistle, note that man, and have no company with him, that he may be ashamed.
+            15 Yet count him not as an enemy, but admonish him as a brother.
+            16 Now the Lord of peace himself give you peace always by all means. The Lord be with you all.
+            17 The salutation of Paul with mine own hand, which is the token in every epistle: so I write.
+            18 The grace of our Lord Jesus Christ be with you all. Amen.
+            ¶ The second epistle to the Thessalonians was written from Athens.*`
+
         }
     },
     "BoM": {
