@@ -237,6 +237,57 @@ var books = {
             "2015-11-2150-hebrews-11-male-voice-64k-eng.mp3",
             "2015-11-2160-hebrews-12-male-voice-64k-eng.mp3",
             "2015-11-2170-hebrews-13-male-voice-64k-eng.mp3",
+
+            "2015-11-2180-james-01-male-voice-64k-eng.mp3",
+            "2015-11-2190-james-02-male-voice-64k-eng.mp3",
+            "2015-11-2200-james-03-male-voice-64k-eng.mp3",
+            "2015-11-2210-james-04-male-voice-64k-eng.mp3",
+            "2015-11-2220-james-05-male-voice-64k-eng.mp3",
+
+            "2015-11-2230-1-peter-01-male-voice-64k-eng.mp3",
+            "2015-11-2240-1-peter-02-male-voice-64k-eng.mp3",
+            "2015-11-2250-1-peter-03-male-voice-64k-eng.mp3",
+            "2015-11-2260-1-peter-04-male-voice-64k-eng.mp3",
+            "2015-11-2270-1-peter-05-male-voice-64k-eng.mp3",
+
+            "2015-11-2280-2-peter-01-male-voice-64k-eng.mp3",
+            "2015-11-2290-2-peter-02-male-voice-64k-eng.mp3",
+            "2015-11-2300-2-peter-03-male-voice-64k-eng.mp3",
+
+            "2015-11-2310-1-john-01-male-voice-64k-eng.mp3",
+            "2015-11-2320-1-john-02-male-voice-64k-eng.mp3",
+            "2015-11-2330-1-john-03-male-voice-64k-eng.mp3",
+            "2015-11-2340-1-john-04-male-voice-64k-eng.mp3",
+            "2015-11-2350-1-john-05-male-voice-64k-eng.mp3",
+
+            "2015-11-2360-2-john-01-male-voice-64k-eng.mp3",
+
+            "2015-11-2370-3-john-01-male-voice-64k-eng.mp3",
+
+            "2015-11-2380-jude-01-male-voice-64k-eng.mp3",
+
+            "2015-11-2390-revelation-01-male-voice-64k-eng.mp3",
+            "2015-11-2400-revelation-02-male-voice-64k-eng.mp3",
+            "2015-11-2410-revelation-03-male-voice-64k-eng.mp3",
+            "2015-11-2420-revelation-04-male-voice-64k-eng.mp3",
+            "2015-11-2430-revelation-05-male-voice-64k-eng.mp3",
+            "2015-11-2440-revelation-06-male-voice-64k-eng.mp3",
+            "2015-11-2450-revelation-07-male-voice-64k-eng.mp3",
+            "2015-11-2460-revelation-08-male-voice-64k-eng.mp3",
+            "2015-11-2470-revelation-09-male-voice-64k-eng.mp3",
+            "2015-11-2480-revelation-10-male-voice-64k-eng.mp3",
+            "2015-11-2490-revelation-11-male-voice-64k-eng.mp3",
+            "2015-11-2500-revelation-12-male-voice-64k-eng.mp3",
+            "2015-11-2510-revelation-13-male-voice-64k-eng.mp3",
+            "2015-11-2520-revelation-14-male-voice-64k-eng.mp3",
+            "2015-11-2530-revelation-15-male-voice-64k-eng.mp3",
+            "2015-11-2540-revelation-16-male-voice-64k-eng.mp3",
+            "2015-11-2550-revelation-17-male-voice-64k-eng.mp3",
+            "2015-11-2560-revelation-18-male-voice-64k-eng.mp3",
+            "2015-11-2570-revelation-19-male-voice-64k-eng.mp3",
+            "2015-11-2580-revelation-20-male-voice-64k-eng.mp3",
+            "2015-11-2590-revelation-21-male-voice-64k-eng.mp3",
+            "2015-11-2600-revelation-22-male-voice-64k-eng.mp3"
         ],
         "chapters": {
             "matthew-01": `THE GOSPEL ACCORDING TO
@@ -7853,9 +7904,945 @@ var books = {
             23 Know ye that our brother Timothy is set at liberty; with whom, if he come shortly, I will see you.
             24 Salute all them that have the rule over you, and all the saints. They of Italy salute you.
             25 Grace be with you all. Amen.
-            ¶ Written to the Hebrews from Italy by Timothy.`
-
-
+            ¶ Written to the Hebrews from Italy by Timothy.`,
+            "james-01": `THE GENERAL EPISTLE OF
+            JAMES
+            CHAPTER 1
+            If any of you lack wisdom, let him ask of God—Resist temptation—Be doers of the word—James explains how to recognize pure religion.
+            1 James, a servant of God and of the Lord Jesus Christ, to the twelve tribes which are scattered abroad, greeting.
+            2 My brethren, count it all joy when ye fall into divers temptations;
+            3 Knowing this, that the trying of your faith worketh patience.
+            4 But let patience have her perfect work, that ye may be perfect and entire, wanting nothing.
+            5 If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.
+            6 But let him ask in faith, nothing wavering. For he that wavereth is like a wave of the sea driven with the wind and tossed.
+            7 For let not that man think that he shall receive any thing of the Lord.
+            8 A double minded man is unstable in all his ways.
+            9 Let the brother of low degree rejoice in that he is exalted:
+            10 But the rich, in that he is made low: because as the flower of the grass he shall pass away.
+            11 For the sun is no sooner risen with a burning heat, but it withereth the grass, and the flower thereof falleth, and the grace of the fashion of it perisheth: so also shall the rich man fade away in his ways.
+            12 Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which the Lord hath promised to them that love him.
+            13 Let no man say when he is tempted, I am tempted of God: for God cannot be tempted with evil, neither tempteth he any man:
+            14 But every man is tempted, when he is drawn away of his own lust, and enticed.
+            15 Then when lust hath conceived, it bringeth forth sin: and sin, when it is finished, bringeth forth death.
+            16 Do not err, my beloved brethren.
+            17 Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is no variableness, neither shadow of turning.
+            18 Of his own will begat he us with the word of truth, that we should be a kind of firstfruits of his creatures.
+            19 Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath:
+            20 For the wrath of man worketh not the righteousness of God.
+            21 Wherefore lay apart all filthiness and superfluity of naughtiness, and receive with meekness the engrafted word, which is able to save your souls.
+            22 But be ye doers of the word, and not hearers only, deceiving your own selves.
+            23 For if any be a hearer of the word, and not a doer, he is like unto a man beholding his natural face in a glass:
+            24 For he beholdeth himself, and goeth his way, and straightway forgetteth what manner of man he was.
+            25 But whoso looketh into the perfect law of liberty, and continueth therein, he being not a forgetful hearer, but a doer of the work, this man shall be blessed in his deed.
+            26 If any man among you seem to be religious, and bridleth not his tongue, but deceiveth his own heart, this man’s religion is vain.
+            27 Pure religion and undefiled before God and the Father is this, To visit the fatherless and widows in their affliction, and to keep himself unspotted from the world.`,
+            "james-02": `CHAPTER 2
+            God has chosen the poor of this world who are rich in faith—Salvation is gained by keeping the whole law—Faith without works is dead.
+            1 My brethren, have not the faith of our Lord Jesus Christ, the Lord of glory, with respect of persons.
+            2 For if there come unto your assembly a man with a gold ring, in goodly apparel, and there come in also a poor man in vile raiment;
+            3 And ye have respect to him that weareth the gay clothing, and say unto him, Sit thou here in a good place; and say to the poor, Stand thou there, or sit here under my footstool:
+            4 Are ye not then partial in yourselves, and are become judges of evil thoughts?
+            5 Hearken, my beloved brethren, Hath not God chosen the poor of this world rich in faith, and heirs of the kingdom which he hath promised to them that love him?
+            6 But ye have despised the poor. Do not rich men oppress you, and draw you before the judgment seats?
+            7 Do not they blaspheme that worthy name by the which ye are called?
+            8 If ye fulfil the royal law according to the scripture, Thou shalt love thy neighbour as thyself, ye do well:
+            9 But if ye have respect to persons, ye commit sin, and are convinced of the law as transgressors.
+            10 For whosoever shall keep the whole law, and yet offend in one point, he is guilty of all.
+            11 For he that said, Do not commit adultery, said also, Do not kill. Now if thou commit no adultery, yet if thou kill, thou art become a transgressor of the law.
+            12 So speak ye, and so do, as they that shall be judged by the law of liberty.
+            13 For he shall have judgment without mercy, that hath shewed no mercy; and mercy rejoiceth against judgment.
+            14 What doth it profit, my brethren, though a man say he hath faith, and have not works? can faith save him?
+            15 If a brother or sister be naked, and destitute of daily food,
+            16 And one of you say unto them, Depart in peace, be ye warmed and filled; notwithstanding ye give them not those things which are needful to the body; what doth it profit?
+            17 Even so faith, if it hath not works, is dead, being alone.
+            18 Yea, a man may say, Thou hast faith, and I have works: shew me thy faith without thy works, and I will shew thee my faith by my works.
+            19 Thou believest that there is one God; thou doest well: the devils also believe, and tremble.
+            20 But wilt thou know, O vain man, that faith without works is dead?
+            21 Was not Abraham our father justified by works, when he had offered Isaac his son upon the altar?
+            22 Seest thou how faith wrought with his works, and by works was faith made perfect?
+            23 And the scripture was fulfilled which saith, Abraham believed God, and it was imputed unto him for righteousness: and he was called the Friend of God.
+            24 Ye see then how that by works a man is justified, and not by faith only.
+            25 Likewise also was not Rahab the harlot justified by works, when she had received the messengers, and had sent them out another way?
+            26 For as the body without the spirit is dead, so faith without works is dead also.`,
+            "james-03": `CHAPTER 3
+            By governing the tongue, we gain perfection—Heavenly wisdom is pure, peaceable, and full of mercy.
+            1 My brethren, be not many masters, knowing that we shall receive the greater condemnation.
+            2 For in many things we offend all. If any man offend not in word, the same is a perfect man, and able also to bridle the whole body.
+            3 Behold, we put bits in the horses’ mouths, that they may obey us; and we turn about their whole body.
+            4 Behold also the ships, which though they be so great, and are driven of fierce winds, yet are they turned about with a very small helm, whithersoever the governor listeth.
+            5 Even so the tongue is a little member, and boasteth great things. Behold, how great a matter a little fire kindleth!
+            6 And the tongue is a fire, a world of iniquity: so is the tongue among our members, that it defileth the whole body, and setteth on fire the course of nature; and it is set on fire of hell.
+            7 For every kind of beasts, and of birds, and of serpents, and of things in the sea, is tamed, and hath been tamed of mankind:
+            8 But the tongue can no man tame; it is an unruly evil, full of deadly poison.
+            9 Therewith bless we God, even the Father; and therewith curse we men, which are made after the similitude of God.
+            10 Out of the same mouth proceedeth blessing and cursing. My brethren, these things ought not so to be.
+            11 Doth a fountain send forth at the same place sweet water and bitter?
+            12 Can the fig tree, my brethren, bear olive berries? either a vine, figs? so can no fountain both yield salt water and fresh.
+            13 Who is a wise man and endued with knowledge among you? let him shew out of a good conversation his works with meekness of wisdom.
+            14 But if ye have bitter envying and strife in your hearts, glory not, and lie not against the truth.
+            15 This wisdom descendeth not from above, but is earthly, sensual, devilish.
+            16 For where envying and strife is, there is confusion and every evil work.
+            17 But the wisdom that is from above is first pure, then peaceable, gentle, and easy to be entreated, full of mercy and good fruits, without partiality, and without hypocrisy.
+            18 And the fruit of righteousness is sown in peace of them that make peace.`,
+            "james-04": `CHAPTER 4
+            Wars are born of lusts—The friends of the world are the enemies of God—Sin is failure to walk in the light we have received.
+            1 From whence come wars and fightings among you? come they not hence, even of your lusts that war in your members?
+            2 Ye lust, and have not: ye kill, and desire to have, and cannot obtain: ye fight and war, yet ye have not, because ye ask not.
+            3 Ye ask, and receive not, because ye ask amiss, that ye may consume it upon your lusts.
+            4 Ye adulterers and adulteresses, know ye not that the friendship of the world is enmity with God? whosoever therefore will be a friend of the world is the enemy of God.
+            5 Do ye think that the scripture saith in vain, The spirit that dwelleth in us lusteth to envy?
+            6 But he giveth more grace. Wherefore he saith, God resisteth the proud, but giveth grace unto the humble.
+            7 Submit yourselves therefore to God. Resist the devil, and he will flee from you.
+            8 Draw nigh to God, and he will draw nigh to you. Cleanse your hands, ye sinners; and purify your hearts, ye double minded.
+            9 Be afflicted, and mourn, and weep: let your laughter be turned to mourning, and your joy to heaviness.
+            10 Humble yourselves in the sight of the Lord, and he shall lift you up.
+            11 Speak not evil one of another, brethren. He that speaketh evil of his brother, and judgeth his brother, speaketh evil of the law, and judgeth the law: but if thou judge the law, thou art not a doer of the law, but a judge.
+            12 There is one lawgiver, who is able to save and to destroy: who art thou that judgest another?
+            13 Go to now, ye that say, To day or to morrow we will go into such a city, and continue there a year, and buy and sell, and get gain:
+            14 Whereas ye know not what shall be on the morrow. For what is your life? It is even a vapour, that appeareth for a little time, and then vanisheth away.
+            15 For that ye ought to say, If the Lord will, we shall live, and do this, or that.
+            16 But now ye rejoice in your boastings: all such rejoicing is evil.
+            17 Therefore to him that knoweth to do good, and doeth it not, to him it is sin.`,
+            "james-05": `CHAPTER 5
+            Misery awaits the wanton rich—Await the Lord’s coming with patience—The elders are to anoint and heal the sick.
+            1 Go to now, ye rich men, weep and howl for your miseries that shall come upon you.
+            2 Your riches are corrupted, and your garments are motheaten.
+            3 Your gold and silver is cankered; and the rust of them shall be a witness against you, and shall eat your flesh as it were fire. Ye have heaped treasure together for the last days.
+            4 Behold, the hire of the labourers who have reaped down your fields, which is of you kept back by fraud, crieth: and the cries of them which have reaped are entered into the ears of the Lord of sabaoth.
+            5 Ye have lived in pleasure on the earth, and been wanton; ye have nourished your hearts, as in a day of slaughter.
+            6 Ye have condemned and killed the just; and he doth not resist you.
+            7 Be patient therefore, brethren, unto the coming of the Lord. Behold, the husbandman waiteth for the precious fruit of the earth, and hath long patience for it, until he receive the early and latter rain.
+            8 Be ye also patient; stablish your hearts: for the coming of the Lord draweth nigh.
+            9 Grudge not one against another, brethren, lest ye be condemned: behold, the judge standeth before the door.
+            10 Take, my brethren, the prophets, who have spoken in the name of the Lord, for an example of suffering affliction, and of patience.
+            11 Behold, we count them happy which endure. Ye have heard of the patience of Job, and have seen the end of the Lord; that the Lord is very pitiful, and of tender mercy.
+            12 But above all things, my brethren, swear not, neither by heaven, neither by the earth, neither by any other oath: but let your yea be yea; and your nay, nay; lest ye fall into condemnation.
+            13 Is any among you afflicted? let him pray. Is any merry? let him sing psalms.
+            14 Is any sick among you? let him call for the elders of the church; and let them pray over him, anointing him with oil in the name of the Lord:
+            15 And the prayer of faith shall save the sick, and the Lord shall raise him up; and if he have committed sins, they shall be forgiven him.
+            16 Confess your faults one to another, and pray one for another, that ye may be healed. The effectual fervent prayer of a righteous man availeth much.
+            17 Elias was a man subject to like passions as we are, and he prayed earnestly that it might not rain: and it rained not on the earth by the space of three years and six months.
+            18 And he prayed again, and the heaven gave rain, and the earth brought forth her fruit.
+            19 Brethren, if any of you do err from the truth, and one convert him;
+            20 Let him know, that he which converteth the sinner from the error of his way shall save a soul from death, and shall hide a multitude of sins.`,
+            "1-peter-01": `THE FIRST EPISTLE GENERAL OF
+            PETER
+            CHAPTER 1
+            The trial of our faith precedes salvation—Christ was foreordained to be the Redeemer.
+            1 Peter, an apostle of Jesus Christ, to the strangers scattered throughout Pontus, Galatia, Cappadocia, Asia, and Bithynia,
+            2 Elect according to the foreknowledge of God the Father, through sanctification of the Spirit, unto obedience and sprinkling of the blood of Jesus Christ: Grace unto you, and peace, be multiplied.
+            3 Blessed be the God and Father of our Lord Jesus Christ, which according to his abundant mercy hath begotten us again unto a lively hope by the resurrection of Jesus Christ from the dead,
+            4 To an inheritance incorruptible, and undefiled, and that fadeth not away, reserved in heaven for you,
+            5 Who are kept by the power of God through faith unto salvation ready to be revealed in the last time.
+            6 Wherein ye greatly rejoice, though now for a season, if need be, ye are in heaviness through manifold temptations:
+            7 That the trial of your faith, being much more precious than of gold that perisheth, though it be tried with fire, might be found unto praise and honour and glory at the appearing of Jesus Christ:
+            8 Whom having not seen, ye love; in whom, though now ye see him not, yet believing, ye rejoice with joy unspeakable and full of glory:
+            9 Receiving the end of your faith, even the salvation of your souls.
+            10 Of which salvation the prophets have inquired and searched diligently, who prophesied of the grace that should come unto you:
+            11 Searching what, or what manner of time the Spirit of Christ which was in them did signify, when it testified beforehand the sufferings of Christ, and the glory that should follow.
+            12 Unto whom it was revealed, that not unto themselves, but unto us they did minister the things, which are now reported unto you by them that have preached the gospel unto you with the Holy Ghost sent down from heaven; which things the angels desire to look into.
+            13 Wherefore gird up the loins of your mind, be sober, and hope to the end for the grace that is to be brought unto you at the revelation of Jesus Christ;
+            14 As obedient children, not fashioning yourselves according to the former lusts in your ignorance:
+            15 But as he which hath called you is holy, so be ye holy in all manner of conversation;
+            16 Because it is written, Be ye holy; for I am holy.
+            17 And if ye call on the Father, who without respect of persons judgeth according to every man’s work, pass the time of your sojourning here in fear:
+            18 Forasmuch as ye know that ye were not redeemed with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers;
+            19 But with the precious blood of Christ, as of a lamb without blemish and without spot:
+            20 Who verily was foreordained before the foundation of the world, but was manifest in these last times for you,
+            21 Who by him do believe in God, that raised him up from the dead, and gave him glory; that your faith and hope might be in God.
+            22 Seeing ye have purified your souls in obeying the truth through the Spirit unto unfeigned love of the brethren, see that ye love one another with a pure heart fervently:
+            23 Being born again, not of corruptible seed, but of incorruptible, by the word of God, which liveth and abideth for ever.
+            24 For all flesh is as grass, and all the glory of man as the flower of grass. The grass withereth, and the flower thereof falleth away:
+            25 But the word of the Lord endureth for ever. And this is the word which by the gospel is preached unto you.`,
+            "1-peter-02": `CHAPTER 2
+            Converts are newborn babes in Christ—He is the chief cornerstone—Saints hold a royal priesthood and are a peculiar people—Saints are in subjection to the laws of man.
+            1 Wherefore laying aside all malice, and all guile, and hypocrisies, and envies, and all evil speakings,
+            2 As newborn babes, desire the sincere milk of the word, that ye may grow thereby:
+            3 If so be ye have tasted that the Lord is gracious.
+            4 To whom coming, as unto a living stone, disallowed indeed of men, but chosen of God, and precious,
+            5 Ye also, as lively stones, are built up a spiritual house, an holy priesthood, to offer up spiritual sacrifices, acceptable to God by Jesus Christ.
+            6 Wherefore also it is contained in the scripture, Behold, I lay in Sion a chief corner stone, elect, precious: and he that believeth on him shall not be confounded.
+            7 Unto you therefore which believe he is precious: but unto them which be disobedient, the stone which the builders disallowed, the same is made the head of the corner,
+            8 And a stone of stumbling, and a rock of offence, even to them which stumble at the word, being disobedient: whereunto also they were appointed.
+            9 But ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people; that ye should shew forth the praises of him who hath called you out of darkness into his marvellous light:
+            10 Which in time past were not a people, but are now the people of God: which had not obtained mercy, but now have obtained mercy.
+            11 Dearly beloved, I beseech you as strangers and pilgrims, abstain from fleshly lusts, which war against the soul;
+            12 Having your conversation honest among the Gentiles: that, whereas they speak against you as evildoers, they may by your good works, which they shall behold, glorify God in the day of visitation.
+            13 Submit yourselves to every ordinance of man for the Lord’s sake: whether it be to the king, as supreme;
+            14 Or unto governors, as unto them that are sent by him for the punishment of evildoers, and for the praise of them that do well.
+            15 For so is the will of God, that with well doing ye may put to silence the ignorance of foolish men:
+            16 As free, and not using your liberty for a cloak of maliciousness, but as the servants of God.
+            17 Honour all men. Love the brotherhood. Fear God. Honour the king.
+            18 Servants, be subject to your masters with all fear; not only to the good and gentle, but also to the froward.
+            19 For this is thankworthy, if a man for conscience toward God endure grief, suffering wrongfully.
+            20 For what glory is it, if, when ye be buffeted for your faults, ye shall take it patiently? but if, when ye do well, and suffer for it, ye take it patiently, this is acceptable with God.
+            21 For even hereunto were ye called: because Christ also suffered for us, leaving us an example, that ye should follow his steps:
+            22 Who did no sin, neither was guile found in his mouth:
+            23 Who, when he was reviled, reviled not again; when he suffered, he threatened not; but committed himself to him that judgeth righteously:
+            24 Who his own self bare our sins in his own body on the tree, that we, being dead to sins, should live unto righteousness: by whose stripes ye were healed.
+            25 For ye were as sheep going astray; but are now returned unto the Shepherd and Bishop of your souls.`,
+            "1-peter-03": `CHAPTER 3
+            Husbands and wives should honor each other—Saints should live by gospel standards—Christ preached to the spirits in prison.
+            1 Likewise, ye wives, be in subjection to your own husbands; that, if any obey not the word, they also may without the word be won by the conversation of the wives;
+            2 While they behold your chaste conversation coupled with fear.
+            3 Whose adorning let it not be that outward adorning of plaiting the hair, and of wearing of gold, or of putting on of apparel;
+            4 But let it be the hidden man of the heart, in that which is not corruptible, even the ornament of a meek and quiet spirit, which is in the sight of God of great price.
+            5 For after this manner in the old time the holy women also, who trusted in God, adorned themselves, being in subjection unto their own husbands:
+            6 Even as Sara obeyed Abraham, calling him lord: whose daughters ye are, as long as ye do well, and are not afraid with any amazement.
+            7 Likewise, ye husbands, dwell with them according to knowledge, giving honour unto the wife, as unto the weaker vessel, and as being heirs together of the grace of life; that your prayers be not hindered.
+            8 Finally, be ye all of one mind, having compassion one of another, love as brethren, be pitiful, be courteous:
+            9 Not rendering evil for evil, or railing for railing: but contrariwise blessing; knowing that ye are thereunto called, that ye should inherit a blessing.
+            10 For he that will love life, and see good days, let him refrain his tongue from evil, and his lips that they speak no guile:
+            11 Let him eschew evil, and do good; let him seek peace, and ensue it.
+            12 For the eyes of the Lord are over the righteous, and his ears are open unto their prayers: but the face of the Lord is against them that do evil.
+            13 And who is he that will harm you, if ye be followers of that which is good?
+            14 But and if ye suffer for righteousness’ sake, happy are ye: and be not afraid of their terror, neither be troubled;
+            15 But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear:
+            16 Having a good conscience; that, whereas they speak evil of you, as of evildoers, they may be ashamed that falsely accuse your good conversation in Christ.
+            17 For it is better, if the will of God be so, that ye suffer for well doing, than for evil doing.
+            18 For Christ also hath once suffered for sins, the just for the unjust, that he might bring us to God, being put to death in the flesh, but quickened by the Spirit:
+            19 By which also he went and preached unto the spirits in prison;
+            20 Which sometime were disobedient, when once the longsuffering of God waited in the days of Noah, while the ark was a preparing, wherein few, that is, eight souls were saved by water.
+            21 The like figure whereunto even baptism doth also now save us (not the putting away of the filth of the flesh, but the answer of a good conscience toward God,) by the resurrection of Jesus Christ:
+            22 Who is gone into heaven, and is on the right hand of God; angels and authorities and powers being made subject unto him.`,
+            "1-peter-04": `CHAPTER 4
+            Peter explains why the gospel is preached to the dead—Saints should speak as the oracles of God—The righteous will be tried and tested in all things.
+            1 Forasmuch then as Christ hath suffered for us in the flesh, arm yourselves likewise with the same mind: for he that hath suffered in the flesh hath ceased from sin;
+            2 That he no longer should live the rest of his time in the flesh to the lusts of men, but to the will of God.
+            3 For the time past of our life may suffice us to have wrought the will of the Gentiles, when we walked in lasciviousness, lusts, excess of wine, revellings, banquetings, and abominable idolatries:
+            4 Wherein they think it strange that ye run not with them to the same excess of riot, speaking evil of you:
+            5 Who shall give account to him that is ready to judge the quick and the dead.
+            6 For for this cause was the gospel preached also to them that are dead, that they might be judged according to men in the flesh, but live according to God in the spirit.
+            7 But the end of all things is at hand: be ye therefore sober, and watch unto prayer.
+            8 And above all things have fervent charity among yourselves: for charity shall cover the multitude of sins.
+            9 Use hospitality one to another without grudging.
+            10 As every man hath received the gift, even so minister the same one to another, as good stewards of the manifold grace of God.
+            11 If any man speak, let him speak as the oracles of God; if any man minister, let him do it as of the ability which God giveth: that God in all things may be glorified through Jesus Christ, to whom be praise and dominion for ever and ever. Amen.
+            12 Beloved, think it not strange concerning the fiery trial which is to try you, as though some strange thing happened unto you:
+            13 But rejoice, inasmuch as ye are partakers of Christ’s sufferings; that, when his glory shall be revealed, ye may be glad also with exceeding joy.
+            14 If ye be reproached for the name of Christ, happy are ye; for the spirit of glory and of God resteth upon you: on their part he is evil spoken of, but on your part he is glorified.
+            15 But let none of you suffer as a murderer, or as a thief, or as an evildoer, or as a busybody in other men’s matters.
+            16 Yet if any man suffer as a Christian, let him not be ashamed; but let him glorify God on this behalf.
+            17 For the time is come that judgment must begin at the house of God: and if it first begin at us, what shall the end be of them that obey not the gospel of God?
+            18 And if the righteous scarcely be saved, where shall the ungodly and the sinner appear?
+            19 Wherefore let them that suffer according to the will of God commit the keeping of their souls to him in well doing, as unto a faithful Creator.`,
+            "1-peter-05": `CHAPTER 5
+            The elders are to feed the flock of God—Humility and godly graces lead to perfection.
+            1 The elders which are among you I exhort, who am also an elder, and a witness of the sufferings of Christ, and also a partaker of the glory that shall be revealed:
+            2 Feed the flock of God which is among you, taking the oversight thereof, not by constraint, but willingly; not for filthy lucre, but of a ready mind;
+            3 Neither as being lords over God’s heritage, but being ensamples to the flock.
+            4 And when the chief Shepherd shall appear, ye shall receive a crown of glory that fadeth not away.
+            5 Likewise, ye younger, submit yourselves unto the elder. Yea, all of you be subject one to another, and be clothed with humility: for God resisteth the proud, and giveth grace to the humble.
+            6 Humble yourselves therefore under the mighty hand of God, that he may exalt you in due time:
+            7 Casting all your care upon him; for he careth for you.
+            8 Be sober, be vigilant; because your adversary the devil, as a roaring lion, walketh about, seeking whom he may devour:
+            9 Whom resist steadfast in the faith, knowing that the same afflictions are accomplished in your brethren that are in the world.
+            10 But the God of all grace, who hath called us unto his eternal glory by Christ Jesus, after that ye have suffered a while, make you perfect, stablish, strengthen, settle you.
+            11 To him be glory and dominion for ever and ever. Amen.
+            12 By Silvanus, a faithful brother unto you, as I suppose, I have written briefly, exhorting, and testifying that this is the true grace of God wherein ye stand.
+            13 The church that is at Babylon, elected together with you, saluteth you; and so doth Marcus my son.
+            14 Greet ye one another with a kiss of charity. Peace be with you all that are in Christ Jesus. Amen.`,
+            "2-peter-01": `THE SECOND EPISTLE GENERAL OF
+            PETER
+            CHAPTER 1
+            Peter urges the Saints to make their calling and election sure—Prophecy comes by the power of the Holy Ghost.
+            1 Simon Peter, a servant and an apostle of Jesus Christ, to them that have obtained like precious faith with us through the righteousness of God and our Saviour Jesus Christ:
+            2 Grace and peace be multiplied unto you through the knowledge of God, and of Jesus our Lord,
+            3 According as his divine power hath given unto us all things that pertain unto life and godliness, through the knowledge of him that hath called us to glory and virtue:
+            4 Whereby are given unto us exceeding great and precious promises: that by these ye might be partakers of the divine nature, having escaped the corruption that is in the world through lust.
+            5 And beside this, giving all diligence, add to your faith virtue; and to virtue knowledge;
+            6 And to knowledge temperance; and to temperance patience; and to patience godliness;
+            7 And to godliness brotherly kindness; and to brotherly kindness charity.
+            8 For if these things be in you, and abound, they make you that ye shall neither be barren nor unfruitful in the knowledge of our Lord Jesus Christ.
+            9 But he that lacketh these things is blind, and cannot see afar off, and hath forgotten that he was purged from his old sins.
+            10 Wherefore the rather, brethren, give diligence to make your calling and election sure: for if ye do these things, ye shall never fall:
+            11 For so an entrance shall be ministered unto you abundantly into the everlasting kingdom of our Lord and Saviour Jesus Christ.
+            12 Wherefore I will not be negligent to put you always in remembrance of these things, though ye know them, and be established in the present truth.
+            13 Yea, I think it meet, as long as I am in this tabernacle, to stir you up by putting you in remembrance;
+            14 Knowing that shortly I must put off this my tabernacle, even as our Lord Jesus Christ hath shewed me.
+            15 Moreover I will endeavour that ye may be able after my decease to have these things always in remembrance.
+            16 For we have not followed cunningly devised fables, when we made known unto you the power and coming of our Lord Jesus Christ, but were eyewitnesses of his majesty.
+            17 For he received from God the Father honour and glory, when there came such a voice to him from the excellent glory, This is my beloved Son, in whom I am well pleased.
+            18 And this voice which came from heaven we heard, when we were with him in the holy mount.
+            19 We have also a more sure word of prophecy; whereunto ye do well that ye take heed, as unto a light that shineth in a dark place, until the day dawn, and the day star arise in your hearts:
+            20 Knowing this first, that no prophecy of the scripture is of any private interpretation.
+            21 For the prophecy came not in old time by the will of man: but holy men of God spake as they were moved by the Holy Ghost.`,
+            "2-peter-02": `CHAPTER 2
+            False teachers among the Saints are damned—Lustful Saints will perish in their own corruption.
+            1 But there were false prophets also among the people, even as there shall be false teachers among you, who privily shall bring in damnable heresies, even denying the Lord that bought them, and bring upon themselves swift destruction.
+            2 And many shall follow their pernicious ways; by reason of whom the way of truth shall be evil spoken of.
+            3 And through covetousness shall they with feigned words make merchandise of you: whose judgment now of a long time lingereth not, and their damnation slumbereth not.
+            4 For if God spared not the angels that sinned, but cast them down to hell, and delivered them into chains of darkness, to be reserved unto judgment;
+            5 And spared not the old world, but saved Noah the eighth person, a preacher of righteousness, bringing in the flood upon the world of the ungodly;
+            6 And turning the cities of Sodom and Gomorrha into ashes condemned them with an overthrow, making them an ensample unto those that after should live ungodly;
+            7 And delivered just Lot, vexed with the filthy conversation of the wicked:
+            8 (For that righteous man dwelling among them, in seeing and hearing, vexed his righteous soul from day to day with their unlawful deeds;)
+            9 The Lord knoweth how to deliver the godly out of temptations, and to reserve the unjust unto the day of judgment to be punished:
+            10 But chiefly them that walk after the flesh in the lust of uncleanness, and despise government. Presumptuous are they, selfwilled, they are not afraid to speak evil of dignities.
+            11 Whereas angels, which are greater in power and might, bring not railing accusation against them before the Lord.
+            12 But these, as natural brute beasts, made to be taken and destroyed, speak evil of the things that they understand not; and shall utterly perish in their own corruption;
+            13 And shall receive the reward of unrighteousness, as they that count it pleasure to riot in the day time. Spots they are and blemishes, sporting themselves with their own deceivings while they feast with you;
+            14 Having eyes full of adultery, and that cannot cease from sin; beguiling unstable souls: an heart they have exercised with covetous practices; cursed children:
+            15 Which have forsaken the right way, and are gone astray, following the way of Balaam the son of Bosor, who loved the wages of unrighteousness;
+            16 But was rebuked for his iniquity: the dumb ass speaking with man’s voice forbad the madness of the prophet.
+            17 These are wells without water, clouds that are carried with a tempest; to whom the mist of darkness is reserved for ever.
+            18 For when they speak great swelling words of vanity, they allure through the lusts of the flesh, through much wantonness, those that were clean escaped from them who live in error.
+            19 While they promise them liberty, they themselves are the servants of corruption: for of whom a man is overcome, of the same is he brought in bondage.
+            20 For if after they have escaped the pollutions of the world through the knowledge of the Lord and Saviour Jesus Christ, they are again entangled therein, and overcome, the latter end is worse with them than the beginning.
+            21 For it had been better for them not to have known the way of righteousness, than, after they have known it, to turn from the holy commandment delivered unto them.
+            22 But it is happened unto them according to the true proverb, The dog is turned to his own vomit again; and the sow that was washed to her wallowing in the mire.`,
+            "2-peter-03": `CHAPTER 3
+            Some in the latter days will doubt the Second Coming—The elements will melt at the coming of the Lord.
+            1 This second epistle, beloved, I now write unto you; in both which I stir up your pure minds by way of remembrance:
+            2 That ye may be mindful of the words which were spoken before by the holy prophets, and of the commandment of us the apostles of the Lord and Saviour:
+            3 Knowing this first, that there shall come in the last days scoffers, walking after their own lusts,
+            4 And saying, Where is the promise of his coming? for since the fathers fell asleep, all things continue as they were from the beginning of the creation.
+            5 For this they willingly are ignorant of, that by the word of God the heavens were of old, and the earth standing out of the water and in the water:
+            6 Whereby the world that then was, being overflowed with water, perished:
+            7 But the heavens and the earth, which are now, by the same word are kept in store, reserved unto fire against the day of judgment and perdition of ungodly men.
+            8 But, beloved, be not ignorant of this one thing, that one day is with the Lord as a thousand years, and a thousand years as one day.
+            9 The Lord is not slack concerning his promise, as some men count slackness; but is longsuffering to us-ward, not willing that any should perish, but that all should come to repentance.
+            10 But the day of the Lord will come as a thief in the night; in the which the heavens shall pass away with a great noise, and the elements shall melt with fervent heat, the earth also and the works that are therein shall be burned up.
+            11 Seeing then that all these things shall be dissolved, what manner of persons ought ye to be in all holy conversation and godliness,
+            12 Looking for and hasting unto the coming of the day of God, wherein the heavens being on fire shall be dissolved, and the elements shall melt with fervent heat?
+            13 Nevertheless we, according to his promise, look for new heavens and a new earth, wherein dwelleth righteousness.
+            14 Wherefore, beloved, seeing that ye look for such things, be diligent that ye may be found of him in peace, without spot, and blameless.
+            15 And account that the longsuffering of our Lord is salvation; even as our beloved brother Paul also according to the wisdom given unto him hath written unto you;
+            16 As also in all his epistles, speaking in them of these things; in which are some things hard to be understood, which they that are unlearned and unstable wrest, as they do also the other scriptures, unto their own destruction.
+            17 Ye therefore, beloved, seeing ye know these things before, beware lest ye also, being led away with the error of the wicked, fall from your own steadfastness.
+            18 But grow in grace, and in the knowledge of our Lord and Saviour Jesus Christ. To him be glory both now and for ever. Amen.`,
+            "1-john-01": `THE FIRST EPISTLE GENERAL OF
+            JOHN
+            CHAPTER 1
+            The Saints gain fellowship with God by obedience—We must confess our sins to gain forgiveness.
+            1 That which was from the beginning, which we have heard, which we have seen with our eyes, which we have looked upon, and our hands have handled, of the Word of life;
+            2 (For the life was manifested, and we have seen it, and bear witness, and shew unto you that eternal life, which was with the Father, and was manifested unto us;)
+            3 That which we have seen and heard declare we unto you, that ye also may have fellowship with us: and truly our fellowship is with the Father, and with his Son Jesus Christ.
+            4 And these things write we unto you, that your joy may be full.
+            5 This then is the message which we have heard of him, and declare unto you, that God is light, and in him is no darkness at all.
+            6 If we say that we have fellowship with him, and walk in darkness, we lie, and do not the truth:
+            7 But if we walk in the light, as he is in the light, we have fellowship one with another, and the blood of Jesus Christ his Son cleanseth us from all sin.
+            8 If we say that we have no sin, we deceive ourselves, and the truth is not in us.
+            9 If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.
+            10 If we say that we have not sinned, we make him a liar, and his word is not in us.`,
+            "1-john-02": `CHAPTER 2
+            Christ is our Advocate with the Father—We know God by obedience—Love not the world—Anti-Christs will come in the last days.
+            1 My little children, these things write I unto you, that ye sin not. And if any man sin, we have an advocate with the Father, Jesus Christ the righteous:
+            2 And he is the propitiation for our sins: and not for ours only, but also for the sins of the whole world.
+            3 And hereby we do know that we know him, if we keep his commandments.
+            4 He that saith, I know him, and keepeth not his commandments, is a liar, and the truth is not in him.
+            5 But whoso keepeth his word, in him verily is the love of God perfected: hereby know we that we are in him.
+            6 He that saith he abideth in him ought himself also so to walk, even as he walked.
+            7 Brethren, I write no new commandment unto you, but an old commandment which ye had from the beginning. The old commandment is the word which ye have heard from the beginning.
+            8 Again, a new commandment I write unto you, which thing is true in him and in you: because the darkness is past, and the true light now shineth.
+            9 He that saith he is in the light, and hateth his brother, is in darkness even until now.
+            10 He that loveth his brother abideth in the light, and there is none occasion of stumbling in him.
+            11 But he that hateth his brother is in darkness, and walketh in darkness, and knoweth not whither he goeth, because that darkness hath blinded his eyes.
+            12 I write unto you, little children, because your sins are forgiven you for his name’s sake.
+            13 I write unto you, fathers, because ye have known him that is from the beginning. I write unto you, young men, because ye have overcome the wicked one. I write unto you, little children, because ye have known the Father.
+            14 I have written unto you, fathers, because ye have known him that is from the beginning. I have written unto you, young men, because ye are strong, and the word of God abideth in you, and ye have overcome the wicked one.
+            15 Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him.
+            16 For all that is in the world, the lust of the flesh, and the lust of the eyes, and the pride of life, is not of the Father, but is of the world.
+            17 And the world passeth away, and the lust thereof: but he that doeth the will of God abideth for ever.
+            18 Little children, it is the last time: and as ye have heard that antichrist shall come, even now are there many antichrists; whereby we know that it is the last time.
+            19 They went out from us, but they were not of us; for if they had been of us, they would no doubt have continued with us: but they went out, that they might be made manifest that they were not all of us.
+            20 But ye have an unction from the Holy One, and ye know all things.
+            21 I have not written unto you because ye know not the truth, but because ye know it, and that no lie is of the truth.
+            22 Who is a liar but he that denieth that Jesus is the Christ? He is antichrist, that denieth the Father and the Son.
+            23 Whosoever denieth the Son, the same hath not the Father: [but] he that acknowledgeth the Son hath the Father also.
+            24 Let that therefore abide in you, which ye have heard from the beginning. If that which ye have heard from the beginning shall remain in you, ye also shall continue in the Son, and in the Father.
+            25 And this is the promise that he hath promised us, even eternal life.
+            26 These things have I written unto you concerning them that seduce you.
+            27 But the anointing which ye have received of him abideth in you, and ye need not that any man teach you: but as the same anointing teacheth you of all things, and is truth, and is no lie, and even as it hath taught you, ye shall abide in him.
+            28 And now, little children, abide in him; that, when he shall appear, we may have confidence, and not be ashamed before him at his coming.
+            29 If ye know that he is righteous, ye know that every one that doeth righteousness is born of him.`,
+            "1-john-03": `CHAPTER 3
+            The sons of God will become like Christ—Love for others is required to gain eternal life—Obedience ensures us an answer to our prayers.
+            1 Behold, what manner of love the Father hath bestowed upon us, that we should be called the sons of God: therefore the world knoweth us not, because it knew him not.
+            2 Beloved, now are we the sons of God, and it doth not yet appear what we shall be: but we know that, when he shall appear, we shall be like him; for we shall see him as he is.
+            3 And every man that hath this hope in him purifieth himself, even as he is pure.
+            4 Whosoever committeth sin transgresseth also the law: for sin is the transgression of the law.
+            5 And ye know that he was manifested to take away our sins; and in him is no sin.
+            6 Whosoever abideth in him sinneth not: whosoever sinneth hath not seen him, neither known him.
+            7 Little children, let no man deceive you: he that doeth righteousness is righteous, even as he is righteous.
+            8 He that committeth sin is of the devil; for the devil sinneth from the beginning. For this purpose the Son of God was manifested, that he might destroy the works of the devil.
+            9 Whosoever is born of God doth not commit sin; for his seed remaineth in him: and he cannot sin, because he is born of God.
+            10 In this the children of God are manifest, and the children of the devil: whosoever doeth not righteousness is not of God, neither he that loveth not his brother.
+            11 For this is the message that ye heard from the beginning, that we should love one another.
+            12 Not as Cain, who was of that wicked one, and slew his brother. And wherefore slew he him? Because his own works were evil, and his brother’s righteous.
+            13 Marvel not, my brethren, if the world hate you.
+            14 We know that we have passed from death unto life, because we love the brethren. He that loveth not his brother abideth in death.
+            15 Whosoever hateth his brother is a murderer: and ye know that no murderer hath eternal life abiding in him.
+            16 Hereby perceive we the love of God, because he laid down his life for us: and we ought to lay down our lives for the brethren.
+            17 But whoso hath this world’s good, and seeth his brother have need, and shutteth up his bowels of compassion from him, how dwelleth the love of God in him?
+            18 My little children, let us not love in word, neither in tongue; but in deed and in truth.
+            19 And hereby we know that we are of the truth, and shall assure our hearts before him.
+            20 For if our heart condemn us, God is greater than our heart, and knoweth all things.
+            21 Beloved, if our heart condemn us not, then have we confidence toward God.
+            22 And whatsoever we ask, we receive of him, because we keep his commandments, and do those things that are pleasing in his sight.
+            23 And this is his commandment, That we should believe on the name of his Son Jesus Christ, and love one another, as he gave us commandment.
+            24 And he that keepeth his commandments dwelleth in him, and he in him. And hereby we know that he abideth in us, by the Spirit which he hath given us.`,
+            "1-john-04": `CHAPTER 4
+            Try the spirits—God is love and dwells in those who love Him.
+            1 Beloved, believe not every spirit, but try the spirits whether they are of God: because many false prophets are gone out into the world.
+            2 Hereby know ye the Spirit of God: Every spirit that confesseth that Jesus Christ is come in the flesh is of God:
+            3 And every spirit that confesseth not that Jesus Christ is come in the flesh is not of God: and this is that spirit of antichrist, whereof ye have heard that it should come; and even now already is it in the world.
+            4 Ye are of God, little children, and have overcome them: because greater is he that is in you, than he that is in the world.
+            5 They are of the world: therefore speak they of the world, and the world heareth them.
+            6 We are of God: he that knoweth God heareth us; he that is not of God heareth not us. Hereby know we the spirit of truth, and the spirit of error.
+            7 Beloved, let us love one another: for love is of God; and every one that loveth is born of God, and knoweth God.
+            8 He that loveth not knoweth not God; for God is love.
+            9 In this was manifested the love of God toward us, because that God sent his only begotten Son into the world, that we might live through him.
+            10 Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins.
+            11 Beloved, if God so loved us, we ought also to love one another.
+            12 No man hath seen God at any time. If we love one another, God dwelleth in us, and his love is perfected in us.
+            13 Hereby know we that we dwell in him, and he in us, because he hath given us of his Spirit.
+            14 And we have seen and do testify that the Father sent the Son to be the Saviour of the world.
+            15 Whosoever shall confess that Jesus is the Son of God, God dwelleth in him, and he in God.
+            16 And we have known and believed the love that God hath to us. God is love; and he that dwelleth in love dwelleth in God, and God in him.
+            17 Herein is our love made perfect, that we may have boldness in the day of judgment: because as he is, so are we in this world.
+            18 There is no fear in love; but perfect love casteth out fear: because fear hath torment. He that feareth is not made perfect in love.
+            19 We love him, because he first loved us.
+            20 If a man say, I love God, and hateth his brother, he is a liar: for he that loveth not his brother whom he hath seen, how can he love God whom he hath not seen?
+            21 And this commandment have we from him, That he who loveth God love his brother also.`,
+            "1-john-05": `CHAPTER 5
+            Saints are born of God through belief in Christ—Water, blood, and the Spirit testify of Christ—Belief in Christ is required in order to gain eternal life.
+            1 Whosoever believeth that Jesus is the Christ is born of God: and every one that loveth him that begat loveth him also that is begotten of him.
+            2 By this we know that we love the children of God, when we love God, and keep his commandments.
+            3 For this is the love of God, that we keep his commandments: and his commandments are not grievous.
+            4 For whatsoever is born of God overcometh the world: and this is the victory that overcometh the world, even our faith.
+            5 Who is he that overcometh the world, but he that believeth that Jesus is the Son of God?
+            6 This is he that came by water and blood, even Jesus Christ; not by water only, but by water and blood. And it is the Spirit that beareth witness, because the Spirit is truth.
+            7 For there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one.
+            8 And there are three that bear witness in earth, the Spirit, and the water, and the blood: and these three agree in one.
+            9 If we receive the witness of men, the witness of God is greater: for this is the witness of God which he hath testified of his Son.
+            10 He that believeth on the Son of God hath the witness in himself: he that believeth not God hath made him a liar; because he believeth not the record that God gave of his Son.
+            11 And this is the record, that God hath given to us eternal life, and this life is in his Son.
+            12 He that hath the Son hath life; and he that hath not the Son of God hath not life.
+            13 These things have I written unto you that believe on the name of the Son of God; that ye may know that ye have eternal life, and that ye may believe on the name of the Son of God.
+            14 And this is the confidence that we have in him, that, if we ask any thing according to his will, he heareth us:
+            15 And if we know that he hear us, whatsoever we ask, we know that we have the petitions that we desired of him.
+            16 If any man see his brother sin a sin which is not unto death, he shall ask, and he shall give him life for them that sin not unto death. There is a sin unto death: I do not say that he shall pray for it.
+            17 All unrighteousness is sin: and there is a sin not unto death.
+            18 We know that whosoever is born of God sinneth not; but he that is begotten of God keepeth himself, and that wicked one toucheth him not.
+            19 And we know that we are of God, and the whole world lieth in wickedness.
+            20 And we know that the Son of God is come, and hath given us an understanding, that we may know him that is true, and we are in him that is true, even in his Son Jesus Christ. This is the true God, and eternal life.
+            21 Little children, keep yourselves from idols. Amen.`,
+            "2-john-01": `THE SECOND EPISTLE OF
+            JOHN
+            CHAPTER 1
+            John rejoices because the children of the elect lady are true and faithful.
+            1 The elder unto the elect lady and her children, whom I love in the truth; and not I only, but also all they that have known the truth;
+            2 For the truth’s sake, which dwelleth in us, and shall be with us for ever.
+            3 Grace be with you, mercy, and peace, from God the Father, and from the Lord Jesus Christ, the Son of the Father, in truth and love.
+            4 I rejoiced greatly that I found of thy children walking in truth, as we have received a commandment from the Father.
+            5 And now I beseech thee, lady, not as though I wrote a new commandment unto thee, but that which we had from the beginning, that we love one another.
+            6 And this is love, that we walk after his commandments. This is the commandment, That, as ye have heard from the beginning, ye should walk in it.
+            7 For many deceivers are entered into the world, who confess not that Jesus Christ is come in the flesh. This is a deceiver and an antichrist.
+            8 Look to yourselves, that we lose not those things which we have wrought, but that we receive a full reward.
+            9 Whosoever transgresseth, and abideth not in the doctrine of Christ, hath not God. He that abideth in the doctrine of Christ, he hath both the Father and the Son.
+            10 If there come any unto you, and bring not this doctrine, receive him not into your house, neither bid him God speed:
+            11 For he that biddeth him God speed is partaker of his evil deeds.
+            12 Having many things to write unto you, I would not write with paper and ink: but I trust to come unto you, and speak face to face, that our joy may be full.
+            13 The children of thy elect sister greet thee. Amen.`,
+            "3-john-01": `THE THIRD EPISTLE OF
+            JOHN
+            CHAPTER 1
+            John commends Gaius for his help to those who love the truth.
+            1 The elder unto the wellbeloved Gaius, whom I love in the truth.
+            2 Beloved, I wish above all things that thou mayest prosper and be in health, even as thy soul prospereth.
+            3 For I rejoiced greatly, when the brethren came and testified of the truth that is in thee, even as thou walkest in the truth.
+            4 I have no greater joy than to hear that my children walk in truth.
+            5 Beloved, thou doest faithfully whatsoever thou doest to the brethren, and to strangers;
+            6 Which have borne witness of thy charity before the church: whom if thou bring forward on their journey after a godly sort, thou shalt do well:
+            7 Because that for his name’s sake they went forth, taking nothing of the Gentiles.
+            8 We therefore ought to receive such, that we might be fellowhelpers to the truth.
+            9 I wrote unto the church: but Diotrephes, who loveth to have the preeminence among them, receiveth us not.
+            10 Wherefore, if I come, I will remember his deeds which he doeth, prating against us with malicious words: and not content therewith, neither doth he himself receive the brethren, and forbiddeth them that would, and casteth them out of the church.
+            11 Beloved, follow not that which is evil, but that which is good. He that doeth good is of God: but he that doeth evil hath not seen God.
+            12 Demetrius hath good report of all men, and of the truth itself: yea, and we also bear record; and ye know that our record is true.
+            13 I had many things to write, but I will not with ink and pen write unto thee:
+            14 But I trust I shall shortly see thee, and we shall speak face to face. Peace be to thee. Our friends salute thee. Greet the friends by name.`,
+            "jude-01": `THE GENERAL EPISTLE OF
+            JUDE
+            CHAPTER 1
+            Contend for the faith—Some angels kept not their first estate—Michael disputed about the body of Moses—Enoch prophesied of the Second Coming—Mockers will come in the last days.
+            1 Jude, the servant of Jesus Christ, and brother of James, to them that are sanctified by God the Father, and preserved in Jesus Christ, and called:
+            2 Mercy unto you, and peace, and love, be multiplied.
+            3 Beloved, when I gave all diligence to write unto you of the common salvation, it was needful for me to write unto you, and exhort you that ye should earnestly contend for the faith which was once delivered unto the saints.
+            4 For there are certain men crept in unawares, who were before of old ordained to this condemnation, ungodly men, turning the grace of our God into lasciviousness, and denying the only Lord God, and our Lord Jesus Christ.
+            5 I will therefore put you in remembrance, though ye once knew this, how that the Lord, having saved the people out of the land of Egypt, afterward destroyed them that believed not.
+            6 And the angels which kept not their first estate, but left their own habitation, he hath reserved in everlasting chains under darkness unto the judgment of the great day.
+            7 Even as Sodom and Gomorrha, and the cities about them in like manner, giving themselves over to fornication, and going after strange flesh, are set forth for an example, suffering the vengeance of eternal fire.
+            8 Likewise also these filthy dreamers defile the flesh, despise dominion, and speak evil of dignities.
+            9 Yet Michael the archangel, when contending with the devil he disputed about the body of Moses, durst not bring against him a railing accusation, but said, The Lord rebuke thee.
+            10 But these speak evil of those things which they know not: but what they know naturally, as brute beasts, in those things they corrupt themselves.
+            11 Woe unto them! for they have gone in the way of Cain, and ran greedily after the error of Balaam for reward, and perished in the gainsaying of Core.
+            12 These are spots in your feasts of charity, when they feast with you, feeding themselves without fear: clouds they are without water, carried about of winds; trees whose fruit withereth, without fruit, twice dead, plucked up by the roots;
+            13 Raging waves of the sea, foaming out their own shame; wandering stars, to whom is reserved the blackness of darkness for ever.
+            14 And Enoch also, the seventh from Adam, prophesied of these, saying, Behold, the Lord cometh with ten thousands of his saints,
+            15 To execute judgment upon all, and to convince all that are ungodly among them of all their ungodly deeds which they have ungodly committed, and of all their hard speeches which ungodly sinners have spoken against him.
+            16 These are murmurers, complainers, walking after their own lusts; and their mouth speaketh great swelling words, having men’s persons in admiration because of advantage.
+            17 But, beloved, remember ye the words which were spoken before of the apostles of our Lord Jesus Christ;
+            18 How that they told you there should be mockers in the last time, who should walk after their own ungodly lusts.
+            19 These be they who separate themselves, sensual, having not the Spirit.
+            20 But ye, beloved, building up yourselves on your most holy faith, praying in the Holy Ghost,
+            21 Keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life.
+            22 And of some have compassion, making a difference:
+            23 And others save with fear, pulling them out of the fire; hating even the garment spotted by the flesh.
+            24 Now unto him that is able to keep you from falling, and to present you faultless before the presence of his glory with exceeding joy,
+            25 To the only wise God our Saviour, be glory and majesty, dominion and power, both now and ever. Amen.`,
+            "revelation-01": `THE REVELATION
+            OF ST JOHN THE DIVINE
+            CHAPTER 1
+            Christ chooses some as kings and priests unto God—Christ will come again—John sees the risen Lord.
+            1 The Revelation of Jesus Christ, which God gave unto him, to shew unto his servants things which must shortly come to pass; and he sent and signified it by his angel unto his servant John:
+            2 Who bare record of the word of God, and of the testimony of Jesus Christ, and of all things that he saw.
+            3 Blessed is he that readeth, and they that hear the words of this prophecy, and keep those things which are written therein: for the time is at hand.
+            4 John to the seven churches which are in Asia: Grace be unto you, and peace, from him which is, and which was, and which is to come; and from the seven Spirits which are before his throne;
+            5 And from Jesus Christ, who is the faithful witness, and the first begotten of the dead, and the prince of the kings of the earth. Unto him that loved us, and washed us from our sins in his own blood,
+            6 And hath made us kings and priests unto God and his Father; to him be glory and dominion for ever and ever. Amen.
+            7 Behold, he cometh with clouds; and every eye shall see him, and they also which pierced him: and all kindreds of the earth shall wail because of him. Even so, Amen.
+            8 I am Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty.
+            9 I John, who also am your brother, and companion in tribulation, and in the kingdom and patience of Jesus Christ, was in the isle that is called Patmos, for the word of God, and for the testimony of Jesus Christ.
+            10 I was in the Spirit on the Lord’s day, and heard behind me a great voice, as of a trumpet,
+            11 Saying, I am Alpha and Omega, the first and the last: and, What thou seest, write in a book, and send it unto the seven churches which are in Asia; unto Ephesus, and unto Smyrna, and unto Pergamos, and unto Thyatira, and unto Sardis, and unto Philadelphia, and unto Laodicea.
+            12 And I turned to see the voice that spake with me. And being turned, I saw seven golden candlesticks;
+            13 And in the midst of the seven candlesticks one like unto the Son of man, clothed with a garment down to the foot, and girt about the paps with a golden girdle.
+            14 His head and his hairs were white like wool, as white as snow; and his eyes were as a flame of fire;
+            15 And his feet like unto fine brass, as if they burned in a furnace; and his voice as the sound of many waters.
+            16 And he had in his right hand seven stars: and out of his mouth went a sharp twoedged sword: and his countenance was as the sun shineth in his strength.
+            17 And when I saw him, I fell at his feet as dead. And he laid his right hand upon me, saying unto me, Fear not; I am the first and the last:
+            18 I am he that liveth, and was dead; and, behold, I am alive for evermore, Amen; and have the keys of hell and of death.
+            19 Write the things which thou hast seen, and the things which are, and the things which shall be hereafter;
+            20 The mystery of the seven stars which thou sawest in my right hand, and the seven golden candlesticks. The seven stars are the angels of the seven churches: and the seven candlesticks which thou sawest are the seven churches.`,
+            "revelation-02": `CHAPTER 2
+            He who overcomes will gain eternal life, avoid the second death, inherit the celestial kingdom, and rule many kingdoms.
+            1 Unto the angel of the church of Ephesus write; These things saith he that holdeth the seven stars in his right hand, who walketh in the midst of the seven golden candlesticks;
+            2 I know thy works, and thy labour, and thy patience, and how thou canst not bear them which are evil: and thou hast tried them which say they are apostles, and are not, and hast found them liars:
+            3 And hast borne, and hast patience, and for my name’s sake hast laboured, and hast not fainted.
+            4 Nevertheless I have somewhat against thee, because thou hast left thy first love.
+            5 Remember therefore from whence thou art fallen, and repent, and do the first works; or else I will come unto thee quickly, and will remove thy candlestick out of his place, except thou repent.
+            6 But this thou hast, that thou hatest the deeds of the Nicolaitans, which I also hate.
+            7 He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the tree of life, which is in the midst of the paradise of God.
+            8 And unto the angel of the church in Smyrna write; These things saith the first and the last, which was dead, and is alive;
+            9 I know thy works, and tribulation, and poverty, (but thou art rich) and I know the blasphemy of them which say they are Jews, and are not, but are the synagogue of Satan.
+            10 Fear none of those things which thou shalt suffer: behold, the devil shall cast some of you into prison, that ye may be tried; and ye shall have tribulation ten days: be thou faithful unto death, and I will give thee a crown of life.
+            11 He that hath an ear, let him hear what the Spirit saith unto the churches; He that overcometh shall not be hurt of the second death.
+            12 And to the angel of the church in Pergamos write; These things saith he which hath the sharp sword with two edges;
+            13 I know thy works, and where thou dwellest, even where Satan’s seat is: and thou holdest fast my name, and hast not denied my faith, even in those days wherein Antipas was my faithful martyr, who was slain among you, where Satan dwelleth.
+            14 But I have a few things against thee, because thou hast there them that hold the doctrine of Balaam, who taught Balac to cast a stumblingblock before the children of Israel, to eat things sacrificed unto idols, and to commit fornication.
+            15 So hast thou also them that hold the doctrine of the Nicolaitans, which thing I hate.
+            16 Repent; or else I will come unto thee quickly, and will fight against them with the sword of my mouth.
+            17 He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the hidden manna, and will give him a white stone, and in the stone a new name written, which no man knoweth saving he that receiveth it.
+            18 And unto the angel of the church in Thyatira write; These things saith the Son of God, who hath his eyes like unto a flame of fire, and his feet are like fine brass;
+            19 I know thy works, and charity, and service, and faith, and thy patience, and thy works; and the last to be more than the first.
+            20 Notwithstanding I have a few things against thee, because thou sufferest that woman Jezebel, which calleth herself a prophetess, to teach and to seduce my servants to commit fornication, and to eat things sacrificed unto idols.
+            21 And I gave her space to repent of her fornication; and she repented not.
+            22 Behold, I will cast her into a bed, and them that commit adultery with her into great tribulation, except they repent of their deeds.
+            23 And I will kill her children with death; and all the churches shall know that I am he which searcheth the reins and hearts: and I will give unto every one of you according to your works.
+            24 But unto you I say, and unto the rest in Thyatira, as many as have not this doctrine, and which have not known the depths of Satan, as they speak; I will put upon you none other burden.
+            25 But that which ye have already hold fast till I come.
+            26 And he that overcometh, and keepeth my works unto the end, to him will I give power over the nations:
+            27 And he shall rule them with a rod of iron; as the vessels of a potter shall they be broken to shivers: even as I received of my Father.
+            28 And I will give him the morning star.
+            29 He that hath an ear, let him hear what the Spirit saith unto the churches.`,
+            "revelation-03": `CHAPTER 3
+            He who overcomes will retain his name in the book of life, reach godhood, and be with Jesus as He is with the Father.
+            1 And unto the angel of the church in Sardis write; These things saith he that hath the seven Spirits of God, and the seven stars; I know thy works, that thou hast a name that thou livest, and art dead.
+            2 Be watchful, and strengthen the things which remain, that are ready to die: for I have not found thy works perfect before God.
+            3 Remember therefore how thou hast received and heard, and hold fast, and repent. If therefore thou shalt not watch, I will come on thee as a thief, and thou shalt not know what hour I will come upon thee.
+            4 Thou hast a few names even in Sardis which have not defiled their garments; and they shall walk with me in white: for they are worthy.
+            5 He that overcometh, the same shall be clothed in white raiment; and I will not blot out his name out of the book of life, but I will confess his name before my Father, and before his angels.
+            6 He that hath an ear, let him hear what the Spirit saith unto the churches.
+            7 And to the angel of the church in Philadelphia write; These things saith he that is holy, he that is true, he that hath the key of David, he that openeth, and no man shutteth; and shutteth, and no man openeth;
+            8 I know thy works: behold, I have set before thee an open door, and no man can shut it: for thou hast a little strength, and hast kept my word, and hast not denied my name.
+            9 Behold, I will make them of the synagogue of Satan, which say they are Jews, and are not, but do lie; behold, I will make them to come and worship before thy feet, and to know that I have loved thee.
+            10 Because thou hast kept the word of my patience, I also will keep thee from the hour of temptation, which shall come upon all the world, to try them that dwell upon the earth.
+            11 Behold, I come quickly: hold that fast which thou hast, that no man take thy crown.
+            12 Him that overcometh will I make a pillar in the temple of my God, and he shall go no more out: and I will write upon him the name of my God, and the name of the city of my God, which is new Jerusalem, which cometh down out of heaven from my God: and I will write upon him my new name.
+            13 He that hath an ear, let him hear what the Spirit saith unto the churches.
+            14 And unto the angel of the church of the Laodiceans write; These things saith the Amen, the faithful and true witness, the beginning of the creation of God;
+            15 I know thy works, that thou art neither cold nor hot: I would thou wert cold or hot.
+            16 So then because thou art lukewarm, and neither cold nor hot, I will spue thee out of my mouth.
+            17 Because thou sayest, I am rich, and increased with goods, and have need of nothing; and knowest not that thou art wretched, and miserable, and poor, and blind, and naked:
+            18 I counsel thee to buy of me gold tried in the fire, that thou mayest be rich; and white raiment, that thou mayest be clothed, and that the shame of thy nakedness do not appear; and anoint thine eyes with eyesalve, that thou mayest see.
+            19 As many as I love, I rebuke and chasten: be zealous therefore, and repent.
+            20 Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.
+            21 To him that overcometh will I grant to sit with me in my throne, even as I also overcame, and am set down with my Father in his throne.
+            22 He that hath an ear, let him hear what the Spirit saith unto the churches.`,
+            "revelation-04": `CHAPTER 4
+            John sees the celestial earth, the throne of God, and all created things worshipping the Lord.
+            1 After this I looked, and, behold, a door was opened in heaven: and the first voice which I heard was as it were of a trumpet talking with me; which said, Come up hither, and I will shew thee things which must be hereafter.
+            2 And immediately I was in the spirit: and, behold, a throne was set in heaven, and one sat on the throne.
+            3 And he that sat was to look upon like a jasper and a sardine stone: and there was a rainbow round about the throne, in sight like unto an emerald.
+            4 And round about the throne were four and twenty seats: and upon the seats I saw four and twenty elders sitting, clothed in white raiment; and they had on their heads crowns of gold.
+            5 And out of the throne proceeded lightnings and thunderings and voices: and there were seven lamps of fire burning before the throne, which are the seven Spirits of God.
+            6 And before the throne there was a sea of glass like unto crystal: and in the midst of the throne, and round about the throne, were four beasts full of eyes before and behind.
+            7 And the first beast was like a lion, and the second beast like a calf, and the third beast had a face as a man, and the fourth beast was like a flying eagle.
+            8 And the four beasts had each of them six wings about him; and they were full of eyes within: and they rest not day and night, saying, Holy, holy, holy, Lord God Almighty, which was, and is, and is to come.
+            9 And when those beasts give glory and honour and thanks to him that sat on the throne, who liveth for ever and ever,
+            10 The four and twenty elders fall down before him that sat on the throne, and worship him that liveth for ever and ever, and cast their crowns before the throne, saying,
+            11 Thou art worthy, O Lord, to receive glory and honour and power: for thou hast created all things, and for thy pleasure they are and were created.`,
+            "revelation-05": `CHAPTER 5
+            John sees the book sealed with seven seals, and he sees those people redeemed out of every nation—He hears every creature praising God and the Lamb.
+            1 And I saw in the right hand of him that sat on the throne a book written within and on the backside, sealed with seven seals.
+            2 And I saw a strong angel proclaiming with a loud voice, Who is worthy to open the book, and to loose the seals thereof?
+            3 And no man in heaven, nor in earth, neither under the earth, was able to open the book, neither to look thereon.
+            4 And I wept much, because no man was found worthy to open and to read the book, neither to look thereon.
+            5 And one of the elders saith unto me, Weep not: behold, the Lion of the tribe of Juda, the Root of David, hath prevailed to open the book, and to loose the seven seals thereof.
+            6 And I beheld, and, lo, in the midst of the throne and of the four beasts, and in the midst of the elders, stood a Lamb as it had been slain, having seven horns and seven eyes, which are the seven Spirits of God sent forth into all the earth.
+            7 And he came and took the book out of the right hand of him that sat upon the throne.
+            8 And when he had taken the book, the four beasts and four and twenty elders fell down before the Lamb, having every one of them harps, and golden vials full of odours, which are the prayers of saints.
+            9 And they sung a new song, saying, Thou art worthy to take the book, and to open the seals thereof: for thou wast slain, and hast redeemed us to God by thy blood out of every kindred, and tongue, and people, and nation;
+            10 And hast made us unto our God kings and priests: and we shall reign on the earth.
+            11 And I beheld, and I heard the voice of many angels round about the throne and the beasts and the elders: and the number of them was ten thousand times ten thousand, and thousands of thousands;
+            12 Saying with a loud voice, Worthy is the Lamb that was slain to receive power, and riches, and wisdom, and strength, and honour, and glory, and blessing.
+            13 And every creature which is in heaven, and on the earth, and under the earth, and such as are in the sea, and all that are in them, heard I saying, Blessing, and honour, and glory, and power, be unto him that sitteth upon the throne, and unto the Lamb for ever and ever.
+            14 And the four beasts said, Amen. And the four and twenty elders fell down and worshipped him that liveth for ever and ever.`,
+            "revelation-06": `CHAPTER 6
+            Christ opens the six seals, and John sees the events therein—In the fifth seal, he sees the Christian martyrs; and in the sixth, he sees the signs of the times.
+            1 And I saw when the Lamb opened one of the seals, and I heard, as it were the noise of thunder, one of the four beasts saying, Come and see.
+            2 And I saw, and behold a white horse: and he that sat on him had a bow; and a crown was given unto him: and he went forth conquering, and to conquer.
+            3 And when he had opened the second seal, I heard the second beast say, Come and see.
+            4 And there went out another horse that was red: and power was given to him that sat thereon to take peace from the earth, and that they should kill one another: and there was given unto him a great sword.
+            5 And when he had opened the third seal, I heard the third beast say, Come and see. And I beheld, and lo a black horse; and he that sat on him had a pair of balances in his hand.
+            6 And I heard a voice in the midst of the four beasts say, A measure of wheat for a penny, and three measures of barley for a penny; and see thou hurt not the oil and the wine.
+            7 And when he had opened the fourth seal, I heard the voice of the fourth beast say, Come and see.
+            8 And I looked, and behold a pale horse: and his name that sat on him was Death, and Hell followed with him. And power was given unto them over the fourth part of the earth, to kill with sword, and with hunger, and with death, and with the beasts of the earth.
+            9 And when he had opened the fifth seal, I saw under the altar the souls of them that were slain for the word of God, and for the testimony which they held:
+            10 And they cried with a loud voice, saying, How long, O Lord, holy and true, dost thou not judge and avenge our blood on them that dwell on the earth?
+            11 And white robes were given unto every one of them; and it was said unto them, that they should rest yet for a little season, until their fellowservants also and their brethren, that should be killed as they were, should be fulfilled.
+            12 And I beheld when he had opened the sixth seal, and, lo, there was a great earthquake; and the sun became black as sackcloth of hair, and the moon became as blood;
+            13 And the stars of heaven fell unto the earth, even as a fig tree casteth her untimely figs, when she is shaken of a mighty wind.
+            14 And the heaven departed as a scroll when it is rolled together; and every mountain and island were moved out of their places.
+            15 And the kings of the earth, and the great men, and the rich men, and the chief captains, and the mighty men, and every bondman, and every free man, hid themselves in the dens and in the rocks of the mountains;
+            16 And said to the mountains and rocks, Fall on us, and hide us from the face of him that sitteth on the throne, and from the wrath of the Lamb:
+            17 For the great day of his wrath is come; and who shall be able to stand?`,
+            "revelation-07": `CHAPTER 7
+            John also sees in the sixth seal the Restoration of the gospel, the sealing of the 144,000, and the hosts of the exalted from all nations.
+            1 And after these things I saw four angels standing on the four corners of the earth, holding the four winds of the earth, that the wind should not blow on the earth, nor on the sea, nor on any tree.
+            2 And I saw another angel ascending from the east, having the seal of the living God: and he cried with a loud voice to the four angels, to whom it was given to hurt the earth and the sea,
+            3 Saying, Hurt not the earth, neither the sea, nor the trees, till we have sealed the servants of our God in their foreheads.
+            4 And I heard the number of them which were sealed: and there were sealed an hundred and forty and four thousand of all the tribes of the children of Israel.
+            5 Of the tribe of Juda were sealed twelve thousand. Of the tribe of Reuben were sealed twelve thousand. Of the tribe of Gad were sealed twelve thousand.
+            6 Of the tribe of Aser were sealed twelve thousand. Of the tribe of Nepthalim were sealed twelve thousand. Of the tribe of Manasses were sealed twelve thousand.
+            7 Of the tribe of Simeon were sealed twelve thousand. Of the tribe of Levi were sealed twelve thousand. Of the tribe of Issachar were sealed twelve thousand.
+            8 Of the tribe of Zabulon were sealed twelve thousand. Of the tribe of Joseph were sealed twelve thousand. Of the tribe of Benjamin were sealed twelve thousand.
+            9 After this I beheld, and, lo, a great multitude, which no man could number, of all nations, and kindreds, and people, and tongues, stood before the throne, and before the Lamb, clothed with white robes, and palms in their hands;
+            10 And cried with a loud voice, saying, Salvation to our God which sitteth upon the throne, and unto the Lamb.
+            11 And all the angels stood round about the throne, and about the elders and the four beasts, and fell before the throne on their faces, and worshipped God,
+            12 Saying, Amen: Blessing, and glory, and wisdom, and thanksgiving, and honour, and power, and might, be unto our God for ever and ever. Amen.
+            13 And one of the elders answered, saying unto me, What are these which are arrayed in white robes? and whence came they?
+            14 And I said unto him, Sir, thou knowest. And he said to me, These are they which came out of great tribulation, and have washed their robes, and made them white in the blood of the Lamb.
+            15 Therefore are they before the throne of God, and serve him day and night in his temple: and he that sitteth on the throne shall dwell among them.
+            16 They shall hunger no more, neither thirst any more; neither shall the sun light on them, nor any heat.
+            17 For the Lamb which is in the midst of the throne shall feed them, and shall lead them unto living fountains of waters: and God shall wipe away all tears from their eyes.`,
+            "revelation-08": `CHAPTER 8
+            John sees fire and desolation poured out during the seventh seal and preceding the Second Coming.
+            1 And when he had opened the seventh seal, there was silence in heaven about the space of half an hour.
+            2 And I saw the seven angels which stood before God; and to them were given seven trumpets.
+            3 And another angel came and stood at the altar, having a golden censer; and there was given unto him much incense, that he should offer it with the prayers of all saints upon the golden altar which was before the throne.
+            4 And the smoke of the incense, which came with the prayers of the saints, ascended up before God out of the angel’s hand.
+            5 And the angel took the censer, and filled it with fire of the altar, and cast it into the earth: and there were voices, and thunderings, and lightnings, and an earthquake.
+            6 And the seven angels which had the seven trumpets prepared themselves to sound.
+            7 The first angel sounded, and there followed hail and fire mingled with blood, and they were cast upon the earth: and the third part of trees was burnt up, and all green grass was burnt up.
+            8 And the second angel sounded, and as it were a great mountain burning with fire was cast into the sea: and the third part of the sea became blood;
+            9 And the third part of the creatures which were in the sea, and had life, died; and the third part of the ships were destroyed.
+            10 And the third angel sounded, and there fell a great star from heaven, burning as it were a lamp, and it fell upon the third part of the rivers, and upon the fountains of waters;
+            11 And the name of the star is called Wormwood: and the third part of the waters became wormwood; and many men died of the waters, because they were made bitter.
+            12 And the fourth angel sounded, and the third part of the sun was smitten, and the third part of the moon, and the third part of the stars; so as the third part of them was darkened, and the day shone not for a third part of it, and the night likewise.
+            13 And I beheld, and heard an angel flying through the midst of heaven, saying with a loud voice, Woe, woe, woe, to the inhabiters of the earth by reason of the other voices of the trumpet of the three angels, which are yet to sound!`,
+            "revelation-09": `CHAPTER 9
+            John also sees the wars and plagues poured out during the seventh seal and before the Lord comes.
+            1 And the fifth angel sounded, and I saw a star fall from heaven unto the earth: and to him was given the key of the bottomless pit.
+            2 And he opened the bottomless pit; and there arose a smoke out of the pit, as the smoke of a great furnace; and the sun and the air were darkened by reason of the smoke of the pit.
+            3 And there came out of the smoke locusts upon the earth: and unto them was given power, as the scorpions of the earth have power.
+            4 And it was commanded them that they should not hurt the grass of the earth, neither any green thing, neither any tree; but only those men which have not the seal of God in their foreheads.
+            5 And to them it was given that they should not kill them, but that they should be tormented five months: and their torment was as the torment of a scorpion, when he striketh a man.
+            6 And in those days shall men seek death, and shall not find it; and shall desire to die, and death shall flee from them.
+            7 And the shapes of the locusts were like unto horses prepared unto battle; and on their heads were as it were crowns like gold, and their faces were as the faces of men.
+            8 And they had hair as the hair of women, and their teeth were as the teeth of lions.
+            9 And they had breastplates, as it were breastplates of iron; and the sound of their wings was as the sound of chariots of many horses running to battle.
+            10 And they had tails like unto scorpions, and there were stings in their tails: and their power was to hurt men five months.
+            11 And they had a king over them, which is the angel of the bottomless pit, whose name in the Hebrew tongue is Abaddon, but in the Greek tongue hath his name Apollyon.
+            12 One woe is past; and, behold, there come two woes more hereafter.
+            13 And the sixth angel sounded, and I heard a voice from the four horns of the golden altar which is before God,
+            14 Saying to the sixth angel which had the trumpet, Loose the four angels which are bound in the great river Euphrates.
+            15 And the four angels were loosed, which were prepared for an hour, and a day, and a month, and a year, for to slay the third part of men.
+            16 And the number of the army of the horsemen were two hundred thousand thousand: and I heard the number of them.
+            17 And thus I saw the horses in the vision, and them that sat on them, having breastplates of fire, and of jacinth, and brimstone: and the heads of the horses were as the heads of lions; and out of their mouths issued fire and smoke and brimstone.
+            18 By these three was the third part of men killed, by the fire, and by the smoke, and by the brimstone, which issued out of their mouths.
+            19 For their power is in their mouth, and in their tails: for their tails were like unto serpents, and had heads, and with them they do hurt.
+            20 And the rest of the men which were not killed by these plagues yet repented not of the works of their hands, that they should not worship devils, and idols of gold, and silver, and brass, and stone, and of wood: which neither can see, nor hear, nor walk:
+            21 Neither repented they of their murders, nor of their sorceries, nor of their fornication, nor of their thefts.`,
+            "revelation-10": `CHAPTER 10
+            John seals up many things relative to the last days—He is commissioned to participate in the restoration of all things.
+            1 And I saw another mighty angel come down from heaven, clothed with a cloud: and a rainbow was upon his head, and his face was as it were the sun, and his feet as pillars of fire:
+            2 And he had in his hand a little book open: and he set his right foot upon the sea, and his left foot on the earth,
+            3 And cried with a loud voice, as when a lion roareth: and when he had cried, seven thunders uttered their voices.
+            4 And when the seven thunders had uttered their voices, I was about to write: and I heard a voice from heaven saying unto me, Seal up those things which the seven thunders uttered, and write them not.
+            5 And the angel which I saw stand upon the sea and upon the earth lifted up his hand to heaven,
+            6 And sware by him that liveth for ever and ever, who created heaven, and the things that therein are, and the earth, and the things that therein are, and the sea, and the things which are therein, that there should be time no longer:
+            7 But in the days of the voice of the seventh angel, when he shall begin to sound, the mystery of God should be finished, as he hath declared to his servants the prophets.
+            8 And the voice which I heard from heaven spake unto me again, and said, Go and take the little book which is open in the hand of the angel which standeth upon the sea and upon the earth.
+            9 And I went unto the angel, and said unto him, Give me the little book. And he said unto me, Take it, and eat it up; and it shall make thy belly bitter, but it shall be in thy mouth sweet as honey.
+            10 And I took the little book out of the angel’s hand, and ate it up; and it was in my mouth sweet as honey: and as soon as I had eaten it, my belly was bitter.
+            11 And he said unto me, Thou must prophesy again before many peoples, and nations, and tongues, and kings.`,
+            "revelation-11": `CHAPTER 11
+            In the last days, two prophets will be slain in Jerusalem—After 3½ days, they will be resurrected—Christ will reign over all the earth.
+            1 And there was given me a reed like unto a rod: and the angel stood, saying, Rise, and measure the temple of God, and the altar, and them that worship therein.
+            2 But the court which is without the temple leave out, and measure it not; for it is given unto the Gentiles: and the holy city shall they tread under foot forty and two months.
+            3 And I will give power unto my two witnesses, and they shall prophesy a thousand two hundred and threescore days, clothed in sackcloth.
+            4 These are the two olive trees, and the two candlesticks standing before the God of the earth.
+            5 And if any man will hurt them, fire proceedeth out of their mouth, and devoureth their enemies: and if any man will hurt them, he must in this manner be killed.
+            6 These have power to shut heaven, that it rain not in the days of their prophecy: and have power over waters to turn them to blood, and to smite the earth with all plagues, as often as they will.
+            7 And when they shall have finished their testimony, the beast that ascendeth out of the bottomless pit shall make war against them, and shall overcome them, and kill them.
+            8 And their dead bodies shall lie in the street of the great city, which spiritually is called Sodom and Egypt, where also our Lord was crucified.
+            9 And they of the people and kindreds and tongues and nations shall see their dead bodies three days and an half, and shall not suffer their dead bodies to be put in graves.
+            10 And they that dwell upon the earth shall rejoice over them, and make merry, and shall send gifts one to another; because these two prophets tormented them that dwelt on the earth.
+            11 And after three days and an half the Spirit of life from God entered into them, and they stood upon their feet; and great fear fell upon them which saw them.
+            12 And they heard a great voice from heaven saying unto them, Come up hither. And they ascended up to heaven in a cloud; and their enemies beheld them.
+            13 And the same hour was there a great earthquake, and the tenth part of the city fell, and in the earthquake were slain of men seven thousand: and the remnant were affrighted, and gave glory to the God of heaven.
+            14 The second woe is past; and, behold, the third woe cometh quickly.
+            15 And the seventh angel sounded; and there were great voices in heaven, saying, The kingdoms of this world are become the kingdoms of our Lord, and of his Christ; and he shall reign for ever and ever.
+            16 And the four and twenty elders, which sat before God on their seats, fell upon their faces, and worshipped God,
+            17 Saying, We give thee thanks, O Lord God Almighty, which art, and wast, and art to come; because thou hast taken to thee thy great power, and hast reigned.
+            18 And the nations were angry, and thy wrath is come, and the time of the dead, that they should be judged, and that thou shouldest give reward unto thy servants the prophets, and to the saints, and them that fear thy name, small and great; and shouldest destroy them which destroy the earth.
+            19 And the temple of God was opened in heaven, and there was seen in his temple the ark of his testament: and there were lightnings, and voices, and thunderings, and an earthquake, and great hail.`,
+            "revelation-12": `CHAPTER 12
+            John sees the imminent apostasy of the Church—He also sees the War in Heaven in the beginning when Satan was cast out—He sees the continuation of that war on earth.
+            1 And there appeared a great wonder in heaven; a woman clothed with the sun, and the moon under her feet, and upon her head a crown of twelve stars:
+            2 And she being with child cried, travailing in birth, and pained to be delivered.
+            3 And there appeared another wonder in heaven; and behold a great red dragon, having seven heads and ten horns, and seven crowns upon his heads.
+            4 And his tail drew the third part of the stars of heaven, and did cast them to the earth: and the dragon stood before the woman which was ready to be delivered, for to devour her child as soon as it was born.
+            5 And she brought forth a man child, who was to rule all nations with a rod of iron: and her child was caught up unto God, and to his throne.
+            6 And the woman fled into the wilderness, where she hath a place prepared of God, that they should feed her there a thousand two hundred and threescore days.
+            7 And there was war in heaven: Michael and his angels fought against the dragon; and the dragon fought and his angels,
+            8 And prevailed not; neither was their place found any more in heaven.
+            9 And the great dragon was cast out, that old serpent, called the Devil, and Satan, which deceiveth the whole world: he was cast out into the earth, and his angels were cast out with him.
+            10 And I heard a loud voice saying in heaven, Now is come salvation, and strength, and the kingdom of our God, and the power of his Christ: for the accuser of our brethren is cast down, which accused them before our God day and night.
+            11 And they overcame him by the blood of the Lamb, and by the word of their testimony; and they loved not their lives unto the death.
+            12 Therefore rejoice, ye heavens, and ye that dwell in them. Woe to the inhabiters of the earth and of the sea! for the devil is come down unto you, having great wrath, because he knoweth that he hath but a short time.
+            13 And when the dragon saw that he was cast unto the earth, he persecuted the woman which brought forth the man child.
+            14 And to the woman were given two wings of a great eagle, that she might fly into the wilderness, into her place, where she is nourished for a time, and times, and half a time, from the face of the serpent.
+            15 And the serpent cast out of his mouth water as a flood after the woman, that he might cause her to be carried away of the flood.
+            16 And the earth helped the woman, and the earth opened her mouth, and swallowed up the flood which the dragon cast out of his mouth.
+            17 And the dragon was wroth with the woman, and went to make war with the remnant of her seed, which keep the commandments of God, and have the testimony of Jesus Christ.`,
+            "revelation-13": `CHAPTER 13
+            John sees fierce-looking beasts that represent degenerate earthly kingdoms controlled by Satan—The devil works miracles and deceives men.
+            1 And I stood upon the sand of the sea, and saw a beast rise up out of the sea, having seven heads and ten horns, and upon his horns ten crowns, and upon his heads the name of blasphemy.
+            2 And the beast which I saw was like unto a leopard, and his feet were as the feet of a bear, and his mouth as the mouth of a lion: and the dragon gave him his power, and his seat, and great authority.
+            3 And I saw one of his heads as it were wounded to death; and his deadly wound was healed: and all the world wondered after the beast.
+            4 And they worshipped the dragon which gave power unto the beast: and they worshipped the beast, saying, Who is like unto the beast? who is able to make war with him?
+            5 And there was given unto him a mouth speaking great things and blasphemies; and power was given unto him to continue forty and two months.
+            6 And he opened his mouth in blasphemy against God, to blaspheme his name, and his tabernacle, and them that dwell in heaven.
+            7 And it was given unto him to make war with the saints, and to overcome them: and power was given him over all kindreds, and tongues, and nations.
+            8 And all that dwell upon the earth shall worship him, whose names are not written in the book of life of the Lamb slain from the foundation of the world.
+            9 If any man have an ear, let him hear.
+            10 He that leadeth into captivity shall go into captivity: he that killeth with the sword must be killed with the sword. Here is the patience and the faith of the saints.
+            11 And I beheld another beast coming up out of the earth; and he had two horns like a lamb, and he spake as a dragon.
+            12 And he exerciseth all the power of the first beast before him, and causeth the earth and them which dwell therein to worship the first beast, whose deadly wound was healed.
+            13 And he doeth great wonders, so that he maketh fire come down from heaven on the earth in the sight of men,
+            14 And deceiveth them that dwell on the earth by the means of those miracles which he had power to do in the sight of the beast; saying to them that dwell on the earth, that they should make an image to the beast, which had the wound by a sword, and did live.
+            15 And he had power to give life unto the image of the beast, that the image of the beast should both speak, and cause that as many as would not worship the image of the beast should be killed.
+            16 And he causeth all, both small and great, rich and poor, free and bond, to receive a mark in their right hand, or in their foreheads:
+            17 And that no man might buy or sell, save he that had the mark, or the name of the beast, or the number of his name.
+            18 Here is wisdom. Let him that hath understanding count the number of the beast: for it is the number of a man; and his number is Six hundred threescore and six.`,
+            "revelation-14": `CHAPTER 14
+            The Lamb will stand upon Mount Zion—The gospel will be restored in the last days by angelic ministry—The Son of Man will harvest the earth.
+            1 And I looked, and, lo, a Lamb stood on the mount Sion, and with him an hundred forty and four thousand, having his Father’s name written in their foreheads.
+            2 And I heard a voice from heaven, as the voice of many waters, and as the voice of a great thunder: and I heard the voice of harpers harping with their harps:
+            3 And they sung as it were a new song before the throne, and before the four beasts, and the elders: and no man could learn that song but the hundred and forty and four thousand, which were redeemed from the earth.
+            4 These are they which were not defiled with women; for they are virgins. These are they which follow the Lamb whithersoever he goeth. These were redeemed from among men, being the firstfruits unto God and to the Lamb.
+            5 And in their mouth was found no guile: for they are without fault before the throne of God.
+            6 And I saw another angel fly in the midst of heaven, having the everlasting gospel to preach unto them that dwell on the earth, and to every nation, and kindred, and tongue, and people,
+            7 Saying with a loud voice, Fear God, and give glory to him; for the hour of his judgment is come: and worship him that made heaven, and earth, and the sea, and the fountains of waters.
+            8 And there followed another angel, saying, Babylon is fallen, is fallen, that great city, because she made all nations drink of the wine of the wrath of her fornication.
+            9 And the third angel followed them, saying with a loud voice, If any man worship the beast and his image, and receive his mark in his forehead, or in his hand,
+            10 The same shall drink of the wine of the wrath of God, which is poured out without mixture into the cup of his indignation; and he shall be tormented with fire and brimstone in the presence of the holy angels, and in the presence of the Lamb:
+            11 And the smoke of their torment ascendeth up for ever and ever: and they have no rest day nor night, who worship the beast and his image, and whosoever receiveth the mark of his name.
+            12 Here is the patience of the saints: here are they that keep the commandments of God, and the faith of Jesus.
+            13 And I heard a voice from heaven saying unto me, Write, Blessed are the dead which die in the Lord from henceforth: Yea, saith the Spirit, that they may rest from their labours; and their works do follow them.
+            14 And I looked, and behold a white cloud, and upon the cloud one sat like unto the Son of man, having on his head a golden crown, and in his hand a sharp sickle.
+            15 And another angel came out of the temple, crying with a loud voice to him that sat on the cloud, Thrust in thy sickle, and reap: for the time is come for thee to reap; for the harvest of the earth is ripe.
+            16 And he that sat on the cloud thrust in his sickle on the earth; and the earth was reaped.
+            17 And another angel came out of the temple which is in heaven, he also having a sharp sickle.
+            18 And another angel came out from the altar, which had power over fire; and cried with a loud cry to him that had the sharp sickle, saying, Thrust in thy sharp sickle, and gather the clusters of the vine of the earth; for her grapes are fully ripe.
+            19 And the angel thrust in his sickle into the earth, and gathered the vine of the earth, and cast it into the great winepress of the wrath of God.
+            20 And the winepress was trodden without the city, and blood came out of the winepress, even unto the horse bridles, by the space of a thousand and six hundred furlongs.`,
+            "revelation-15": `CHAPTER 15
+            Exalted Saints praise God in celestial glory forever.
+            1 And I saw another sign in heaven, great and marvellous, seven angels having the seven last plagues; for in them is filled up the wrath of God.
+            2 And I saw as it were a sea of glass mingled with fire: and them that had gotten the victory over the beast, and over his image, and over his mark, and over the number of his name, stand on the sea of glass, having the harps of God.
+            3 And they sing the song of Moses the servant of God, and the song of the Lamb, saying, Great and marvellous are thy works, Lord God Almighty; just and true are thy ways, thou King of saints.
+            4 Who shall not fear thee, O Lord, and glorify thy name? for thou only art holy: for all nations shall come and worship before thee; for thy judgments are made manifest.
+            5 And after that I looked, and, behold, the temple of the tabernacle of the testimony in heaven was opened:
+            6 And the seven angels came out of the temple, having the seven plagues, clothed in pure and white linen, and having their breasts girded with golden girdles.
+            7 And one of the four beasts gave unto the seven angels seven golden vials full of the wrath of God, who liveth for ever and ever.
+            8 And the temple was filled with smoke from the glory of God, and from his power; and no man was able to enter into the temple, till the seven plagues of the seven angels were fulfilled.`,
+            "revelation-16": `CHAPTER 16
+            God pours out plagues upon the wicked—The nations assemble for Armageddon—Christ comes, islands flee, and mountains cease.
+            1 And I heard a great voice out of the temple saying to the seven angels, Go your ways, and pour out the vials of the wrath of God upon the earth.
+            2 And the first went, and poured out his vial upon the earth; and there fell a noisome and grievous sore upon the men which had the mark of the beast, and upon them which worshipped his image.
+            3 And the second angel poured out his vial upon the sea; and it became as the blood of a dead man: and every living soul died in the sea.
+            4 And the third angel poured out his vial upon the rivers and fountains of waters; and they became blood.
+            5 And I heard the angel of the waters say, Thou art righteous, O Lord, which art, and wast, and shalt be, because thou hast judged thus.
+            6 For they have shed the blood of saints and prophets, and thou hast given them blood to drink; for they are worthy.
+            7 And I heard another out of the altar say, Even so, Lord God Almighty, true and righteous are thy judgments.
+            8 And the fourth angel poured out his vial upon the sun; and power was given unto him to scorch men with fire.
+            9 And men were scorched with great heat, and blasphemed the name of God, which hath power over these plagues: and they repented not to give him glory.
+            10 And the fifth angel poured out his vial upon the seat of the beast; and his kingdom was full of darkness; and they gnawed their tongues for pain,
+            11 And blasphemed the God of heaven because of their pains and their sores, and repented not of their deeds.
+            12 And the sixth angel poured out his vial upon the great river Euphrates; and the water thereof was dried up, that the way of the kings of the east might be prepared.
+            13 And I saw three unclean spirits like frogs come out of the mouth of the dragon, and out of the mouth of the beast, and out of the mouth of the false prophet.
+            14 For they are the spirits of devils, working miracles, which go forth unto the kings of the earth and of the whole world, to gather them to the battle of that great day of God Almighty.
+            15 Behold, I come as a thief. Blessed is he that watcheth, and keepeth his garments, lest he walk naked, and they see his shame.
+            16 And he gathered them together into a place called in the Hebrew tongue Armageddon.
+            17 And the seventh angel poured out his vial into the air; and there came a great voice out of the temple of heaven, from the throne, saying, It is done.
+            18 And there were voices, and thunders, and lightnings; and there was a great earthquake, such as was not since men were upon the earth, so mighty an earthquake, and so great.
+            19 And the great city was divided into three parts, and the cities of the nations fell: and great Babylon came in remembrance before God, to give unto her the cup of the wine of the fierceness of his wrath.
+            20 And every island fled away, and the mountains were not found.
+            21 And there fell upon men a great hail out of heaven, every stone about the weight of a talent: and men blasphemed God because of the plague of the hail; for the plague thereof was exceeding great.`,
+            "revelation-17": `CHAPTER 17
+            John is shown that Babylon the great, the mother of harlots and abominations, has become established throughout the earth.
+            1 And there came one of the seven angels which had the seven vials, and talked with me, saying unto me, Come hither; I will shew unto thee the judgment of the great whore that sitteth upon many waters:
+            2 With whom the kings of the earth have committed fornication, and the inhabitants of the earth have been made drunk with the wine of her fornication.
+            3 So he carried me away in the spirit into the wilderness: and I saw a woman sit upon a scarlet coloured beast, full of names of blasphemy, having seven heads and ten horns.
+            4 And the woman was arrayed in purple and scarlet colour, and decked with gold and precious stones and pearls, having a golden cup in her hand full of abominations and filthiness of her fornication:
+            5 And upon her forehead was a name written, MYSTERY, BABYLON THE GREAT, THE MOTHER OF HARLOTS AND ABOMINATIONS OF THE EARTH.
+            6 And I saw the woman drunken with the blood of the saints, and with the blood of the martyrs of Jesus: and when I saw her, I wondered with great admiration.
+            7 And the angel said unto me, Wherefore didst thou marvel? I will tell thee the mystery of the woman, and of the beast that carrieth her, which hath the seven heads and ten horns.
+            8 The beast that thou sawest was, and is not; and shall ascend out of the bottomless pit, and go into perdition: and they that dwell on the earth shall wonder, whose names were not written in the book of life from the foundation of the world, when they behold the beast that was, and is not, and yet is.
+            9 And here is the mind which hath wisdom. The seven heads are seven mountains, on which the woman sitteth.
+            10 And there are seven kings: five are fallen, and one is, and the other is not yet come; and when he cometh, he must continue a short space.
+            11 And the beast that was, and is not, even he is the eighth, and is of the seven, and goeth into perdition.
+            12 And the ten horns which thou sawest are ten kings, which have received no kingdom as yet; but receive power as kings one hour with the beast.
+            13 These have one mind, and shall give their power and strength unto the beast.
+            14 These shall make war with the Lamb, and the Lamb shall overcome them: for he is Lord of lords, and King of kings: and they that are with him are called, and chosen, and faithful.
+            15 And he saith unto me, The waters which thou sawest, where the whore sitteth, are peoples, and multitudes, and nations, and tongues.
+            16 And the ten horns which thou sawest upon the beast, these shall hate the whore, and shall make her desolate and naked, and shall eat her flesh, and burn her with fire.
+            17 For God hath put in their hearts to fulfil his will, and to agree, and give their kingdom unto the beast, until the words of God shall be fulfilled.
+            18 And the woman which thou sawest is that great city, which reigneth over the kings of the earth.`,
+            "revelation-18": `CHAPTER 18
+            The Saints are called out of Babylon lest they partake of her sins—She falls and is lamented by her supporters.
+            1 And after these things I saw another angel come down from heaven, having great power; and the earth was lightened with his glory.
+            2 And he cried mightily with a strong voice, saying, Babylon the great is fallen, is fallen, and is become the habitation of devils, and the hold of every foul spirit, and a cage of every unclean and hateful bird.
+            3 For all nations have drunk of the wine of the wrath of her fornication, and the kings of the earth have committed fornication with her, and the merchants of the earth are waxed rich through the abundance of her delicacies.
+            4 And I heard another voice from heaven, saying, Come out of her, my people, that ye be not partakers of her sins, and that ye receive not of her plagues.
+            5 For her sins have reached unto heaven, and God hath remembered her iniquities.
+            6 Reward her even as she rewarded you, and double unto her double according to her works: in the cup which she hath filled fill to her double.
+            7 How much she hath glorified herself, and lived deliciously, so much torment and sorrow give her: for she saith in her heart, I sit a queen, and am no widow, and shall see no sorrow.
+            8 Therefore shall her plagues come in one day, death, and mourning, and famine; and she shall be utterly burned with fire: for strong is the Lord God who judgeth her.
+            9 And the kings of the earth, who have committed fornication and lived deliciously with her, shall bewail her, and lament for her, when they shall see the smoke of her burning,
+            10 Standing afar off for the fear of her torment, saying, Alas, alas, that great city Babylon, that mighty city! for in one hour is thy judgment come.
+            11 And the merchants of the earth shall weep and mourn over her; for no man buyeth their merchandise any more:
+            12 The merchandise of gold, and silver, and precious stones, and of pearls, and fine linen, and purple, and silk, and scarlet, and all thyine wood, and all manner vessels of ivory, and all manner vessels of most precious wood, and of brass, and iron, and marble,
+            13 And cinnamon, and odours, and ointments, and frankincense, and wine, and oil, and fine flour, and wheat, and beasts, and sheep, and horses, and chariots, and slaves, and souls of men.
+            14 And the fruits that thy soul lusted after are departed from thee, and all things which were dainty and goodly are departed from thee, and thou shalt find them no more at all.
+            15 The merchants of these things, which were made rich by her, shall stand afar off for the fear of her torment, weeping and wailing,
+            16 And saying, Alas, alas, that great city, that was clothed in fine linen, and purple, and scarlet, and decked with gold, and precious stones, and pearls!
+            17 For in one hour so great riches is come to nought. And every shipmaster, and all the company in ships, and sailors, and as many as trade by sea, stood afar off,
+            18 And cried when they saw the smoke of her burning, saying, What city is like unto this great city!
+            19 And they cast dust on their heads, and cried, weeping and wailing, saying, Alas, alas, that great city, wherein were made rich all that had ships in the sea by reason of her costliness! for in one hour is she made desolate.
+            20 Rejoice over her, thou heaven, and ye holy apostles and prophets; for God hath avenged you on her.
+            21 And a mighty angel took up a stone like a great millstone, and cast it into the sea, saying, Thus with violence shall that great city Babylon be thrown down, and shall be found no more at all.
+            22 And the voice of harpers, and musicians, and of pipers, and trumpeters, shall be heard no more at all in thee; and no craftsman, of whatsoever craft he be, shall be found any more in thee; and the sound of a millstone shall be heard no more at all in thee;
+            23 And the light of a candle shall shine no more at all in thee; and the voice of the bridegroom and of the bride shall be heard no more at all in thee: for thy merchants were the great men of the earth; for by thy sorceries were all nations deceived.
+            24 And in her was found the blood of prophets, and of saints, and of all that were slain upon the earth.`,
+            "revelation-19": `CHAPTER 19
+            The marriage supper of the Lamb is made ready—The testimony of Jesus is the spirit of prophecy—Christ is King of Kings and Lord of Lords.
+            1 And after these things I heard a great voice of much people in heaven, saying, Alleluia; Salvation, and glory, and honour, and power, unto the Lord our God:
+            2 For true and righteous are his judgments: for he hath judged the great whore, which did corrupt the earth with her fornication, and hath avenged the blood of his servants at her hand.
+            3 And again they said, Alleluia. And her smoke rose up for ever and ever.
+            4 And the four and twenty elders and the four beasts fell down and worshipped God that sat on the throne, saying, Amen; Alleluia.
+            5 And a voice came out of the throne, saying, Praise our God, all ye his servants, and ye that fear him, both small and great.
+            6 And I heard as it were the voice of a great multitude, and as the voice of many waters, and as the voice of mighty thunderings, saying, Alleluia: for the Lord God omnipotent reigneth.
+            7 Let us be glad and rejoice, and give honour to him: for the marriage of the Lamb is come, and his wife hath made herself ready.
+            8 And to her was granted that she should be arrayed in fine linen, clean and white: for the fine linen is the righteousness of saints.
+            9 And he saith unto me, Write, Blessed are they which are called unto the marriage supper of the Lamb. And he saith unto me, These are the true sayings of God.
+            10 And I fell at his feet to worship him. And he said unto me, See thou do it not: I am thy fellowservant, and of thy brethren that have the testimony of Jesus: worship God: for the testimony of Jesus is the spirit of prophecy.
+            11 And I saw heaven opened, and behold a white horse; and he that sat upon him was called Faithful and True, and in righteousness he doth judge and make war.
+            12 His eyes were as a flame of fire, and on his head were many crowns; and he had a name written, that no man knew, but he himself.
+            13 And he was clothed with a vesture dipped in blood: and his name is called The Word of God.
+            14 And the armies which were in heaven followed him upon white horses, clothed in fine linen, white and clean.
+            15 And out of his mouth goeth a sharp sword, that with it he should smite the nations: and he shall rule them with a rod of iron: and he treadeth the winepress of the fierceness and wrath of Almighty God.
+            16 And he hath on his vesture and on his thigh a name written, KING OF KINGS, AND LORD OF LORDS.
+            17 And I saw an angel standing in the sun; and he cried with a loud voice, saying to all the fowls that fly in the midst of heaven, Come and gather yourselves together unto the supper of the great God;
+            18 That ye may eat the flesh of kings, and the flesh of captains, and the flesh of mighty men, and the flesh of horses, and of them that sit on them, and the flesh of all men, both free and bond, both small and great.
+            19 And I saw the beast, and the kings of the earth, and their armies, gathered together to make war against him that sat on the horse, and against his army.
+            20 And the beast was taken, and with him the false prophet that wrought miracles before him, with which he deceived them that had received the mark of the beast, and them that worshipped his image. These both were cast alive into a lake of fire burning with brimstone.
+            21 And the remnant were slain with the sword of him that sat upon the horse, which sword proceeded out of his mouth: and all the fowls were filled with their flesh.`,
+            "revelation-20": `CHAPTER 20
+            Satan is bound during the Millennium—The Saints will then live and reign with Christ—The dead stand before God and are judged out of the books according to their works.
+            1 And I saw an angel come down from heaven, having the key of the bottomless pit and a great chain in his hand.
+            2 And he laid hold on the dragon, that old serpent, which is the Devil, and Satan, and bound him a thousand years,
+            3 And cast him into the bottomless pit, and shut him up, and set a seal upon him, that he should deceive the nations no more, till the thousand years should be fulfilled: and after that he must be loosed a little season.
+            4 And I saw thrones, and they sat upon them, and judgment was given unto them: and I saw the souls of them that were beheaded for the witness of Jesus, and for the word of God, and which had not worshipped the beast, neither his image, neither had received his mark upon their foreheads, or in their hands; and they lived and reigned with Christ a thousand years.
+            5 But the rest of the dead lived not again until the thousand years were finished. This is the first resurrection.
+            6 Blessed and holy is he that hath part in the first resurrection: on such the second death hath no power, but they shall be priests of God and of Christ, and shall reign with him a thousand years.
+            7 And when the thousand years are expired, Satan shall be loosed out of his prison,
+            8 And shall go out to deceive the nations which are in the four quarters of the earth, Gog and Magog, to gather them together to battle: the number of whom is as the sand of the sea.
+            9 And they went up on the breadth of the earth, and compassed the camp of the saints about, and the beloved city: and fire came down from God out of heaven, and devoured them.
+            10 And the devil that deceived them was cast into the lake of fire and brimstone, where the beast and the false prophet are, and shall be tormented day and night for ever and ever.
+            11 And I saw a great white throne, and him that sat on it, from whose face the earth and the heaven fled away; and there was found no place for them.
+            12 And I saw the dead, small and great, stand before God; and the books were opened: and another book was opened, which is the book of life: and the dead were judged out of those things which were written in the books, according to their works.
+            13 And the sea gave up the dead which were in it; and death and hell delivered up the dead which were in them: and they were judged every man according to their works.
+            14 And death and hell were cast into the lake of fire. This is the second death.
+            15 And whosoever was not found written in the book of life was cast into the lake of fire.`,
+            "revelation-21": `CHAPTER 21
+            Those who overcome will be sons of God—The earth attains its celestial glory.
+            1 And I saw a new heaven and a new earth: for the first heaven and the first earth were passed away; and there was no more sea.
+            2 And I John saw the holy city, new Jerusalem, coming down from God out of heaven, prepared as a bride adorned for her husband.
+            3 And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and God himself shall be with them, and be their God.
+            4 And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away.
+            5 And he that sat upon the throne said, Behold, I make all things new. And he said unto me, Write: for these words are true and faithful.
+            6 And he said unto me, It is done. I am Alpha and Omega, the beginning and the end. I will give unto him that is athirst of the fountain of the water of life freely.
+            7 He that overcometh shall inherit all things; and I will be his God, and he shall be my son.
+            8 But the fearful, and unbelieving, and the abominable, and murderers, and whoremongers, and sorcerers, and idolaters, and all liars, shall have their part in the lake which burneth with fire and brimstone: which is the second death.
+            9 And there came unto me one of the seven angels which had the seven vials full of the seven last plagues, and talked with me, saying, Come hither, I will shew thee the bride, the Lamb’s wife.
+            10 And he carried me away in the spirit to a great and high mountain, and shewed me that great city, the holy Jerusalem, descending out of heaven from God,
+            11 Having the glory of God: and her light was like unto a stone most precious, even like a jasper stone, clear as crystal;
+            12 And had a wall great and high, and had twelve gates, and at the gates twelve angels, and names written thereon, which are the names of the twelve tribes of the children of Israel:
+            13 On the east three gates; on the north three gates; on the south three gates; and on the west three gates.
+            14 And the wall of the city had twelve foundations, and in them the names of the twelve apostles of the Lamb.
+            15 And he that talked with me had a golden reed to measure the city, and the gates thereof, and the wall thereof.
+            16 And the city lieth foursquare, and the length is as large as the breadth: and he measured the city with the reed, twelve thousand furlongs. The length and the breadth and the height of it are equal.
+            17 And he measured the wall thereof, an hundred and forty and four cubits, according to the measure of a man, that is, of the angel.
+            18 And the building of the wall of it was of jasper: and the city was pure gold, like unto clear glass.
+            19 And the foundations of the wall of the city were garnished with all manner of precious stones. The first foundation was jasper; the second, sapphire; the third, a chalcedony; the fourth, an emerald;
+            20 The fifth, sardonyx; the sixth, sardius; the seventh, chrysolite; the eighth, beryl; the ninth, a topaz; the tenth, a chrysoprasus; the eleventh, a jacinth; the twelfth, an amethyst.
+            21 And the twelve gates were twelve pearls; every several gate was of one pearl: and the street of the city was pure gold, as it were transparent glass.
+            22 And I saw no temple therein: for the Lord God Almighty and the Lamb are the temple of it.
+            23 And the city had no need of the sun, neither of the moon, to shine in it: for the glory of God did lighten it, and the Lamb is the light thereof.
+            24 And the nations of them which are saved shall walk in the light of it: and the kings of the earth do bring their glory and honour into it.
+            25 And the gates of it shall not be shut at all by day: for there shall be no night there.
+            26 And they shall bring the glory and honour of the nations into it.
+            27 And there shall in no wise enter into it any thing that defileth, neither whatsoever worketh abomination, or maketh a lie: but they which are written in the Lamb’s book of life.`,
+            "revelation-22": `CHAPTER 22
+            The Saints will reign in celestial splendor—Christ will come, and men will be judged—Blessed are they who keep His commandments.
+            1 And he shewed me a pure river of water of life, clear as crystal, proceeding out of the throne of God and of the Lamb.
+            2 In the midst of the street of it, and on either side of the river, was there the tree of life, which bare twelve manner of fruits, and yielded her fruit every month: and the leaves of the tree were for the healing of the nations.
+            3 And there shall be no more curse: but the throne of God and of the Lamb shall be in it; and his servants shall serve him:
+            4 And they shall see his face; and his name shall be in their foreheads.
+            5 And there shall be no night there; and they need no candle, neither light of the sun; for the Lord God giveth them light: and they shall reign for ever and ever.
+            6 And he said unto me, These sayings are faithful and true: and the Lord God of the holy prophets sent his angel to shew unto his servants the things which must shortly be done.
+            7 Behold, I come quickly: blessed is he that keepeth the sayings of the prophecy of this book.
+            8 And I John saw these things, and heard them. And when I had heard and seen, I fell down to worship before the feet of the angel which shewed me these things.
+            9 Then saith he unto me, See thou do it not: for I am thy fellowservant, and of thy brethren the prophets, and of them which keep the sayings of this book: worship God.
+            10 And he saith unto me, Seal not the sayings of the prophecy of this book: for the time is at hand.
+            11 He that is unjust, let him be unjust still: and he which is filthy, let him be filthy still: and he that is righteous, let him be righteous still: and he that is holy, let him be holy still.
+            12 And, behold, I come quickly; and my reward is with me, to give every man according as his work shall be.
+            13 I am Alpha and Omega, the beginning and the end, the first and the last.
+            14 Blessed are they that do his commandments, that they may have right to the tree of life, and may enter in through the gates into the city.
+            15 For without are dogs, and sorcerers, and whoremongers, and murderers, and idolaters, and whosoever loveth and maketh a lie.
+            16 I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star.
+            17 And the Spirit and the bride say, Come. And let him that heareth say, Come. And let him that is athirst come. And whosoever will, let him take the water of life freely.
+            18 For I testify unto every man that heareth the words of the prophecy of this book, If any man shall add unto these things, God shall add unto him the plagues that are written in this book:
+            19 And if any man shall take away from the words of the book of this prophecy, God shall take away his part out of the book of life, and out of the holy city, and from the things which are written in this book.
+            20 He which testifieth these things saith, Surely I come quickly. Amen. Even so, come, Lord Jesus.
+            21 The grace of our Lord Jesus Christ be with you all. Amen.
+            THE END`
         }
     },
     "BoM": {
