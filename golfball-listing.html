@@ -449,6 +449,44 @@
                     });
                 }
 
+                if (aListingType.toUpperCase() === "KSL") {
+                    var phoneNumDiv = createDOMElement({
+                        "ELtype": "div",
+                        "ELclasses": [ "font-weight-bold" ],
+                        "ELattributes": [
+                            { "ELname": "id", "ELvalue": "phoneNumDiv" },
+                        ],
+                        "ELhtmlString": "Phone number:<br> ",
+                        "ELparentElement": parentElement
+                    });
+
+                    var phoneNumText = createDOMElement({
+                        "ELtype": "span",
+                        "ELattributes": [
+                            { "ELname": "id", "ELvalue": "phoneNumSpan" },
+                        ],
+                        "ELhtmlString": "3046260269",
+                        "ELparentElement": phoneNumDiv
+                    });
+
+                    var phoneNumCopyButton = createDOMElement({
+                        "ELtype": "button",
+                        "ELclasses": [ "btn", "btn-primary" ],
+                        "ELattributes": [
+                            { "ELname": "type", "ELvalue": "button" },
+                            { "ELname": "onclick", "ELvalue": "addToClipboard('phoneNumSpan');" }
+                        ],
+                        "ELhtmlString": "Copy Phone Number to Clipboard",
+                        "ELparentElement": parentElement
+                    });
+    
+                    for (var i = 0; i < 2; i++) {
+                        var blankLine = createDOMElement({
+                            "ELtype": "br",
+                            "ELparentElement": parentElement
+                        });
+                    }
+                }
 
                 // Generate the spreadsheet entry
                 var tableDiv = createDOMElement({
