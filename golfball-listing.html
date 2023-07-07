@@ -423,8 +423,24 @@
                 if (aListingType.toUpperCase() === "KSL") {
                     descriptionString += "Text is preferred. ";
                 }
-                descriptionString += "See our other listings for more golf balls.";
+                descriptionString += "See our other listings for more golf balls.<br><br>";
 
+                descriptionString += `<pre>Keywords:
+ used golf golfball ball balls for sale sales near lehi ut utah me
+ bridgestone bridge stone
+ callaway calloway
+ kirkland
+ maxfli max fli
+ nitro
+ noodle
+ pinnacle
+ precept
+ srixon
+ taylormade taylor made
+ titleist
+ top flite flight
+ vice</pre>`;
+ 
                 var descriptionText = createDOMElement({
                     "ELtype": "span",
                     "ELattributes": [
