@@ -36,6 +36,9 @@
                 "callawaySoftAssorted": {
                     "name": "Callaway Soft Assorted"
                 },
+                "callawayWarbird": {
+                    "name": "Callaway Warbird"
+                },
                 "kirkland": {
                     "name": "Kirkland"
                 },
@@ -436,9 +439,12 @@
                 }
                 descriptionString += " Pickup in Lehi. ";
                 if (aListingType.toUpperCase() === "KSL") {
-                    descriptionString += "Text is preferred. ";
+                    descriptionString += "Text is preferred. See our other listings for more golf balls.";
                 }
-                descriptionString += "See our other listings for more golf balls.<br><br>";
+                else {
+                    descriptionString += "<br><br>See our other listings at https://www.facebook.com/marketplace/profile/100002064083516";
+                }
+                descriptionString += "<br><br>";
 
                 descriptionString += `<pre>Keywords:
  used golf golfball ball balls for sale sales near lehi ut utah me
