@@ -2,11 +2,15 @@
 <html>
     <head>
         <title>Scripture Audio</title>
-        <style>
+        <style id="bodyStyle">
             body {
                 overflow: hidden;
+                background-color: white;
+                color: black;
             }
+        </style>
 
+        <style>
             #leftSide {
                 height:95vh;
                 overflow: scroll;
@@ -94,14 +98,16 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
-    <body>
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col bg-light">
+    <body id="theBody">
+        <div class="container">
+            <div class="row"><div class="col">&nbsp;<br><br></div></div>
+
+            <div id="headerLeft" class="row mt-3 bg-light">
+                <div class="col">
                     <h1>Scripture Reader</h1>
                 </div>
-                <div class="col bg-light">
-                    <select id="bookSelector" class="form-control mt-3 mb-3" onchange="selectNewBook();">
+                <div id="headerRight" class="col bg-light">
+                    <select id="bookSelector" class="form-control mt-3 mb-3 bg-light" onchange="selectNewBook();">
                         <option value="BoM" selected>Book of Mormon</option>
                         <option value="NT">New Testament</option>
                         <option value="PoGP">Pearl of Great Price</option>
@@ -139,6 +145,12 @@
                         <span class="slider round"></span>
                     </label>
 
+                    <span>&nbsp;&nbsp;&nbsp;Dark Mode:&nbsp;&nbsp;</span>
+                    <label class="switch">
+                        <input id="darkmodeCheckbox" type="checkbox" onchange="adjustDarkMode();">
+                        <span class="slider round"></span>
+                    </label>
+
                     <span class="ml-3">Percent done: </span><span id="percentDone" class="ml-3">0</span>
 
                     <hr>
@@ -154,6 +166,47 @@
         <script src="chapters/scrip-chapters.js"></script>
 
         <script>
+            function adjustDarkMode() {
+                // console.log("Starting adjustDarkMode()...");
+                var darkmodeCheckbox = document.getElementById("darkmodeCheckbox");
+                var theHeader = document.getElementById('header');
+                var theFooter = document.getElementById('footer');
+                var theBody = document.getElementById('theBody');
+
+                var elementsWithClasses = [
+                    "headerLeft",
+                    "headerRight",
+                    "bookSelector",
+                    "footer"
+                ];
+
+                var newBG = 'bg-light';
+                var newBackgroundColor = 'white';
+                var newColor = 'black';
+
+                if (darkmodeCheckbox.checked == true) {
+                    // set dark mode
+                    // console.log("   Setting dark mode");
+                    newBG = 'bg-dark';
+                    newBackgroundColor = 'black';
+                    newColor = 'white';
+                }
+
+                for (var i = 0; i < elementsWithClasses.length; i++) {
+                    document.getElementById(elementsWithClasses[i]).classList.remove('bg-light', 'bg-dark')
+                    document.getElementById(elementsWithClasses[i]).classList.add(newBG);
+                }
+                /*
+                theHeader.classList.remove('bg-lite', 'bg-dark');
+                theHeader.classList.add(newBG);
+                theFooter.classList.remove('bg-lite', 'bg-dark');
+                theFooter.classList.add(newBG);
+                */
+
+                theBody.style.backgroundColor = newBackgroundColor;
+                theBody.style.color = newColor;
+            }
+
             function setupBookElement(anAnchor) {
                 $(anAnchor).empty();
 
