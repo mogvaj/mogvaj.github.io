@@ -2,37 +2,32 @@
 <html>
     <head>
         <title>Noise Maker</title>
-        <style id="bodyStyle">
-            body {
-                overflow: hidden;
-                background-color: white;
-                color: black;
-            }
-        </style>
 
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <script>
+        <!-- <script>
             document.querySelector("meta[name=viewport]").setAttribute('content', 'width=device-width, initial-scale=' + (1/window.devicePixelRatio)+', shrink-to-fit=no');
-        </script>
+        </script> -->
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
     <body id="theBody">
-        <div class="container">
-            <div class="row"><div class="col">&nbsp;<br><br></div></div>
-                <button id="theButton" class="btn btn-primary w-100 h-100 d-inline-block" onclick="handleButtonClick();">Start Noise</button>
-                <audio id="theAudio1">
-                    <source src="mp3s/brownNoise2.mp3" type="audio/mpeg">
-                </audio>
-                <audio id="theAudio2">
-                    <source src="mp3s/brownNoise2.mp3" type="audio/mpeg">
-                </audio>
-
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <button type="button" id="theButton" class="btn btn-lg btn-primary w-100" onclick="handleButtonClick();">Start Noise</button>
+                </div>
             </div>
         </div>
+
+        <audio id="theAudio1">
+            <source src="mp3s/brownNoise2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="theAudio2">
+            <source src="mp3s/brownNoise2.mp3" type="audio/mpeg">
+        </audio>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
