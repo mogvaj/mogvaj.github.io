@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Noise Maker</title>
+    </head>
+    <body id="theBody">
+        <br><br><br>
+        <button type="button" id="theButton" class="btn btn-lg btn-primary w-100" onclick="handleButtonClick();">Start Noise</button>
+
+        <audio id="theAudio1">
+            <source src="mp3s/brownNoise2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="theAudio2">
+            <source src="mp3s/brownNoise2.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <script>
+            // Global variables
+            var status="quiet"; // other status = "noisy"
+            var timingHandle = "none";
+            var audio1 = document.getElementById("theAudio1");
+            var audio2 = document.getElementById("theAudio2");
+
+            function handleButtonClick() {
+                if (status == "quiet") {
+                    document.getElementById("theButton").innerHTML = "Stop Noise";
+                    startNoise();
+                }
+                else {
+                    document.getElementById("theButton").innerHTML = "Start Noise";
+                    stopNoise();
+                }
+            }
+
+            function startNoise() {
+                audio1.loop = true;
+                audio2.loop = true;
+
+                var pauseTime = audio1.duration / 2;
+                audio2.currentTime = pauseTime;
+
+                audio1.play();
+                audio2.play();
+                status = "noisy";
+            }
+
+            function stopNoise() {
+                if (status == "noisy") {
+                    audio1.pause();
+                    audio2.pause();
+                    status = "quiet";
+                }
+            }
+        </script>
+    </body>
+</html>
