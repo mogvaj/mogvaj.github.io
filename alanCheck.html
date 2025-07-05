@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Checklist Tool</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	<body>
+		<div id="outputDiv"></div>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script>
+			var checklistDB = {
+				"Alan Gould's Checklists": {
+					// Instructions for doing things for Alan Gould
+
+					"HOW TO TRANSCRIBE AUDIO FILES": [
+						{ "type": "title", "text": "Move recorded file from the recorder to PC" },
+						{ "type": "cki", "text": 'a. Record audio in sacrament meeting' },
+						{ "type": "cki", "text": 'b. Plug recorder into Windows 11 PC' },
+						{ "type": "cki", "text": 'c. Start File Explorer from bottom of screen' },
+						{ "type": "cki", "text": 'd. Double click on the IC RECORDER' },
+						{ "type": "cki", "text": 'e. Find the audio file you want to transcribe' },
+						{ "type": "cki", "text": 'f. Right click on the audio file and choose “Copy”' },
+						{ "type": "cki", "text": 'g. Close the IC RECORDER File Explorer window' },
+						{ "type": "cki", "text": 'h. On the Desktop, open the “MP3-Audio” shortcut on the Mindy-side shoulder of Mary Ellen' },
+						{ "type": "cki", "text": 'i. Right click in the “MP3-Audio” window and choose “Paste”' },
+						{ "type": "cki", "text": 'j. After the file finishes copying, close the “MP3-Audio” File Explorer window' },
+
+						{ "type": "title", "text": "Automagically transcribe the audio file" },
+						{ "type": "cki", "text": 'a. Click on the Start menu (4 squares on bottom of screen)' },
+						{ "type": "cki", "text": 'b. Choose “Word”' },
+						{ "type": "cki", "text": 'c. Choose to create a new “Blank Document”' },
+						{ "type": "cki", "text": 'd. Choose “Home” from the top ribbon in Word' },
+						{ "type": "cki", "text": 'e. Choose “Dictate”' },
+						{ "type": "cki", "text": 'f. Choose “Transcribe”' },
+						{ "type": "cki", "text": 'g. Choose “Upload Audio”' },
+						{ "type": "cki", "text": 'h. Choose “Documents” on the left column' },
+						{ "type": "cki", "text": 'i. Choose “13th Ward Sacrament Recordings”' },
+						{ "type": "cki", "text": 'j. Choose “2025”' },
+						{ "type": "cki", "text": 'k. Choose “audio”' },
+						{ "type": "cki", "text": 'l. Choose the audio file you want to transcribe and then click “Open”' },
+						{ "type": "cki", "text": 'm. Word will then send the audio file to a MS server, which will do the transcribing, and then that server will send back the text' },
+						{ "type": "cki", "text": 'n. You will get a blue message saying “Your transcript is saved.”' },
+						{ "type": "cki", "text": 'o. Click the “Add to document” button' },
+						{ "type": "cki", "text": 'p. Click the “Just text” option' },
+						{ "type": "cki", "text": 'q. Click the “x” beside “Transcribe”' },
+						{ "type": "cki", "text": 'r. Click on “File” on the menu bar' },
+						{ "type": "cki", "text": 's. Click on “Save As”' },
+						{ "type": "cki", "text": 't. Click on “Browse”' },
+						{ "type": "cki", "text": 'u. Click on “Documents” on the left side of the “Save As” window' },
+						{ "type": "cki", "text": 'v. Double-click on “13th Ward Sacrament Recordings”' },
+						{ "type": "cki", "text": 'w. Double-click on “2025”' },
+						{ "type": "cki", "text": 'x. Double-click on “Transcribed”' },
+						{ "type": "cki", "text": 'y. Type the filename into the “File name:” field' },
+						{ "type": "cki", "text": 'z. Click on the “Save” button' },
+
+						{ "type": "title", "text": "Place DOC and MP3 side-by-side" },
+						{ "type": "cki", "text": 'a. Double-click on the “DOCX-Transcribed” folder on Mary Ellen’s right shoulder' },
+						{ "type": "cki", "text": 'b. Double-click on the file you want to work on' },
+						{ "type": "cki", "text": 'c. Minimize the file that just opened in Word' },
+						{ "type": "cki", "text": 'd. Double-click on the “MP3-Audio” folder on Mary Ellen’s left (Mindy) shoulder' },
+						{ "type": "cki", "text": 'e. Double-click on the file you want to listen to' },
+						{ "type": "cki", "text": 'f. Click and hold on the Media Player title bar' },
+						{ "type": "cki", "text": 'g. Drag the Media Player to the right middle of the screen' },
+						{ "type": "cki", "text": 'h. Let go when it “lights up” the right side of the screen' },
+						{ "type": "cki", "text": 'i. On the left side of the screen, choose its “partner” Word file' },
+						{ "type": "cki", "text": 'j. They should now be side-by-side' },
+
+					], // End of "How to Transcribe" checklist
+
+				}, // End of associative array of Alan Gould checklists
+			};
+		</script>
+
+		<script>
+			class MainApp {
+				constructor(anAnchorElement, aCheckListDB) {
+					this.appVersion = 3;
+
+					this.anchorElement = anAnchorElement;
+					this.checklistDB = aCheckListDB;
+					this.currentAircraft = '';
+					this.currentChecklist = '';
+
+					this.runStep = 0;
+				}
+
+				clearAppWindow() {
+					$(this.anchorElement).empty();
+				}
+
+				draw() {
+					// console.log("Starting MainApp.draw()...");
+					this.clearAppWindow();
+
+					this.titleNav = new TitleNav(this.anchorElement, this);
+					this.titleNav.draw();
+
+					if (this.runStep === 0) {
+						// Need to get the currentAircraft
+						// console.log("Starting MainApp.draw--if(runStep === 0)...");
+						this.optionGetter = new OptionGetter(this.anchorElement, this, this.checklistDB);
+						this.optionGetter.draw();
+					}
+					else if (this.runStep === 1) {
+						// Need to get the currentChecklist
+						// console.log("Starting MainApp.draw--if(runStep === 1)...");
+						this.optionGetter = new OptionGetter(this.anchorElement, this, this.checklistDB[this.currentAircraft]);
+						this.optionGetter.draw();
+					}
+					else if (this.runStep === 2) {
+						// Need to show the checklist
+						this.checklistRunner = new ChecklistRunner(this.anchorElement, this, this.checklistDB[this.currentAircraft][this.currentChecklist]);
+						this.checklistRunner.draw();
+					}
+				}
+
+				processResult(aResult="") {
+					if (this.runStep === 0) {
+						this.currentAircraft = aResult;
+						this.runStep++;
+						this.draw();
+					}
+					else if (this.runStep === 1) {
+						this.currentChecklist = aResult;
+						this.runStep++;
+						this.draw();
+					}
+					else if (this.runStep === 2) {
+
+						this.titleNav.updateProgressDiv();
+					}
+				}
+			}
+
+			class TitleNav {
+				constructor(anAnchorElement, aParentObject) {
+					this.anchorElement = anAnchorElement;
+					this.parentObject = aParentObject;
+
+					this.appTitleDiv = '';
+					this.currentAircraftDiv = '';
+					this.currentChecklistDiv = '';
+					this.progressDiv = '';
+				}
+
+				draw() {
+					// console.log("Starting TitleNav.draw()...");
+					// Make a Navbar
+					this.navElement = createDOMElement({
+						"ELtype": "nav",
+						"ELclasses": [ "navbar", "fixed-top", "navbar-dark", "bg-primary" ],
+						"ELattributes": [
+							{ "ELname": "id", "ELvalue": "navElement" }
+						],
+						"ELparentElement": this.anchorElement
+					});
+
+					// Make a title
+					this.appTitleDiv = createDOMElement({
+						"ELtype": "div",
+						"ELclasses": [ "navbar-brand" ],
+						"ELattributes": [
+							{ "ELname": "id", "ELvalue": "appTitleDiv" }
+						],
+						"ELparentElement": this.navElement
+					});
+
+					// Display the current aircraft as this.parentObject.currentAircraft || "None selected"
+					var aircraftDisplayText = "Library: None selected";
+					if (this.parentObject.currentAircraft !== '') {
+						aircraftDisplayText = "Library: " + this.parentObject.currentAircraft;
+					}
+
+					this.currentAircraftDiv = createDOMElement({
+						"ELtype": "span",
+						"ELattributes": [
+							{ "ELname": "id", "ELvalue": "currentAircraftDiv" }
+						],
+						"ELhtmlString": aircraftDisplayText,
+						"ELparentElement": this.appTitleDiv
+					});
+
+					// Create a DIV for this.currentChecklist
+					var checklistDisplayText = "Checklist: None selected";
+					if (this.parentObject.runStep >= 1) {
+						checklistDisplayText = "Checklist: " + this.parentObject.currentChecklist;
+					}
+
+					this.currentChecklistDiv = createDOMElement({
+						"ELtype": "div",
+						"ELattributes": [
+							{ "ELname": "id", "ELvalue": "currentChecklistDiv" }
+						],
+						"ELhtmlString": checklistDisplayText,
+						"ELparentElement": this.appTitleDiv
+					});
+
+					// Create a DIV for this.progressDiv
+					if (this.parentObject.runStep >= 2) {
+						this.progressDiv = createDOMElement({
+							"ELtype": "div",
+							"ELattributes": [
+								{ "ELname": "id", "ELvalue": "progressDiv" }
+							],
+							"ELhtmlString": "Progress: 0%",
+							"ELparentElement": this.appTitleDiv
+						});
+					}
+				}
+
+				updateProgressDiv() {
+					// console.log("Starting TitleNav.updateProgressDiv()...");
+					if (this.parentObject.runStep >= 2) {
+						var totalButtons = document.getElementsByClassName("cki").length;
+						var greenButtons = document.getElementsByClassName("btn-success").length;
+						var percentComplete = Math.round(greenButtons / totalButtons * 100);
+
+						console.log("   totalButtons = " + totalButtons);
+						console.log("   greenButtons = " + greenButtons);
+						console.log("   percentComplete = " + percentComplete);
+
+						this.progressDiv.innerHTML = "Progress: " + percentComplete + "%";
+					}
+				}
+			}
+
+			class OptionGetter {
+				constructor(anAnchorElement, aParentObject, aChoiceObject) {
+					this.anchorElement = anAnchorElement;
+					this.parentObject = aParentObject;
+					this.choiceObject = aChoiceObject;
+				}
+
+				draw() {
+					// console.log("Starting OptionGetter.draw()...");
+
+					var choiceContainer = createDOMElement({
+						"ELtype": "div",
+						"ELclasses": [ "container", "d-flex", "flex-column" ],
+						"ELattributes": [
+							{ "ELname": "style", "ELvalue": "margin-top: 120px" }
+						],
+						"ELparentElement": this.anchorElement
+					});
+
+					var thisObject = this;
+					var choiceArray = Object.keys(this.choiceObject);
+					choiceArray.sort();
+					// console.log("choiceArray = " + JSON.stringify(choiceArray));
+					// console.log("ChoiceArray.length = " + choiceArray.length);
+					for (var i = 0; i < choiceArray.length; i++) {
+						// console.log("Making a button...");
+						var newButton = createDOMElement({
+							"ELtype": "button",
+							"ELclasses": [ "btn", "btn-info", "m-1" ],
+							"ELattributes": [
+								{ "ELname": "id", "ELvalue": choiceArray[i] }
+							],
+							"ELhtmlString": choiceArray[i],
+							"ELparentElement": choiceContainer
+						});
+						newButton.addEventListener("click", function(e) {
+							thisObject.parentObject.processResult(e.target.id);
+						});
+					}
+				}
+			}
+
+			class ChecklistRunner {
+				constructor(anAnchorElement, aParentObject, aChecklistArray) {
+					this.anchorElement = anAnchorElement;
+					this.parentObject = aParentObject;
+					this.checklistArray = aChecklistArray;
+				}
+
+				draw() {
+					// console.log("Starting ChecklistRunner.draw()...");
+
+					var checklistContainer = createDOMElement({
+						"ELtype": "div",
+						"ELclasses": [ "container", "d-flex", "flex-column", "pb-3" ],
+						"ELattributes": [
+							{ "ELname": "style", "ELvalue": "margin-top: 120px" }
+						],
+						"ELparentElement": this.anchorElement
+					});
+
+					for (var i = 0; i < this.checklistArray.length; i++) {
+						var newCKI = new CKI(checklistContainer, this, this.checklistArray[i].type, this.checklistArray[i].text, i);
+						newCKI.draw();
+					}
+				}
+
+				processResult() {
+					this.parentObject.processResult();
+				}
+			}
+
+			class CKI {
+				constructor(aParentElement, aParentObject, anEntryType, aDisplayText, anID) {
+					this.anchorElement = aParentElement;
+					this.parentObject = aParentObject;
+					this.entryType = anEntryType;
+					this.displayText = aDisplayText;
+					this.myID = anID;
+
+					this.mylatesttap = 0;
+					this.myElement = 0;
+					this.created = false;
+				}
+				
+				draw() {
+					var thisObject = this; // For when this is needed later on in this method
+					var ckiElement = "";
+					
+					if (this.entryType === "title") {
+						ckiElement = createDOMElement({
+							"ELtype": "div",
+							"ELclasses": [ "card", "mt-3" ],
+							"ELparentElement": this.anchorElement
+						});
+
+						var ckiHeading = createDOMElement({
+							"ELtype": "h5",
+							"ELclasses": [ "card-header" ],
+							"ELhtmlString": this.displayText,
+							"ELparentElement": ckiElement
+						});
+					}
+					else {
+						ckiElement = createDOMElement({
+							"ELtype": "button",
+							"ELclasses": [ "btn", "btn-block", "btn-danger", "w-75", "mt-2", "ml-3", "cki" ],
+							"ELattributes": [
+								{ "ELname": "id", "ELvalue": "cki-" + this.myID }
+							],
+							"ELhtmlString": this.displayText,
+							"ELparentElement": this.anchorElement
+						});
+						$(ckiElement).on("touchend click", function(event) {
+							event.preventDefault();
+							// thisObject.handleTap(thisObject.myID);
+							thisObject.handleTap(event.target.id);
+						});
+					}
+					
+					this.myElement = ckiElement;
+					this.created = true;
+				}
+				
+				handleTap(anID) {
+					// console.log("Starting handleTap()...");
+					var now = new Date().getTime();
+					var timesince = now - this.mylatesttap;
+					
+					if (this.mylatesttap == "beginning") {
+						this.mylatesttap = new Date().getTime();
+					}
+					
+					if ((timesince < 600) && (timesince > 0)) {
+						// This object has been double-clicked or double-tapped
+						//console.log("This was double-clicked or double-tapped: " + this.displayText);
+						this.myElement.classList.remove('btn-danger');
+						this.myElement.classList.add('btn-success');
+						//$(this.myElement).on("touchend click", function() { var x="do nothing"; });
+						$(this.myElement).off();
+						
+						// Now update the result
+						// It's a global function in the HTML file
+						this.processResult();
+						// totalChecklistItemsCompleted++;
+						// updateResult("result");
+					}
+					else {
+						// Only single clicked or single tapped
+					}
+					
+					this.mylatesttap = new Date().getTime();
+				}
+
+				processResult() {
+					this.parentObject.processResult();
+				}
+			}
+
+
+			//=================================================================================================
+			//=================================================================================================
+			//                                           Utility Functions
+			//=================================================================================================
+			//=================================================================================================
+
+
+			// *********************************************************************
+			// createDOMElement(elData)
+			//
+			// Requires an input JSON object (example below):
+			//
+			//  {
+			//    "ELtype": "div",
+			//    "ELclasses": [ "modal", "fade" ],
+			//    "ELattributes": [
+			//      { "ELname": "role", "ELvalue": "dialog" }
+			//    ],
+			//    "ELhtmlString": "Hello, world!",
+			//    "ELparentElement": // a DOM element
+			//  }
+			//
+			// *********************************************************************
+			function createDOMElement(elData) {
+				if ("ELtype" in elData) {
+					var newElement = document.createElement(elData.ELtype);
+
+					if ("ELclasses" in elData) {
+					for (i = 0; i < elData.ELclasses.length; i++) {
+						newElement.classList.add(elData.ELclasses[i]);
+					}
+					}
+
+					if ("ELattributes" in elData) {
+					for (i = 0; i < elData.ELattributes.length; i++) {
+						newElement.setAttribute(elData.ELattributes[i].ELname, elData.ELattributes[i].ELvalue);
+					}
+					}
+
+					if ("ELhtmlString" in elData) {
+					newElement.innerHTML = elData.ELhtmlString;
+					}
+
+					if ("ELparentElement" in elData) {
+					elData.ELparentElement.appendChild(newElement);
+					}
+
+					return newElement;
+				}
+				else {
+					return -1;
+				}
+			}
+		</script>
+
+		<script>
+			// Startup the app
+			var mainApp = new MainApp(document.getElementById("outputDiv"), checklistDB);
+			mainApp.draw();
+		</script>
+
+	</body>
+</html>
