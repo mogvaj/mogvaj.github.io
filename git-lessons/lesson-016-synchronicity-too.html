@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DCN: How to Git - Lesson 16</title>
+        <link rel="stylesheet" type="text/css" href="common.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta id="headAnchor">
+    </head>
+    <body id="theBody">
+        <div id="outputDiv" class="container">
+            <h1>DCN: How to Git</h1>
+            <h2>Lesson 16 - Synchronicity, too</h2>
+
+            <hr>
+            <div id="headerDiv"></div>
+
+            <ul>
+                <li>Note: The following instructions are specific to the Green-side gitlab.  These instructions also apply to the Red-side gitlab, however the URL is different, so keep that in mind.</li>
+            </ul>
+            <ul>
+                <li>To recap where we are:</li>
+                <ul>
+                    <li>In Lesson 6, we cloned the "hello-git" repository</li>
+                    <li>In Lesson 7, we made a new branch to do some work in: "addNiceGreeting"</li>
+                    <li>In Lesson 8, we made a change to a file in our local copy of the "hello-git" repository</li>
+                    <li>In Lesson 10, we "staged" our branch's files for the next step</li>
+                    <li>In Lesson 11, we took a snapshot of our branch by using the "git commit" command</li>
+                    <li>In Lesson 12, we pushed changes to the origin (Gitlab)</li>
+                    <li>In Lesson 13, we checked to make sure the "addNiceGreeting" branch made it to Gitlab</li>
+                    <li>In Lesson 14, we requested to merge the "addNiceGreeting" branch into the "master" branch</li>
+                    <li>In Lesson 15, we executed the merge</li>
+                    <li>In THIS lesson, we will synchronize our local repo with the new version of the origin's repo...</li>
+                </ul>
+                <br>
+                <li>Login to your UNET workstation (or Remote UNET, or UVDI, etc.)</li>
+                <li>If Git Bash isn't running, yet, start it up and navigate to the directory where "hello-git.html" resides</li>
+                <ul>
+                    <i>If you don't have that directory, back up to Lesson 6 and make your way back here...see you in a few...</i>
+                </ul>
+                <li>In Git Bash, do a "git status" to get your bearings:</li>
+                <ul>
+                    <code>$ (addNiceGreeting) git status
+On branch addNiceGreeting
+nothing to commit, working tree clean
+                        
+$ (addNiceGreeting)
+                    </code>
+                </ul>
+                <li>Wait...didn't we delete the "addNiceGreeting" branch at the end of the last lesson?</li>
+            </ul>
+            <ul>
+                <li>Yes, yes we did! But we deleted the "addNiceGreeting" on Gitlab's version of the repository</li>
+                <li>To see what branches still exist on your local version of the repository, do "git branch -a":</li>
+                <ul>
+                    <code>$ (addNiceGreeting) git status
+* addNiceGreeting
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/addNiceGreeting
+  remotes/origin/master
+
+  $ (addNiceGreeting)
+                    </code>
+                </ul>
+                <li>What that says is that your local Git client has branches called "addNiceGreeting" and "master"...and that, the last it heard, the origin also had branches called "addNiceGreeting" and "master"</li>
+                <li>(Disregard that "HEAD" reference for now.)</li>
+            </ul>
+            <ul>
+                <li>So...how do we synchronize our local repository with the origin?</li>
+                <li>Here's the way I do it:</li>
+                <ul>
+                    <li>Delete the entire "hello-git" folder from your development folder</li>
+                    <li>Re-clone the project (see Lesson 6)</li>
+                </ul>
+
+                <br>
+
+                <li>Here's another way:</li>
+                <ul>
+                    <li>Checkout the "master" branch:</li>
+                    <ul>
+                        <code>$ (addNiceGreeting) git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+$ (master)
+                        </code>
+                    </ul>
+                    <li>(You are going to ask me why it says our "master" branch is up to date with the "origin/master" branch...I have yet to be able to understand explanations of this online. What I chalk this up to is some Git inconsistencies in their terminology.)</li>
+                    <li>However, the "master" you have locally is not the "master" on the origin:</li>
+                    <ul>
+                        <code>$ (master) cat hello-git.html
+&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello, Git&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, Git&lt;/h1&gt;
+        <kbd class="text-danger">{{suspicious lack of "This is my first edit" here}}</kbd>
+    &lt;/body&gt;
+&lt;/html&gt;
+                            
+$ (master)
+                        </code>
+                    </ul>
+                </ul>
+            </ul>
+            <ul>
+                <li>To synchronize your local copy of the "master" branch with the origin's copy, use "git pull":</li>
+                <ul>
+                    <code>$ (master) git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 269 bytes | 6.00 KiB/s, done.
+From https://gitlab.fbi.gov/dcn/hello-git
+   7513f39..fb67836  master     -> origin/master
+Updating 7513f39..fb67836
+Fast-forward
+ hello-git.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+ $ (master)
+                        </code>
+                    </ul>
+                </ul>
+            </ul>
+            <ul>
+                <li>Now, if we look at the contents of the "hello-git.html" file, it will match the version on the "origin" (Gitlab):</li>
+                <ul>
+                    <code>$ (master) cat hello-git.html
+&lt;!doctype html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Hello, Git&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello, Git&lt;/h1&gt;
+        This is my first edit <kbd class="text-success"><--- LOOK! It's there, now!</kbd>
+    &lt;/body&gt;
+&lt;/html&gt;
+
+$ (master)
+                    </code>
+                </ul>
+            </ul>
+
+            <ul>
+                <li>Next time, we'll briefly look at "deployment"...</li>
+                <li>DONE!</li>
+            </ul>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="common.js"></script>
+        <script>
+            document.getElementById("headerDiv").innerHTML = makeHeader();
+        </script>
+    </body>
+</html>

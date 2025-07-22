@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DCN: How to Git - Lesson 4</title>
+        <link rel="stylesheet" type="text/css" href="common.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta id="headAnchor">
+    </head>
+    <body id="theBody">
+        <div id="outputDiv" class="container">
+            <h1>DCN: How to Git</h1>
+            <h2>Lesson 4 - Create SSH keys</h2>
+
+            <hr>
+            <div id="headerDiv"></div>
+
+            <ul>
+                <li>Note 1: The following instructions are specific to the Green-side gitlab.  These instructions also apply to the Red-side gitlab, however the URL is different, so keep that in mind.</li>
+                <li>Note 2: SSH keys will need to be generated for each workstation you work from (i.e., UNET physical at your desk, UNET virtual via Remote UNET, etc.)</li>
+                <ul>
+                    <li>Login to your UNET workstation (or Remote UNET, or UVDI, etc.)</li>
+                    <li>Create SSH Keys:</li>
+                    <ul>
+                        <li>Open a Windows Command Prompt (i.e., the "DOS prompt")</li>
+                        <li>Generate an RSA public key:</li>
+                        <ul>
+                            <code>C:\Users\flast\ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\flast/.ssh/id_rsa): {{press enter to accept the default}}
+...
+{{Enter a passphrase twice}}
+                            </code>
+                        </ul>
+                        <li>When the key has been generated, close the command prompt window</li>
+                        <li>Use File Manager to navigate to c:\Users\flast</li>
+                        <li>There should be a hidden folder named ".ssh"</li>
+                        <ul>
+                            <li>If not, make sure that you can view hidden files and folders in File Manager:</li>
+                            <ul>
+                                <li>In File Manager...</li>
+                                <li>Choose the "View" tab at top</li>
+                                <li>In the ribbon that appears...</li>
+                                <li>Put a checkmark in the "Hidden items" option</li>
+                            </ul>
+                        </ul>
+                        <li>Enter the ".ssh" folder</li>
+                        <li>There should be a file named "id_rsa.pub"...</li>
+                        <li>Open that file with notepad (*not* MS Publisher...)</li>
+                        <li>Select all text and copy it to the clipboard</li>
+                        <li>Switch windows to a web browser</li>
+                        <li>Go to https://gitlab.fbi.gov and login</li>
+                        <li>Click your Profile Avatar</li>
+                        <li>In the dropdown menu that appears, choose "Edit profile"</li>
+                        <li>On the far left side-menu, click on "SSH Keys"</li>
+                        <li>Paste the text of your SSH key into the topmost text area box</li>
+                        <li>Give this key a title (maybe something like "My UNET Workstation"</li>
+                        <li>Click on the "Add key" button</li>
+                        <li>DONE!</li>
+                    </ul>
+                </ul>
+            </ul>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="common.js"></script>
+        <script>
+            document.getElementById("headerDiv").innerHTML = makeHeader();
+        </script>
+    </body>
+</html>

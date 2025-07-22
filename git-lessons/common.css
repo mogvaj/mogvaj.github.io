@@ -1,0 +1,9 @@
+.bg-light-success {
+    background-color: #e6ffcc;
+}
+.clickable {
+    cursor: pointer;
+}
+code {
+    white-space: pre-wrap;
+}
