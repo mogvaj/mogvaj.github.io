@@ -18,17 +18,15 @@
 
             <ul>
                 <li>Note 1: This one is a little longer...</li>
-                <li>Note 2: The following instructions are specific to the Green-side gitlab.  These instructions also apply to the Red-side gitlab, however the URL is different, so keep that in mind.</li>
+                <li>Note 2: Sorry...</li>
             </ul>
             <ul>
-                <li>Login to your UNET workstation (or Remote UNET, or UVDI, etc.)</li>
-                <li>Start the Chrome browser and go to "https://gitlab.fbi.gov"</li>
+                <li>Start a browser and go to "https://github.com"</li>
                 <li>Login as necessary</li>
-                <li>In the upper left, click on "Projects"</li>
+                <li>Navigate to: https://github.com/mogvaj/hello-git</li>
                 <li>In the dropdown menu that appears, click "Your projects"</li>
-                <li>A list of projects you have access to appears</li>
-                <li>Find the project named "Hello Git" and click on it</li>
-                <li>On the right side near the top there is a blue button that says "Clone"...click on it</li>
+                <li>The publicly available "hello-git" repository appears</li>
+                <li>On the right side near the top there is a green button that says "Code"...click on it</li>
                 <li>A drop down menu will appear...</li>
                 <li>Copy the URL under "Clone with HTTPS" by clicking on the clipboard icon to the right of the URL</li>
                 <li>Done with the browser...you can close it now</li>
@@ -44,28 +42,28 @@
                     </ul>
                     <li>Now right click in the bash window and paste the URL copied from Gitlab</li>
                     <ul>
-                        <code>$ git clone https://gitlab.fbi.gov/dcn/hello-git.git {{DON'T press enter yet}}
+                        <code>$ git clone https://github.com/mogvaj/hello-git.git {{DON'T press enter yet}}
                         </code>
                     </ul>
                     <li>Now...left arrow over to the "g" of "gitlab"</li>
                     <li>Add "oauth2:" to the URL:</li>
                     <ul>
-                        <code>$ git clone https://<b>oauth2:</b>gitlab.fbi.gov/dcn/hello-git.git {{DON'T press enter yet}}
+                        <code>$ git clone https://<b>oauth2:</b>github.com/mogvaj/hello-git.git {{DON'T press enter yet}}
                         </code>
                     </ul>
                     <li>Now...open another instance of File Manager and navigate to your "git-information.txt" file</li>
                     <li>Open that file and add the following at the top:</li>
                     <ul class="border p-2 mb-2">
                         <pre>To clone:
-   git clone https://oauth2:{{personal access token}}@gitlab.fbi.gov/....git
+   git clone https://oauth2:{{personal access token}}@github.com/....git
                         </pre>
                     </ul>
                     <li>That's the pattern for how to clone a repository from the Git bash command line (so you can look at it later)</li>
                     <li>Save "git-information.txt"</li>
-                    <li>Copy your Gitlab Personal Access Token to the clipboard:</li>
+                    <li>Copy your GitHub Personal Access Token to the clipboard:</li>
                     <ul class="border p-2 mb-2">
                         <pre>To clone:
-   git clone https://oauth2:{{personal access token}}@gitlab.fbi.gov/....git
+   git clone https://oauth2:{{personal access token}}@github.com/....git
 
 Personal Access Tokens
    <kbd>lerkdfoiuerkjhf</kbd>
@@ -74,12 +72,12 @@ Personal Access Tokens
                     <li>We can now close "git-information.txt"</li>
                     <li>Now...go back to the Git bash window and paste your personal access token after "oauth:"</li>
                     <ul>
-                        <code>$ git clone https://<b>oauth2:lerkdfoiuerkjhf</b>gitlab.fbi.gov/dcn/hello-git.git {{DON'T press enter yet}}
+                        <code>$ git clone https://<b>oauth2:lerkdfoiuerkjhf</b>github.com/mogvaj/hello-git.git {{DON'T press enter yet}}
                         </code>
                     </ul>
                     <li>Next, put an "at" (@) sign after your token and press enter.  Then the cloning magic starts:</li>
                     <ul>
-                        <code>$ git clone https://oauth2:lerkdfoiuerkjhf@gitlab.fbi.gov/dcn/hello-git.git
+                        <code>$ git clone https://oauth2:lerkdfoiuerkjhf@github.com/mogvaj/hello-git.git
 Cloning into 'hello-git'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
@@ -117,16 +115,16 @@ $
                     <ul>
                         <code>$ cd hello-git/
 
-$ (master) git status
-On branch master
-Your branch is up to date with 'origin/master'.
+$ (main) git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-$ (master)
+$ (main)
                         </code>
                     </ul>
-                    <li>Now...you are in a repository. Not only that, you are currently using the "master" branch.</li>
+                    <li>Now...you are in a repository. Not only that, you are currently using the "main" branch.</li>
                 </ul>
                 <li>DONE!</li>
             </ul>
