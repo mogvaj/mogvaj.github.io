@@ -17,16 +17,15 @@
             <div id="headerDiv"></div>
 
             <ul>
-                <li>Note 1: The following instructions are specific to the Green-side gitlab.  These instructions also apply to the Red-side gitlab, however the URL is different, so keep that in mind.</li>
-                <li>Note 2: SSH keys will need to be generated for each workstation you work from (i.e., UNET physical at your desk, UNET virtual via Remote UNET, etc.)</li>
+                <li>Note 1: We probably don't need to do this. If things don't work out in later lessons, you might need to do this....</li>
+                <li>Note 2: SSH keys will need to be generated for each workstation you work from (i.e., your desktop, your laptop, etc.)</li>
                 <ul>
-                    <li>Login to your UNET workstation (or Remote UNET, or UVDI, etc.)</li>
                     <li>Create SSH Keys:</li>
                     <ul>
                         <li>Open a Windows Command Prompt (i.e., the "DOS prompt")</li>
                         <li>Generate an RSA public key:</li>
                         <ul>
-                            <code>C:\Users\flast\ssh-keygen
+                            <code>C:\Users\<i>YourWindowsUsername</i>\ssh-keygen
 Generating public/private rsa key pair.
 Enter file in which to save the key (C:\Users\flast/.ssh/id_rsa): {{press enter to accept the default}}
 ...
@@ -34,7 +33,7 @@ Enter file in which to save the key (C:\Users\flast/.ssh/id_rsa): {{press enter 
                             </code>
                         </ul>
                         <li>When the key has been generated, close the command prompt window</li>
-                        <li>Use File Manager to navigate to c:\Users\flast</li>
+                        <li>Use File Manager to navigate to c:\Users\<i>YourWindowsUsername</i></li>
                         <li>There should be a hidden folder named ".ssh"</li>
                         <ul>
                             <li>If not, make sure that you can view hidden files and folders in File Manager:</li>
@@ -50,12 +49,12 @@ Enter file in which to save the key (C:\Users\flast/.ssh/id_rsa): {{press enter 
                         <li>Open that file with notepad (*not* MS Publisher...)</li>
                         <li>Select all text and copy it to the clipboard</li>
                         <li>Switch windows to a web browser</li>
-                        <li>Go to https://gitlab.fbi.gov and login</li>
+                        <li>Go to https://github.com and login</li>
                         <li>Click your Profile Avatar</li>
-                        <li>In the dropdown menu that appears, choose "Edit profile"</li>
-                        <li>On the far left side-menu, click on "SSH Keys"</li>
+                        <li>In the dropdown menu that appears, choose "Settings"</li>
+                        <li>On the far left side-menu, click on "SSH and GPG Keys"</li>
                         <li>Paste the text of your SSH key into the topmost text area box</li>
-                        <li>Give this key a title (maybe something like "My UNET Workstation"</li>
+                        <li>Give this key a title (maybe something like "My Laptop"</li>
                         <li>Click on the "Add key" button</li>
                         <li>DONE!</li>
                     </ul>

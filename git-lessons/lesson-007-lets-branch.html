@@ -17,24 +17,20 @@
             <div id="headerDiv"></div>
 
             <ul>
-                <li>Note 1: The following instructions are specific to the Green-side gitlab.  These instructions also apply to the Red-side gitlab, however the URL is different, so keep that in mind.</li>
-            </ul>
-            <ul>
-                <li>Login to your UNET workstation (or Remote UNET, or UVDI, etc.)</li>
-                <li>Start up File Manager and navigate to your development folder (i.e., I called mine "development" under my "Documents" folder)</li>
+                <li>Start up File Manager and navigate to your development folder (i.e., I called mine "dev" under my "Documents" folder)</li>
                 <li>In lesson 6, you cloned the "Hello Git" project into this folder.  There should be a folder named "hello-git"</li>
                 <li>Navigate into that "hello-git" folder</li>
                 <li>Right click somewhere in your development folder and choose "Git bash here"</li>
                 <li>Note:</li>
                 <ul>
-                    <li>Currently, we are in the "master" branch. Typically, we do NOT want to make changes to the "master" branch.</li>
+                    <li>Currently, we are in the "main" branch. Typically, we do NOT want to make changes to the "main" branch.</li>
                     <li>When making changes, we should do the following:</li>
                     <ol>
                         <li>Make a new branch</li>
                         <li>Make desired changes in the new branch</li>
                         <li>Push the changes to gitlab</li>
-                        <li>Request that the new branch be merged with the master branch</li>
-                        <li>Merge the branch into master</li>
+                        <li>Request that the new branch be merged with the main branch</li>
+                        <li>Merge the branch into main</li>
                         <li>Delete the no-longer-needed branch</li>
                     </ol>
                 </ul>
@@ -42,12 +38,12 @@
                 <ul>
                     <li>At the Git bash prompt, enter the following:</li>
                     <ul>
-                        <code>$ (master) git branch -a
-* master
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
+                        <code>$ (main) git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
 
-$ (master)
+$ (main)
                         </code>
                     </ul>
                 </ul>
@@ -55,36 +51,36 @@ $ (master)
                 <ul>
                     <li>At the Git bash prompt, enter the following:</li>
                     <ul>
-                        <code>$ (master) git branch addNiceGreeting
-$ (master)
+                        <code>$ (main) git branch addNiceGreeting
+$ (main)
                         </code>
                     </ul>
                 </ul>
                 <li>Check to see which branch you have activated:</li>
                 <ul>
-                    <code>$ (master) git status
-On branch master
-Your branch is up to date with 'origin/master'.
+                    <code>$ (main) git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
                         
-$ (master)
+$ (main)
                     </code>
                 </ul>
                 <li>Again, let's see what branches are available:</li>
                 <ul>
-                    <code>$ (master) git branch -a
+                    <code>$ (main) git branch -a
   addNiceGreeting
-* master
-  remotes/origin/HEAD -> origin/master
-  remotes/origin/master
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
                         
-$ (master)
+$ (main)
                     </code>
                 </ul>
                 <li>Now, let's activate, or switch to, the branch we just created:</li>
                 <ul>
-                    <code>$ (master) git checkout addNiceGreeting
+                    <code>$ (main) git checkout addNiceGreeting
 Switched to branch 'addNiceGreeting'
                         
 $ (addNiceGreeting)

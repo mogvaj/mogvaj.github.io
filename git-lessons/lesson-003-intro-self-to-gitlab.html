@@ -17,27 +17,35 @@
             <div id="headerDiv"></div>
 
             <ul>
-                <li>Note: The following instructions are specific to the Green-side gitlab.  These instructions also apply to the Red-side gitlab, however the URL is different, so keep that in mind.</li>
+                <li>Start up a browser and browse to https://github.com</li>
+                <li>If you don't already have a GitHub account:</li>
                 <ul>
-                    <li>Login to your UNET workstation (or Remote UNET, or UVDI, etc.)</li>
-                    <li>Start up a browser and load https://gitlab.fbi.gov</li>
-                    <li>Click on the button to "Sign in with [FBI Federation Services]"</li>
-                    <li>Enter whatever you have to in order to get in</li>
+                    <li>Choose "Sign up" and...sign up</li>
+                    <li>Return to the top of these instructions</li>
+                </ul>
+                <li>If you already have a GitHub account:</li>
+                <ul>
+                    <li>Choose "Sign in" and...sign in</li>
                     <li>Click on your "Profile Avatar" button in the upper right corner</li>
-                    <li>Choose "Edit profile"</li>
+                    <li>Choose "Settings"</li>
+                    <li>On the left side menu, choose "Developer Settings"</li>
                     <li>Create a Personal Access Token:</li>
                     <ul>
-                        <li>On the left side menu, click on "Access Tokens"</li>
-                        <li>In the "Name" field, type something like "UNET Workstation" or "Remote UNET" (depending on where you are)</li>
-                        <li>Leave the expiration date blank</li>
-                        <li>Click the checkbox next to all the Scope settings (because, why not?)</li>
-                        <li>Click the "Create personal access token" button</li>
+                        <li>On the left side menu, click on "Personal Access Tokens"</li>
+                        <li>On the drop-down that appears, choose "Tokens (classic)"</li>
+                        <li>Click on the button at top labeled "Generate new token"</li>
+                        <li>On the drop-down that appears, choose "Generate new token (classic)"</li>
+                        <li>In the "Note" field, type something like "20250731-personal-access-token"</li>
+                        <li>Set the expiration date per your preference</li>
+                        <li>Click the checkboxes next to all the Scope settings (for training purposes)</li>
+                        <li>Click the "Generate token" button</li>
+                        <li>The access token will be shown near the top of the page</li>
                         <li>Copy the new personal access token to the clipboard</li>
                         <li>Create a text file wherever you keep documents (i.e., your "Documents" folder) and name it "git-information.txt"</li>
                         <li>In the "git-information.txt" file, enter the following:</li>
                         <ul class="border p-2 mb-2">
                             <pre>Gitlab Personal Access Tokens:
-   gsbo5Zrz7cfjdn5xtfs-
+    ghp_notarealpersonalaccesstoken
                             </pre>
                         </ul>
                         <li>Save that file (we'll use that Personal Access Token later)</li>
